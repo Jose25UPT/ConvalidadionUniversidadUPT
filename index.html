@@ -87,7 +87,7 @@
         </div>
 
         <form id="externalCourseForm" class="form-grid form-block">
-          <h3 class="full-row">Registrar curso externo ya aprobado</h3>
+          <h3 class="full-row">Registrar curso externo</h3>
 
           <label>
             Universidad de origen
@@ -123,7 +123,13 @@
             ></textarea>
           </label>
 
+          <label class="full-row inline-check" for="externalPassed">
+            <input id="externalPassed" type="checkbox" checked />
+            Confirmo que este curso externo ya fue aprobado
+          </label>
+
           <button type="submit" id="addExternalBtn">Agregar curso externo</button>
+          <p id="externalFormStatus" class="form-status full-row"></p>
         </form>
 
         <div class="external-list-wrap">

@@ -330,6 +330,21 @@ button:hover {
   filter: brightness(0.97);
 }
 
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.form-status {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--danger);
+}
+
+.form-status.ok {
+  color: var(--ok);
+}
+
 #autoEvaluateBtn {
   background: linear-gradient(90deg, #00a896, #029f84);
 }

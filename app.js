@@ -23,6 +23,10 @@ const elements = {
   suneduProgramValid: document.getElementById("suneduProgramValid"),
   suneduStatus: document.getElementById("suneduStatus"),
   externalCourseForm: document.getElementById("externalCourseForm"),
+  externalPassed: document.getElementById("externalPassed"),
+  addExternalBtn: document.getElementById("addExternalBtn"),
+  evaluateBtn: document.getElementById("evaluateBtn"),
+  externalFormStatus: document.getElementById("externalFormStatus"),
   evaluationForm: document.getElementById("evaluationForm"),
   externalCourseList: document.getElementById("externalCourseList"),
   autoEvaluateBtn: document.getElementById("autoEvaluateBtn"),
@@ -185,6 +189,7 @@ function updateSuneduStatus() {
     elements.suneduStatus.classList.add("ok");
     elements.suneduStatus.textContent =
       "SUNEDU no obligatorio en esta simulación. Puedes registrar y evaluar de forma referencial.";
+    setActionButtonsEnabled(true);
     return;
   }
 
@@ -193,6 +198,7 @@ function updateSuneduStatus() {
   elements.suneduStatus.textContent = valid
     ? "SUNEDU verificado: ya puedes registrar y evaluar cursos."
     : "Debes marcar ambas validaciones para continuar.";
+  setActionButtonsEnabled(valid);
 }
 
 function onPolicyChange() {
@@ -205,9 +211,15 @@ function onPolicyChange() {
 
 function onAddExternalCourse(event) {
   event.preventDefault();
+  clearFormStatus();
 
   if (elements.requireSunedu.checked && !isSuneduValid()) {
-    alert("No se puede registrar: la universidad/programa no está validado por SUNEDU.");
+    showFormStatus("No se agregó: marca ambas validaciones SUNEDU.", false);
+    return;
+  }
+
+  if (!elements.externalPassed.checked) {
+    showFormStatus("No se agregó: confirma que el curso externo esté aprobado.", false);
     return;
   }
 
@@ -237,6 +249,7 @@ function onAddExternalCourse(event) {
 
   renderExternalCourseList();
   renderSuggestionForSelectedExternal();
+  showFormStatus("Curso externo agregado correctamente.", true);
 }
 
 function autoEvaluateBestMatch() {
@@ -652,6 +665,22 @@ function applyQuickMode() {
   const quick = elements.quickMode.checked;
   document.body.classList.toggle("quick-mode", quick);
   elements.suggestionCard.classList.toggle("hidden", quick && !getSelectedExternalCourse());
+}
+
+function setActionButtonsEnabled(enabled) {
+  elements.addExternalBtn.disabled = !enabled;
+  elements.evaluateBtn.disabled = !enabled;
+  elements.autoEvaluateBtn.disabled = !enabled;
+}
+
+function showFormStatus(message, isOk) {
+  elements.externalFormStatus.textContent = message;
+  elements.externalFormStatus.classList.toggle("ok", isOk);
+}
+
+function clearFormStatus() {
+  elements.externalFormStatus.textContent = "";
+  elements.externalFormStatus.classList.remove("ok");
 }
 
 function clearHistory() {
