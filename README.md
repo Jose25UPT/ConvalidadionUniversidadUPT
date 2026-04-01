@@ -4,14 +4,17 @@ Aplicación web inicial para evaluar convalidaciones de cursos hacia la Universi
 
 ## Qué incluye esta versión
 
-- Visualización de cursos por ciclo (I al X) y electivos.
-- Búsqueda por código o nombre del curso.
-- Formulario para registrar curso de universidad de origen.
-- Sugerencia automática de convalidación:
-	- Aprobable
-	- Revisar
-	- No equivalente
-- Historial local de evaluaciones (guardado en el navegador).
+- Convalidación por curso completo (no por subtemas).
+- Validación SUNEDU obligatoria antes de registrar/evaluar cursos.
+- Visualización de malla UPT por ciclo con filtro por cursos convalidables.
+- Política activa por defecto: convalidación de ciclos I al VI.
+- Registro de múltiples cursos externos ya aprobados por el estudiante.
+- Sugerencia automática de equivalencias UPT para cada curso externo.
+- Evaluación final con estado:
+  - Aprobable
+  - Revisar
+  - No equivalente
+- Historial local de evaluaciones (guardado en navegador).
 
 ## Criterios automáticos usados
 
@@ -19,7 +22,34 @@ La sugerencia se calcula con puntaje sobre 100 considerando:
 
 - Similitud de nombre del curso.
 - Diferencia de créditos.
-- Porcentaje de cobertura de sílabo declarado.
+- Cobertura referencial del sílabo (como apoyo, no por subtema detallado).
+
+## Reglas funcionales implementadas
+
+- Si la universidad/programa no está validado por SUNEDU, no permite convalidar.
+- No se convalida por subtemas en esta versión; se evalúa curso completo.
+- Los cursos fuera de ciclos I-VI se muestran como no convalidables en la política actual.
+
+## Opciones configurables (nueva iteración)
+
+- `Aplicar política referencial de ciclos I al VI`:
+  - Activo: prioriza y valida cursos de ciclos I-VI.
+  - Inactivo: permite considerar también cursos de ciclos superiores.
+- `Modo estricto: solo cursos generales (EG-)`:
+  - Activo: solo cursos generales.
+  - Inactivo: generales + especialidad según la política activa.
+- `Exigir validación SUNEDU obligatoria`:
+  - Activo: SUNEDU bloquea o habilita registro/evaluación.
+  - Inactivo: uso referencial (simulación).
+
+## Gestión administrativa
+
+- Reporte imprimible desde historial para secretaría.
+- Panel de decisión final por coordinador en cada evaluación:
+  - Aprobar
+  - Observar
+  - Rechazar
+  - Pendiente
 
 La decisión final siempre debe ser validada por la coordinación académica.
 
