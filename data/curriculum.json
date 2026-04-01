@@ -1,0 +1,138 @@
+{
+  "program": "Ingeniería de Sistemas",
+  "faculty": "FAING",
+  "university": "Universidad Privada de Tacna",
+  "version": "Plan de Estudios 2020-I / Adecuación 2024-II",
+  "cycles": [
+    {
+      "name": "I",
+      "courses": [
+        { "code": "EG-181", "name": "Comunicación I", "ht": 3, "hp": 2, "th": 5, "credits": 4, "prerequisite": "Ninguno" },
+        { "code": "EG-182", "name": "Matemática Básica", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "Ninguno" },
+        { "code": "EG-183", "name": "Estrategias para el Aprendizaje Autónomo", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "EG-184", "name": "Desarrollo Personal y Liderazgo", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "EG-185", "name": "Desarrollo de Competencias Digitales", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "INE-186", "name": "Matemática I", "ht": 4, "hp": 2, "th": 6, "credits": 5, "prerequisite": "Ninguno" }
+      ]
+    },
+    {
+      "name": "II",
+      "courses": [
+        { "code": "EG-281", "name": "Comunicación II", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "EG-181" },
+        { "code": "EG-282", "name": "Territorio Peruano, Defensa y Seguridad Nacional", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "EG-283", "name": "Filosofía", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "INE-284", "name": "Técnicas de Programación", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "Ninguno" },
+        { "code": "INE-285", "name": "Física I", "ht": 3, "hp": 2, "th": 5, "credits": 4, "prerequisite": "Ninguno" },
+        { "code": "INE-286", "name": "Matemática II", "ht": 4, "hp": 2, "th": 6, "credits": 5, "prerequisite": "INE-186" }
+      ]
+    },
+    {
+      "name": "III",
+      "courses": [
+        { "code": "INE-381", "name": "Economía", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "EG-382", "name": "Ética", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "EG-283" },
+        { "code": "INE-383", "name": "Estadística y Probabilidades", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "SI-384", "name": "Estructura de Datos", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "INE-284" },
+        { "code": "SI-385", "name": "Sistemas de Información", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "SI-386", "name": "Matemática Discreta", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "INE-286" }
+      ]
+    },
+    {
+      "name": "IV",
+      "courses": [
+        { "code": "SI-481", "name": "Modelamiento de Procesos", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-385" },
+        { "code": "SI-482", "name": "Ingeniería Económica y Financiera", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "INE-381" },
+        { "code": "SI-483", "name": "Interacción y Diseño de Interfaces", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "INE-484", "name": "Diseño en Ingeniería", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "Ninguno" },
+        { "code": "SI-485", "name": "Sistemas Electrónicos Digitales", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-386" },
+        { "code": "SI-486", "name": "Programación I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-384" }
+      ]
+    },
+    {
+      "name": "V",
+      "courses": [
+        { "code": "SI-581", "name": "Arquitectura de Computadoras", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-485" },
+        { "code": "SI-582", "name": "Diseño de Base de Datos", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-481" },
+        { "code": "SI-583", "name": "Diseño y Modelamiento Virtual", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "INE-484" },
+        { "code": "SI-584", "name": "Ingeniería de Requerimientos", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-481" },
+        { "code": "SI-585", "name": "Ingeniería de Software", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-483" },
+        { "code": "SI-586", "name": "Programación II", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-486" }
+      ]
+    },
+    {
+      "name": "VI",
+      "courses": [
+        { "code": "EG-681", "name": "Ecología y Desarrollo Sostenible", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "SI-682", "name": "Sistemas Operativos I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-581" },
+        { "code": "SI-683", "name": "Base de Datos I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-582" },
+        { "code": "SI-684", "name": "Investigación de Operaciones", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-585" },
+        { "code": "SI-685", "name": "Diseño y Arquitectura de Software", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-584" },
+        { "code": "SI-686", "name": "Programación III", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-586" }
+      ]
+    },
+    {
+      "name": "VII",
+      "courses": [
+        { "code": "EG-781", "name": "Problemas y Desafíos del Perú en un Mundo Global", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "SI-782", "name": "Sistemas Operativos II", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-682" },
+        { "code": "SI-783", "name": "Base de Datos II", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-683" },
+        { "code": "SI-784", "name": "Calidad y Pruebas de Software", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-686" },
+        { "code": "SI-785", "name": "Gestión de Proyectos de TI", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-684" },
+        { "code": "SI-786", "name": "Programación Web I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-683" }
+      ]
+    },
+    {
+      "name": "VIII",
+      "courses": [
+        { "code": "SI-881", "name": "Inteligencia Artificial", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-783" },
+        { "code": "SI-882", "name": "Redes y Comunicación de Datos I", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-782" },
+        { "code": "SI-883", "name": "Soluciones Móviles I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-786" },
+        { "code": "SI-884", "name": "Estadística Inferencial y Análisis de Datos", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-783" },
+        { "code": "SI-885", "name": "Inteligencia de Negocios", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-783" },
+        { "code": "SI-886", "name": "Planeamiento Estratégico de TI", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-785" }
+      ]
+    },
+    {
+      "name": "IX",
+      "courses": [
+        { "code": "SI-981", "name": "Taller de Tesis I", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "SI-884" },
+        { "code": "SI-982", "name": "Programación Web II", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-883" },
+        { "code": "SI-983", "name": "Construcción de Software I", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-883" },
+        { "code": "SI-984", "name": "Redes y Comunicación de Datos II", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-882" },
+        { "code": "SI-985", "name": "Gestión de la Configuración de Software", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-885" },
+        { "code": "SI-986", "name": "Inglés Técnico", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "*" }
+      ]
+    },
+    {
+      "name": "X",
+      "courses": [
+        { "code": "SI-082", "name": "Seguridad de Tecnología de Información", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-985" },
+        { "code": "SI-083", "name": "Construcción de Software II", "ht": 2, "hp": 4, "th": 6, "credits": 4, "prerequisite": "SI-983" },
+        { "code": "SI-084", "name": "Auditoría de Sistemas", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-985" },
+        { "code": "SI-085", "name": "Taller de Emprendimiento y Liderazgo", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "Ninguno" },
+        { "code": "SI-086", "name": "Gerencia de Tecnologías de Información", "ht": 2, "hp": 2, "th": 4, "credits": 3, "prerequisite": "SI-983" },
+        { "code": "SI-080", "name": "Taller de Tesis II / Trabajo de Investigación", "ht": 3, "hp": 0, "th": 3, "credits": 3, "prerequisite": "SI-981" }
+      ]
+    }
+  ],
+  "electives": [
+    { "code": "SI-8810", "name": "Sistemas de Recursos Empresariales", "credits": 3, "prerequisite": "SI-685" },
+    { "code": "SI-8811", "name": "Tópicos de Base de Datos Avanzados I", "credits": 3, "prerequisite": "SI-783" },
+    { "code": "SI-887", "name": "Internet de las Cosas", "credits": 3, "prerequisite": "SI-782" },
+    { "code": "SI-888", "name": "Diseño y Creación de Videojuegos", "credits": 3, "prerequisite": "SI-686" },
+    { "code": "SI-889", "name": "Patrones de Software", "credits": 3, "prerequisite": "SI-685" },
+    { "code": "SI-987", "name": "Cloud Computing", "credits": 3, "prerequisite": "SI-783" },
+    { "code": "SI-988", "name": "Soluciones Móviles II", "credits": 3, "prerequisite": "SI-883" },
+    { "code": "SI-989", "name": "Machine Learning", "credits": 3, "prerequisite": "SI-881" },
+    { "code": "SI-087", "name": "Infraestructura de TI", "credits": 3, "prerequisite": "SI-984" },
+    { "code": "SI-088", "name": "Modelo de Negocios Digitales", "credits": 3, "prerequisite": "SI-786" },
+    { "code": "SI-089", "name": "Tópicos de Base de Datos Avanzados II", "credits": 3, "prerequisite": "SI-885" }
+  ],
+  "totals": {
+    "obligatory": 211,
+    "electives": 9,
+    "extracurricular": 2,
+    "preprofessional": 3,
+    "overall": 225
+  }
+}
