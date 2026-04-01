@@ -15,6 +15,7 @@ const elements = {
   policyCycles: document.getElementById("policyCycles"),
   strictGeneralOnly: document.getElementById("strictGeneralOnly"),
   requireSunedu: document.getElementById("requireSunedu"),
+  quickMode: document.getElementById("quickMode"),
   courseSearch: document.getElementById("courseSearch"),
   courseList: document.getElementById("courseList"),
   selectedCourse: document.getElementById("selectedCourse"),
@@ -24,6 +25,7 @@ const elements = {
   externalCourseForm: document.getElementById("externalCourseForm"),
   evaluationForm: document.getElementById("evaluationForm"),
   externalCourseList: document.getElementById("externalCourseList"),
+  autoEvaluateBtn: document.getElementById("autoEvaluateBtn"),
   resultCard: document.getElementById("resultCard"),
   suggestionCard: document.getElementById("suggestionCard"),
   historyList: document.getElementById("historyList"),
@@ -49,13 +51,17 @@ async function init() {
   elements.policyCycles.addEventListener("change", onPolicyChange);
   elements.strictGeneralOnly.addEventListener("change", onPolicyChange);
   elements.requireSunedu.addEventListener("change", updateSuneduStatus);
+  elements.quickMode.addEventListener("change", applyQuickMode);
   elements.courseSearch.addEventListener("input", renderCourseList);
   elements.suneduLicensed.addEventListener("change", updateSuneduStatus);
   elements.suneduProgramValid.addEventListener("change", updateSuneduStatus);
   elements.externalCourseForm.addEventListener("submit", onAddExternalCourse);
   elements.evaluationForm.addEventListener("submit", onEvaluate);
+  elements.autoEvaluateBtn.addEventListener("click", autoEvaluateBestMatch);
   elements.printReportBtn.addEventListener("click", printReport);
   elements.clearHistoryBtn.addEventListener("click", clearHistory);
+
+  applyQuickMode();
 }
 
 function renderStats() {
@@ -96,7 +102,7 @@ function renderCourseList() {
     .map((entry) => {
       const isActive = state.selectedCourse && state.selectedCourse.code === entry.code;
       const credits = entry.credits ? `${entry.credits} créditos` : "Sin créditos";
-      const convalidableTag = entry.isConvalidable
+      const convalidableTag = isCourseEligible(entry)
         ? `<span class="tag">Convalidable</span>`
         : `<span class="tag warn">No convalidable</span>`;
 
@@ -231,6 +237,29 @@ function onAddExternalCourse(event) {
 
   renderExternalCourseList();
   renderSuggestionForSelectedExternal();
+}
+
+function autoEvaluateBestMatch() {
+  if (elements.requireSunedu.checked && !isSuneduValid()) {
+    alert("Activa validación SUNEDU para autoevaluar.");
+    return;
+  }
+
+  const external = getSelectedExternalCourse();
+  if (!external) {
+    alert("Primero registra y selecciona un curso externo.");
+    return;
+  }
+
+  const matches = getTopMatches(external, 1);
+  if (matches.length === 0) {
+    alert("No hay cursos UPT elegibles según la política activa.");
+    return;
+  }
+
+  state.selectedCourse = matches[0].upt;
+  selectCourse(matches[0].upt);
+  onEvaluate(new Event("submit"));
 }
 
 function renderExternalCourseList() {
@@ -617,6 +646,12 @@ function printReport() {
   reportWindow.document.close();
   reportWindow.focus();
   reportWindow.print();
+}
+
+function applyQuickMode() {
+  const quick = elements.quickMode.checked;
+  document.body.classList.toggle("quick-mode", quick);
+  elements.suggestionCard.classList.toggle("hidden", quick && !getSelectedExternalCourse());
 }
 
 function clearHistory() {

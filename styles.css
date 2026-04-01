@@ -330,6 +330,10 @@ button:hover {
   filter: brightness(0.97);
 }
 
+#autoEvaluateBtn {
+  background: linear-gradient(90deg, #00a896, #029f84);
+}
+
 .result-card {
   margin-top: 1rem;
   border-radius: 14px;
@@ -417,6 +421,20 @@ button:hover {
   .course-list {
     max-height: 420px;
   }
+}
+
+.quick-mode .subtitle,
+.quick-mode .footer-note {
+  display: none;
+}
+
+.quick-mode .optional-notes,
+.quick-mode #suggestionCard {
+  display: none;
+}
+
+.quick-mode .history-item {
+  padding: 0.5rem;
 }
 
 @media (max-width: 640px) {

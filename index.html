@@ -52,6 +52,10 @@
             <input id="requireSunedu" type="checkbox" checked />
             Exigir validación SUNEDU obligatoria
           </label>
+          <label class="inline-check" for="quickMode">
+            <input id="quickMode" type="checkbox" checked />
+            Modo rápido (menos texto y flujo corto)
+          </label>
         </div>
 
         <div class="search-row">
@@ -110,7 +114,7 @@
             <input id="syllabusCoverage" type="number" min="0" max="100" value="70" required />
           </label>
 
-          <label class="full-row">
+          <label class="full-row optional-notes">
             Observaciones
             <textarea
               id="notes"
@@ -133,6 +137,7 @@
 
         <form id="evaluationForm" class="form-grid">
           <button type="submit" id="evaluateBtn">Evaluar convalidación</button>
+          <button type="button" id="autoEvaluateBtn">Autoevaluar mejor equivalencia</button>
         </form>
 
         <div id="resultCard" class="result-card hidden" aria-live="polite"></div>

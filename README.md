@@ -41,6 +41,9 @@ La sugerencia se calcula con puntaje sobre 100 considerando:
 - `Exigir validación SUNEDU obligatoria`:
   - Activo: SUNEDU bloquea o habilita registro/evaluación.
   - Inactivo: uso referencial (simulación).
+- `Modo rápido (menos texto y flujo corto)`:
+  - Activo: simplifica la pantalla para operar más rápido.
+  - Incluye botón `Autoevaluar mejor equivalencia` para sugerir y evaluar en menos pasos.
 
 ## Gestión administrativa
 
