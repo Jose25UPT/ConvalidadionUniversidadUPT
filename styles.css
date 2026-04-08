@@ -100,10 +100,8 @@ h1 {
   font-size: 0.88rem;
 }
 
-.grid-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+.single-layout {
+  display: block;
 }
 
 .panel {
@@ -111,6 +109,7 @@ h1 {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .panel-title-wrap {
@@ -230,6 +229,72 @@ textarea {
   border: 1px solid #bfd4e8;
 }
 
+.add-btn {
+  margin-left: 0.35rem;
+  background: #e8f6f3;
+  color: #0b6b5f;
+  border: 1px solid #a9ddd4;
+}
+
+.selection-box {
+  margin-top: 1rem;
+  border: 1px solid #cfe0ef;
+  border-radius: 14px;
+  background: #f8fcff;
+  padding: 0.8rem;
+}
+
+.selection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.selection-header h3 {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+}
+
+.selection-help {
+  margin: 0.35rem 0 0.65rem;
+  color: #4a6379;
+  font-size: 0.88rem;
+}
+
+.selected-courses-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.selected-item {
+  border: 1px solid #d7e5f2;
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: #ffffff;
+  font-size: 0.9rem;
+  color: #29445b;
+}
+
+.selected-actions {
+  margin-top: 0.4rem;
+}
+
+.selected-empty {
+  margin: 0;
+  color: #6a7f90;
+  font-size: 0.88rem;
+}
+
+.ghost-btn {
+  width: auto;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid #c9d6e2;
+  padding: 0.45rem 0.7rem;
+}
+
 .selected-course {
   border: 1px dashed #bdd0e3;
   border-radius: 12px;
@@ -260,6 +325,10 @@ textarea {
   font-size: 0.9rem;
   color: #33546f;
   line-height: 1.5;
+}
+
+.guide-box.compact {
+  margin-top: 0.75rem;
 }
 
 .mini-btn {
@@ -383,10 +452,6 @@ button:disabled {
 }
 
 @media (max-width: 980px) {
-  .grid-layout {
-    grid-template-columns: 1fr;
-  }
-
   .course-list {
     max-height: 420px;
   }
@@ -400,5 +465,15 @@ button:disabled {
 @media (max-width: 640px) {
   .panel-title-wrap {
     grid-template-columns: 1fr;
+  }
+
+  .selection-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-btn {
+    margin-left: 0;
+    margin-top: 0.3rem;
   }
 }

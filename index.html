@@ -25,12 +25,19 @@
       <div class="stats" id="stats"></div>
     </header>
 
-    <main class="container grid-layout">
+    <main class="container single-layout">
       <section class="panel" aria-labelledby="panel-cursos">
         <div class="panel-title-wrap">
           <h2 id="panel-cursos">Cursos UPT</h2>
           <label for="cycleFilter">Filtrar ciclo</label>
           <select id="cycleFilter"></select>
+        </div>
+
+        <div class="guide-box compact">
+          <strong>Flujo rapido para convalidar</strong>
+          <p>
+            1) Revisa un curso con <em>Ver detalles</em>. 2) Si te parece equivalente, presiona <em>Agregar a mi lista</em>. 3) Repite con todos los cursos que deseas solicitar.
+          </p>
         </div>
 
         <label class="inline-check" for="onlyConvalidable">
@@ -63,21 +70,19 @@
           />
         </div>
 
-        <ul id="courseList" class="course-list" aria-live="polite"></ul>
-      </section>
-
-      <section class="panel" aria-labelledby="panel-evaluacion">
-        <h2 id="panel-evaluacion">Detalle del curso</h2>
-
-        <div class="guide-box">
-          <strong>Flujo rápido</strong>
-          <p>
-            Solo selecciona un curso UPT y presiona <em>Ver detalles</em> para conocer qué se dicta y qué competencias se esperan.
-          </p>
+        <div id="selectedCourse" class="selected-course empty">
+          Selecciona un curso de la lista para ver su informacion principal.
         </div>
 
-        <div id="selectedCourse" class="selected-course empty">
-          Selecciona un curso de la lista para ver su información principal.
+        <ul id="courseList" class="course-list" aria-live="polite"></ul>
+
+        <div class="selection-box">
+          <div class="selection-header">
+            <h3>Cursos que deseo convalidar</h3>
+            <button id="clearSelectedBtn" class="ghost-btn" type="button">Limpiar lista</button>
+          </div>
+          <p class="selection-help">Puedes agregar 2 o mas cursos para tu solicitud.</p>
+          <div id="selectedCoursesList" class="selected-courses-list"></div>
         </div>
       </section>
     </main>
@@ -92,7 +97,7 @@
 
     <footer class="container footer-note">
       <p>
-        Nota: esta herramienta brinda una sugerencia automática. La decisión final debe validarla la coordinación académica.
+        Importante: esta pantalla es solo una simulacion de apoyo. La validacion final de cada curso esta sujeta a evaluacion de la universidad y la escuela profesional correspondiente.
       </p>
     </footer>
 
