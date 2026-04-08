@@ -1,5 +1,188 @@
 const CONVALIDABLE_CYCLES = new Set(["I", "II", "III", "IV", "V", "VI"]);
 
+const COURSE_PROFILES = {
+  "EG-181": {
+    taught: "se practica comunicacion escrita y oral para el entorno universitario",
+    learn: "podras redactar textos academicos y exponer ideas con claridad",
+    tip: "Compara si tu curso tuvo redaccion, argumentacion y exposicion.",
+  },
+  "EG-182": {
+    taught: "se refuerzan fundamentos matematicos para carreras de ingenieria",
+    learn: "podras resolver ejercicios base de algebra y funciones",
+    tip: "Revisa temas y nivel de practica semanal.",
+  },
+  "EG-183": {
+    taught: "se desarrollan estrategias de estudio y organizacion del aprendizaje",
+    learn: "podras estudiar de forma autonoma y planificada",
+    tip: "Busca evidencias de tecnicas de estudio y gestion del tiempo.",
+  },
+  "EG-184": {
+    taught: "se trabajan liderazgo, desarrollo personal y habilidades sociales",
+    learn: "podras participar mejor en equipos y asumir roles de liderazgo",
+    tip: "Compara actividades grupales y dinamicas de liderazgo.",
+  },
+  "EG-185": {
+    taught: "se usan herramientas digitales para productividad academica",
+    learn: "podras aplicar recursos digitales en tareas y presentaciones",
+    tip: "Valida si hubo trabajo practico con herramientas ofimaticas.",
+  },
+  "INE-186": {
+    taught: "se estudian temas de matematica aplicada al analisis ingenieril",
+    learn: "podras resolver problemas matematicos con mayor rigor",
+    tip: "Compara contenidos y dificultad de evaluaciones.",
+  },
+  "EG-281": {
+    taught: "se profundiza la comunicacion academica y profesional",
+    learn: "podras elaborar textos mas tecnicos y sustentar argumentos",
+    tip: "Compara si hubo ensayo, informe tecnico y exposicion.",
+  },
+  "EG-282": {
+    taught: "se analizan temas de territorio, defensa y seguridad nacional",
+    learn: "podras comprender el contexto nacional desde una mirada civica",
+    tip: "Compara unidades de historia, geografia politica y ciudadania.",
+  },
+  "EG-283": {
+    taught: "se revisan corrientes filosoficas y pensamiento critico",
+    learn: "podras analizar ideas y argumentar con mayor fundamento",
+    tip: "Compara autores, corrientes y actividades de analisis.",
+  },
+  "INE-284": {
+    taught: "se introducen algoritmos, estructuras de control y logica de programacion",
+    learn: "podras crear programas basicos para resolver problemas",
+    tip: "Compara practicas de laboratorio y lenguaje usado.",
+  },
+  "INE-285": {
+    taught: "se aplican principios fisicos en ejercicios y problemas basicos",
+    learn: "podras interpretar fenomenos fisicos en contextos de ingenieria",
+    tip: "Valida si hubo laboratorio o sesiones practicas.",
+  },
+  "INE-286": {
+    taught: "se profundizan contenidos matematicos de nivel intermedio",
+    learn: "podras resolver ejercicios avanzados para cursos posteriores",
+    tip: "Compara temas centrales y horas de practica.",
+  },
+  "INE-381": {
+    taught: "se estudian fundamentos economicos aplicados a la toma de decisiones",
+    learn: "podras analizar costos, mercado y decisiones basicas",
+    tip: "Compara si se trabajaron casos de analisis economico.",
+  },
+  "EG-382": {
+    taught: "se discuten principios eticos en la vida profesional",
+    learn: "podras evaluar decisiones considerando responsabilidad y valores",
+    tip: "Busca temas de etica profesional y analisis de casos.",
+  },
+  "INE-383": {
+    taught: "se trabajan estadistica descriptiva y probabilidad",
+    learn: "podras interpretar datos y calcular indicadores estadisticos",
+    tip: "Compara distribuciones, tablas y ejercicios de probabilidad.",
+  },
+  "SI-384": {
+    taught: "se estudian estructuras de datos para organizar informacion eficientemente",
+    learn: "podras elegir e implementar estructuras segun el problema",
+    tip: "Verifica si se incluyeron listas, pilas, colas y arboles.",
+  },
+  "SI-385": {
+    taught: "se analiza el rol de los sistemas de informacion en organizaciones",
+    learn: "podras identificar procesos y necesidades de informacion",
+    tip: "Compara modelado de procesos y analisis organizacional.",
+  },
+  "SI-386": {
+    taught: "se revisan logica matematica, relaciones y estructuras discretas",
+    learn: "podras modelar problemas de computacion con base formal",
+    tip: "Compara logica, conjuntos, relaciones y grafos.",
+  },
+  "SI-481": {
+    taught: "se modelan procesos para mejorar operaciones y flujos de trabajo",
+    learn: "podras mapear y optimizar procesos en contextos reales",
+    tip: "Compara BPM, diagramacion y propuestas de mejora.",
+  },
+  "SI-482": {
+    taught: "se evalua la rentabilidad de proyectos con criterios economicos",
+    learn: "podras sustentar decisiones con indicadores financieros",
+    tip: "Verifica temas como VAN, TIR y flujo de caja.",
+  },
+  "SI-483": {
+    taught: "se disenan interfaces centradas en el usuario",
+    learn: "podras crear prototipos y evaluar usabilidad basica",
+    tip: "Compara si hubo wireframes, prototipos y pruebas de usuario.",
+  },
+  "INE-484": {
+    taught: "se desarrollan proyectos de diseno en el contexto de ingenieria",
+    learn: "podras aplicar metodologia de diseno a problemas tecnicos",
+    tip: "Compara fases de diseno, entregables y nivel de proyecto.",
+  },
+  "SI-485": {
+    taught: "se estudia logica digital y funcionamiento de sistemas electronicos",
+    learn: "podras interpretar circuitos digitales basicos",
+    tip: "Compara si se vieron compuertas logicas y diseno digital.",
+  },
+  "SI-486": {
+    taught: "se profundiza programacion con enfoque practico",
+    learn: "podras construir programas mejor estructurados",
+    tip: "Compara proyectos, lenguaje y nivel de complejidad.",
+  },
+  "SI-581": {
+    taught: "se estudia organizacion interna de computadoras y arquitectura",
+    learn: "podras entender como interactuan hardware y software",
+    tip: "Compara temas de CPU, memoria y buses.",
+  },
+  "SI-582": {
+    taught: "se disenan bases de datos relacionales desde el modelado",
+    learn: "podras construir esquemas y consultas SQL",
+    tip: "Compara modelo ER, normalizacion y consultas.",
+  },
+  "SI-583": {
+    taught: "se desarrolla modelamiento virtual para representar soluciones",
+    learn: "podras crear modelos visuales de sistemas o productos",
+    tip: "Compara herramientas de modelado y entregables practicos.",
+  },
+  "SI-584": {
+    taught: "se levantan y documentan requerimientos de sistemas",
+    learn: "podras definir requisitos funcionales y no funcionales",
+    tip: "Compara casos de uso, historias de usuario o especificaciones.",
+  },
+  "SI-585": {
+    taught: "se cubre el proceso de desarrollo de software con buenas practicas",
+    learn: "podras planificar y construir software de forma ordenada",
+    tip: "Compara ciclo de vida, metodologias y documentacion.",
+  },
+  "SI-586": {
+    taught: "se avanza en programacion orientada a aplicaciones de mayor complejidad",
+    learn: "podras implementar soluciones mas robustas",
+    tip: "Compara proyectos finales y criterios de evaluacion.",
+  },
+  "EG-681": {
+    taught: "se analizan temas de ecologia y sostenibilidad",
+    learn: "podras relacionar desarrollo profesional con responsabilidad ambiental",
+    tip: "Compara contenidos de sostenibilidad y analisis de impacto.",
+  },
+  "SI-682": {
+    taught: "se estudia administracion de procesos, memoria y recursos del sistema operativo",
+    learn: "podras comprender el funcionamiento interno de un sistema operativo",
+    tip: "Compara procesos, hilos, memoria y planificacion.",
+  },
+  "SI-683": {
+    taught: "se implementan bases de datos y consultas de nivel intermedio",
+    learn: "podras manipular datos y optimizar consultas basicas",
+    tip: "Compara SQL intermedio, vistas y procedimientos segun el silabo.",
+  },
+  "SI-684": {
+    taught: "se aplican modelos matematicos para optimizar decisiones",
+    learn: "podras resolver problemas de optimizacion en escenarios reales",
+    tip: "Verifica si se incluyeron programacion lineal y modelos de decision.",
+  },
+  "SI-685": {
+    taught: "se disena software desde la arquitectura y componentes",
+    learn: "podras estructurar soluciones escalables y mantenibles",
+    tip: "Compara patrones, arquitectura por capas y decisiones tecnicas.",
+  },
+  "SI-686": {
+    taught: "se desarrolla programacion avanzada con enfoque practico",
+    learn: "podras crear aplicaciones completas con mejor calidad de codigo",
+    tip: "Compara nivel de proyecto, pruebas y complejidad tecnica.",
+  },
+};
+
 const state = {
   curriculum: null,
   selectedCourse: null,
@@ -218,6 +401,16 @@ function closeCourseDetails() {
 function buildCourseDetails(course) {
   const name = normalize(course.name);
   const code = String(course.code || "");
+
+  const exact = COURSE_PROFILES[code];
+  if (exact) {
+    return {
+      whatIsTaught: `En este curso ${exact.taught}.`,
+      whatYouLearn: `Al terminar, ${exact.learn}.`,
+      studentTip: exact.tip,
+    };
+  }
+
   const has = (...tokens) => tokens.some((token) => name.includes(token));
 
   const rules = [
