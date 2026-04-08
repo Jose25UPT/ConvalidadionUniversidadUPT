@@ -360,6 +360,9 @@ const COURSE_PROFILES = {
 
 const state = {
   curriculum: null,
+  meta: null,
+  cycles: [],
+  courses: [],
   selectedCourse: null,
   selectedCourses: loadSelectedCourses(),
 };
@@ -376,6 +379,11 @@ const elements = {
   selectedCourse: document.getElementById("selectedCourse"),
   selectedCoursesList: document.getElementById("selectedCoursesList"),
   clearSelectedBtn: document.getElementById("clearSelectedBtn"),
+  printPdfBtn: document.getElementById("printPdfBtn"),
+  progressFill: document.getElementById("progressFill"),
+  progressPercent: document.getElementById("progressPercent"),
+  progressText: document.getElementById("progressText"),
+  resultBadge: document.getElementById("resultBadge"),
   courseDetailModal: document.getElementById("courseDetailModal"),
   closeCourseDetailModal: document.getElementById("closeCourseDetailModal"),
   courseDetailBody: document.getElementById("courseDetailBody"),
@@ -387,6 +395,10 @@ init();
 async function init() {
   const response = await fetch("./data/curriculum.json");
   state.curriculum = await response.json();
+  const parsed = parseCurriculumData(state.curriculum);
+  state.meta = parsed.meta;
+  state.cycles = parsed.cycles;
+  state.courses = parsed.courses;
 
   renderStats();
   renderCycleFilter();
@@ -400,6 +412,7 @@ async function init() {
   elements.quickMode.addEventListener("change", applyQuickMode);
   elements.courseSearch.addEventListener("input", renderCourseList);
   elements.clearSelectedBtn.addEventListener("click", clearSelectedCourses);
+  elements.printPdfBtn.addEventListener("click", printSelectedCoursesPdf);
   elements.closeCourseDetailModal.addEventListener("click", closeCourseDetails);
 
   elements.courseDetailModal.addEventListener("click", (event) => {
@@ -411,24 +424,131 @@ async function init() {
   applyQuickMode();
 }
 
+function parseCurriculumData(raw) {
+  const usesNewFormat = Array.isArray(raw.ciclos);
+
+  if (usesNewFormat) {
+    const cycles = raw.ciclos.map((item) => item.ciclo);
+    const courses = [];
+
+    raw.ciclos.forEach((cycle) => {
+      cycle.cursos.forEach((course) => {
+        courses.push({
+          code: course.codigo,
+          name: course.nombre,
+          credits: course.creditos,
+          ht: course.ht,
+          hp: course.hp,
+          th: course.th,
+          prerequisite: course.prerrequisito,
+          cycle: cycle.ciclo,
+          objective: course.objetivo_aprendizaje || "",
+          activities: Array.isArray(course.actividades_practicas) ? course.actividades_practicas : [],
+          evidences: Array.isArray(course.entregables_evidencia) ? course.entregables_evidencia : [],
+          checklist: Array.isArray(course.checklist_convalidacion) ? course.checklist_convalidacion : [],
+        });
+      });
+    });
+
+    const electives = Array.isArray(raw.electives)
+      ? raw.electives
+      : Array.isArray(raw.electivos)
+        ? raw.electivos
+        : [];
+    electives.forEach((course) => {
+      courses.push({
+        code: course.codigo || course.code,
+        name: course.nombre || course.name,
+        credits: course.creditos || course.credits,
+        ht: course.ht || 0,
+        hp: course.hp || 0,
+        th: course.th || 0,
+        prerequisite: course.prerrequisito || course.prerequisite || "Ninguno",
+        cycle: "Electivo",
+        objective: course.objetivo_aprendizaje || "",
+        activities: Array.isArray(course.actividades_practicas) ? course.actividades_practicas : [],
+        evidences: Array.isArray(course.entregables_evidencia) ? course.entregables_evidencia : [],
+        checklist: Array.isArray(course.checklist_convalidacion) ? course.checklist_convalidacion : [],
+      });
+    });
+
+    return {
+      meta: {
+        totalCredits: raw.metadata?.total_creditos || 0,
+        requiredCredits: raw.metadata?.creditos_obligatorios || 0,
+      },
+      cycles: [...cycles, "Electivos"],
+      courses,
+    };
+  }
+
+  const cycles = raw.cycles.map((item) => item.name);
+  const courses = [];
+
+  raw.cycles.forEach((cycle) => {
+    cycle.courses.forEach((course) => {
+      courses.push({
+        ...course,
+        code: course.code,
+        name: course.name,
+        credits: course.credits,
+        ht: course.ht,
+        hp: course.hp,
+        th: course.th,
+        prerequisite: course.prerequisite,
+        cycle: cycle.name,
+        objective: "",
+        activities: [],
+        evidences: [],
+        checklist: [],
+      });
+    });
+  });
+
+  (raw.electives || []).forEach((course) => {
+    courses.push({
+      ...course,
+      code: course.code,
+      name: course.name,
+      credits: course.credits,
+      ht: 0,
+      hp: 0,
+      th: 0,
+      prerequisite: course.prerequisite,
+      cycle: "Electivo",
+      objective: "",
+      activities: [],
+      evidences: [],
+      checklist: [],
+    });
+  });
+
+  return {
+    meta: {
+      totalCredits: raw.totals?.overall || 0,
+      requiredCredits: raw.totals?.obligatory || 0,
+    },
+    cycles: [...cycles, "Electivos"],
+    courses,
+  };
+}
+
 function renderStats() {
-  const coursesCount = state.curriculum.cycles.reduce((acc, cycle) => acc + cycle.courses.length, 0);
-  const convalidables = state.curriculum.cycles
-    .filter((cycle) => CONVALIDABLE_CYCLES.has(cycle.name))
-    .reduce((acc, cycle) => acc + cycle.courses.length, 0);
+  const coursesCount = state.courses.filter((course) => course.cycle !== "Electivo").length;
+  const convalidables = state.courses.filter((course) => CONVALIDABLE_CYCLES.has(course.cycle)).length;
 
   const chips = [
-    `Ciclos: ${state.curriculum.cycles.length}`,
+    `Ciclos: ${state.cycles.filter((cycle) => cycle !== "Electivos").length}`,
     `Cursos obligatorios: ${coursesCount}`,
     `Convalidables I-VI: ${convalidables}`,
-    `Creditos del plan: ${state.curriculum.totals.overall}`,
+    `Creditos del plan: ${state.meta.totalCredits || 0}`,
   ];
 
   elements.stats.innerHTML = chips.map((chip) => `<span class="stat-chip">${chip}</span>`).join("");
 }
 
 function renderCycleFilter() {
-  const options = ["Todos", ...state.curriculum.cycles.map((cycle) => cycle.name), "Electivos"];
+  const options = ["Todos", ...state.cycles];
   elements.cycleFilter.innerHTML = options.map((option) => `<option value="${option}">${option}</option>`).join("");
 }
 
@@ -504,23 +624,7 @@ function renderCourseList() {
 }
 
 function getFilteredCourses(selectedCycle, query, onlyConvalidable) {
-  const allCourses = [];
-
-  state.curriculum.cycles.forEach((cycle) => {
-    cycle.courses.forEach((course) => {
-      allCourses.push({
-        ...course,
-        cycle: cycle.name,
-        isGeneral: isGeneralCourse(course),
-      });
-    });
-  });
-
-  state.curriculum.electives.forEach((course) => {
-    allCourses.push({ ...course, cycle: "Electivo", isGeneral: false });
-  });
-
-  return allCourses.filter((course) => {
+  return state.courses.filter((course) => {
     const byCycle =
       selectedCycle === "Todos" ||
       (selectedCycle === "Electivos" && course.cycle === "Electivo") ||
@@ -557,16 +661,41 @@ function selectCourse(course) {
 
 function openCourseDetails(course) {
   const detail = buildCourseDetails(course);
+  const activities = renderBulletList(course.activities, "No se registran actividades practicas en el JSON.");
+  const evidences = renderBulletList(course.evidences, "No se registran entregables de evidencia en el JSON.");
+  const checklist = renderBulletList(course.checklist, "No se registra checklist de convalidacion en el JSON.");
+
   elements.courseDetailBody.innerHTML = `
     <p><strong>${course.code} - ${course.name}</strong></p>
     <p><strong>Ciclo:</strong> ${course.cycle} · <strong>Creditos:</strong> ${course.credits || "N/A"}</p>
     <p><strong>Horas:</strong> Teoria ${course.ht || 0} · Practica ${course.hp || 0} · Total ${course.th || 0}</p>
     <p><strong>Prerrequisito:</strong> ${course.prerequisite || "Ninguno"}</p>
+    <p><strong>Objetivo de aprendizaje:</strong> ${escapeHtml(course.objective || detail.whatIsTaught)}</p>
     <p><strong>Que se hace en este curso:</strong> ${detail.whatIsTaught}</p>
     <p><strong>Que deberias saber al terminar:</strong> ${detail.whatYouLearn}</p>
+    <div class="detail-block">
+      <h4>Actividades practicas</h4>
+      ${activities}
+    </div>
+    <div class="detail-block">
+      <h4>Entregables de evidencia</h4>
+      ${evidences}
+    </div>
+    <div class="detail-block">
+      <h4>Checklist de convalidacion</h4>
+      ${checklist}
+    </div>
   `;
 
   elements.courseDetailModal.classList.remove("hidden");
+}
+
+function renderBulletList(items, emptyMessage) {
+  if (!items || items.length === 0) {
+    return `<p class="detail-empty">${emptyMessage}</p>`;
+  }
+
+  return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 }
 
 function closeCourseDetails() {
@@ -576,6 +705,17 @@ function closeCourseDetails() {
 function buildCourseDetails(course) {
   const name = normalize(course.name);
   const code = String(course.code || "");
+
+  if (course.objective || (course.activities && course.activities.length > 0) || (course.checklist && course.checklist.length > 0)) {
+    return {
+      whatIsTaught: (course.objective || "se desarrollan contenidos teorico-practicos del curso.").trim(),
+      whatYouLearn:
+        course.checklist?.[0] ||
+        course.evidences?.[0] ||
+        "se espera dominio de los temas centrales y aplicacion en actividades evaluadas.",
+      studentTip: "",
+    };
+  }
 
   const exact = COURSE_PROFILES[code];
   if (exact) {
@@ -774,6 +914,7 @@ function toggleCourseSelection(course) {
 function renderSelectedCourses() {
   if (state.selectedCourses.length === 0) {
     elements.selectedCoursesList.innerHTML = "<p class=\"selected-empty\">Aun no agregaste cursos. Usa \"Agregar\" para empezar.</p>";
+    updateProgress();
     return;
   }
 
@@ -801,8 +942,11 @@ function renderSelectedCourses() {
       saveSelectedCourses(state.selectedCourses);
       renderSelectedCourses();
       renderCourseList();
+      showToast(`Se quito ${code} de tu lista.`);
     });
   });
+
+  updateProgress();
 }
 
 function clearSelectedCourses() {
@@ -811,6 +955,100 @@ function clearSelectedCourses() {
   renderSelectedCourses();
   renderCourseList();
   showToast("Lista de cursos limpiada.");
+}
+
+function updateProgress() {
+  const totalRequired = Number(state.meta?.requiredCredits || state.meta?.totalCredits || 0);
+  const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
+  const rawPercent = totalRequired > 0 ? (selectedCredits / totalRequired) * 100 : 0;
+  const percent = Math.max(0, Math.min(100, Math.round(rawPercent)));
+
+  elements.progressFill.style.width = `${percent}%`;
+  elements.progressPercent.textContent = `${percent}%`;
+  elements.progressText.textContent = `Creditos seleccionados: ${selectedCredits} de ${totalRequired || "N/A"}`;
+
+  let statusClass = "status-low";
+  let statusText = "Inicio de solicitud";
+
+  if (percent >= 70) {
+    statusClass = "status-high";
+    statusText = "Avance alto";
+  } else if (percent >= 35) {
+    statusClass = "status-medium";
+    statusText = "Avance medio";
+  }
+
+  elements.resultBadge.className = `result-badge ${statusClass}`;
+  elements.resultBadge.textContent = `${statusText} · ${percent}% referencial`;
+
+  // Trigger a subtle pulse animation when value changes.
+  elements.resultBadge.classList.remove("pulse");
+  void elements.resultBadge.offsetWidth;
+  elements.resultBadge.classList.add("pulse");
+}
+
+function printSelectedCoursesPdf() {
+  if (state.selectedCourses.length === 0) {
+    showToast("Primero agrega al menos un curso para imprimir.");
+    return;
+  }
+
+  const date = new Date().toLocaleString("es-PE");
+  const rows = state.selectedCourses
+    .map(
+      (course) => `
+        <tr>
+          <td>${escapeHtml(course.code)}</td>
+          <td>${escapeHtml(course.name)}</td>
+          <td>${escapeHtml(String(course.cycle))}</td>
+          <td>${escapeHtml(String(course.credits))}</td>
+        </tr>
+      `
+    )
+    .join("");
+
+  const popup = window.open("", "_blank");
+  if (!popup) {
+    showToast("No se pudo abrir la ventana de impresion.");
+    return;
+  }
+
+  popup.document.write(`
+    <html>
+      <head>
+        <title>Solicitud de Convalidacion</title>
+        <style>
+          body { font-family: Arial, sans-serif; padding: 24px; color: #1b2f40; }
+          h1 { margin: 0 0 8px; }
+          p { margin: 4px 0; }
+          table { width: 100%; border-collapse: collapse; margin-top: 14px; }
+          th, td { border: 1px solid #7f9ab3; padding: 8px; text-align: left; font-size: 12px; }
+          th { background: #eaf4ff; }
+          .note { margin-top: 16px; font-size: 12px; color: #35506a; }
+        </style>
+      </head>
+      <body>
+        <h1>Solicitud referencial de convalidacion</h1>
+        <p>Fecha: ${date}</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Curso</th>
+              <th>Ciclo</th>
+              <th>Creditos</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <p class="note">Importante: este reporte es una simulacion de apoyo. La validacion final esta sujeta a evaluacion oficial de la universidad y de la escuela de Ingenieria de Sistemas.</p>
+      </body>
+    </html>
+  `);
+
+  popup.document.close();
+  popup.focus();
+  popup.print();
 }
 
 function showToast(message) {
@@ -898,4 +1136,13 @@ function normalize(text = "") {
     .replace(/[^a-z0-9\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
