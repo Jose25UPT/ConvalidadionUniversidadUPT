@@ -5,10 +5,11 @@ Aplicación web inicial para evaluar convalidaciones de cursos hacia la Universi
 ## Qué incluye esta versión
 
 - Convalidación por curso completo (no por subtemas).
-- Validación SUNEDU obligatoria antes de registrar/evaluar cursos.
+- Flujo simple: registro directo del curso externo sin pasos previos bloqueantes.
 - Visualización de malla UPT por ciclo con filtro por cursos convalidables.
 - Política activa por defecto: convalidación de ciclos I al VI.
 - Registro de múltiples cursos externos ya aprobados por el estudiante.
+- Campo de resumen del contenido del curso externo para comparar por temas y competencias.
 - Sugerencia automática de equivalencias UPT para cada curso externo.
 - Evaluación final con estado:
   - Aprobable
@@ -21,12 +22,12 @@ Aplicación web inicial para evaluar convalidaciones de cursos hacia la Universi
 La sugerencia se calcula con puntaje sobre 100 considerando:
 
 - Similitud de nombre del curso.
+- Coincidencia del resumen de contenido del curso externo.
 - Diferencia de créditos.
 - Cobertura referencial del sílabo (como apoyo, no por subtema detallado).
 
 ## Reglas funcionales implementadas
 
-- Si la universidad/programa no está validado por SUNEDU, no permite convalidar.
 - No se convalida por subtemas en esta versión; se evalúa curso completo.
 - Los cursos fuera de ciclos I-VI se muestran como no convalidables en la política actual.
 
@@ -38,9 +39,6 @@ La sugerencia se calcula con puntaje sobre 100 considerando:
 - `Modo estricto: solo cursos generales (EG-)`:
   - Activo: solo cursos generales.
   - Inactivo: generales + especialidad según la política activa.
-- `Exigir validación SUNEDU obligatoria`:
-  - Activo: SUNEDU bloquea o habilita registro/evaluación.
-  - Inactivo: uso referencial (simulación).
 - `Modo rápido (menos texto y flujo corto)`:
   - Activo: simplifica la pantalla para operar más rápido.
   - Incluye botón `Autoevaluar mejor equivalencia` para sugerir y evaluar en menos pasos.

@@ -232,26 +232,24 @@ textarea {
   color: var(--muted);
 }
 
-.sunedu-box {
+.guide-box {
   border: 1px solid #c5d6e8;
   border-radius: 12px;
-  padding: 0.75rem;
+  padding: 0.85rem;
   margin-bottom: 0.9rem;
-  background: #f7fbff;
+  background: linear-gradient(130deg, #f7fbff 0%, #eef8ff 100%);
 }
 
-.sunedu-box strong {
+.guide-box strong {
   display: block;
+  color: #145a8a;
 }
 
-.sunedu-status {
-  margin: 0.3rem 0 0;
-  font-size: 0.86rem;
-  color: var(--danger);
-}
-
-.sunedu-status.ok {
-  color: var(--ok);
+.guide-box p {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: #33546f;
+  line-height: 1.5;
 }
 
 .form-block {
@@ -409,6 +407,13 @@ button:disabled {
   border-radius: 12px;
   padding: 0.65rem;
   background: #fbfdff;
+}
+
+.summary-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.86rem;
+  color: #3d5f7c;
+  line-height: 1.4;
 }
 
 .footer-note {

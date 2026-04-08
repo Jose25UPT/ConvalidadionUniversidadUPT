@@ -14,14 +14,10 @@ const elements = {
   onlyConvalidable: document.getElementById("onlyConvalidable"),
   policyCycles: document.getElementById("policyCycles"),
   strictGeneralOnly: document.getElementById("strictGeneralOnly"),
-  requireSunedu: document.getElementById("requireSunedu"),
   quickMode: document.getElementById("quickMode"),
   courseSearch: document.getElementById("courseSearch"),
   courseList: document.getElementById("courseList"),
   selectedCourse: document.getElementById("selectedCourse"),
-  suneduLicensed: document.getElementById("suneduLicensed"),
-  suneduProgramValid: document.getElementById("suneduProgramValid"),
-  suneduStatus: document.getElementById("suneduStatus"),
   externalCourseForm: document.getElementById("externalCourseForm"),
   externalPassed: document.getElementById("externalPassed"),
   addExternalBtn: document.getElementById("addExternalBtn"),
@@ -48,17 +44,13 @@ async function init() {
   renderCourseList();
   renderExternalCourseList();
   renderHistory();
-  updateSuneduStatus();
 
   elements.cycleFilter.addEventListener("change", renderCourseList);
   elements.onlyConvalidable.addEventListener("change", renderCourseList);
   elements.policyCycles.addEventListener("change", onPolicyChange);
   elements.strictGeneralOnly.addEventListener("change", onPolicyChange);
-  elements.requireSunedu.addEventListener("change", updateSuneduStatus);
   elements.quickMode.addEventListener("change", applyQuickMode);
   elements.courseSearch.addEventListener("input", renderCourseList);
-  elements.suneduLicensed.addEventListener("change", updateSuneduStatus);
-  elements.suneduProgramValid.addEventListener("change", updateSuneduStatus);
   elements.externalCourseForm.addEventListener("submit", onAddExternalCourse);
   elements.evaluationForm.addEventListener("submit", onEvaluate);
   elements.autoEvaluateBtn.addEventListener("click", autoEvaluateBestMatch);
@@ -184,23 +176,6 @@ function selectCourse(course) {
   renderSuggestionForSelectedExternal();
 }
 
-function updateSuneduStatus() {
-  if (!elements.requireSunedu.checked) {
-    elements.suneduStatus.classList.add("ok");
-    elements.suneduStatus.textContent =
-      "SUNEDU no obligatorio en esta simulación. Puedes registrar y evaluar de forma referencial.";
-    setActionButtonsEnabled(true);
-    return;
-  }
-
-  const valid = isSuneduValid();
-  elements.suneduStatus.classList.toggle("ok", valid);
-  elements.suneduStatus.textContent = valid
-    ? "SUNEDU verificado: ya puedes registrar y evaluar cursos."
-    : "Debes marcar ambas validaciones para continuar.";
-  setActionButtonsEnabled(valid);
-}
-
 function onPolicyChange() {
   renderCourseList();
   if (state.selectedCourse) {
@@ -213,11 +188,6 @@ function onAddExternalCourse(event) {
   event.preventDefault();
   clearFormStatus();
 
-  if (elements.requireSunedu.checked && !isSuneduValid()) {
-    showFormStatus("No se agregó: marca ambas validaciones SUNEDU.", false);
-    return;
-  }
-
   if (!elements.externalPassed.checked) {
     showFormStatus("No se agregó: confirma que el curso externo esté aprobado.", false);
     return;
@@ -226,15 +196,22 @@ function onAddExternalCourse(event) {
   const university = document.getElementById("originUniversity").value.trim();
   const externalCode = document.getElementById("externalCode").value.trim();
   const externalName = document.getElementById("externalName").value.trim();
+  const externalSummary = document.getElementById("externalSummary").value.trim();
   const externalCredits = Number(document.getElementById("externalCredits").value);
   const coverage = Number(document.getElementById("syllabusCoverage").value);
   const notes = document.getElementById("notes").value.trim();
+
+  if (externalSummary.length < 20) {
+    showFormStatus("Agrega un resumen del contenido con al menos 20 caracteres para mejorar la equivalencia.", false);
+    return;
+  }
 
   const item = {
     id: `${Date.now()}-${Math.random().toString(16).slice(2, 7)}`,
     university,
     externalCode,
     externalName,
+    externalSummary,
     externalCredits,
     coverage,
     notes,
@@ -253,11 +230,6 @@ function onAddExternalCourse(event) {
 }
 
 function autoEvaluateBestMatch() {
-  if (elements.requireSunedu.checked && !isSuneduValid()) {
-    alert("Activa validación SUNEDU para autoevaluar.");
-    return;
-  }
-
   const external = getSelectedExternalCourse();
   if (!external) {
     alert("Primero registra y selecciona un curso externo.");
@@ -288,6 +260,7 @@ function renderExternalCourseList() {
         <article class="history-item">
           <strong>${course.externalCode} - ${course.externalName}</strong><br />
           ${course.university} · ${course.externalCredits} créditos · Cobertura ${course.coverage}%
+          <p class="summary-note"><strong>Resumen:</strong> ${escapeHtml(course.externalSummary || "Sin resumen")}</p>
           <div class="external-actions">
             <button class="mini-btn ${activeClass}" data-action="select-external" data-id="${course.id}">Usar para evaluar</button>
             <button class="mini-btn" data-action="suggest" data-id="${course.id}">Sugerir equivalencias UPT</button>
@@ -338,11 +311,6 @@ function removeExternalCourse(id) {
 function onEvaluate(event) {
   event.preventDefault();
 
-  if (elements.requireSunedu.checked && !isSuneduValid()) {
-    alert("No se puede convalidar: universidad o programa no habilitado por SUNEDU.");
-    return;
-  }
-
   if (!state.selectedCourse) {
     alert("Primero selecciona un curso UPT.");
     return;
@@ -362,6 +330,7 @@ function onEvaluate(event) {
   const evaluation = evaluateEquivalence({
     uptCourse: state.selectedCourse,
     externalName: external.externalName,
+    externalSummary: external.externalSummary,
     externalCredits: external.externalCredits,
     coverage: external.coverage,
   });
@@ -370,6 +339,7 @@ function onEvaluate(event) {
     university: external.university,
     externalCode: external.externalCode,
     externalName: external.externalName,
+    externalSummary: external.externalSummary,
     externalCredits: external.externalCredits,
     coverage: external.coverage,
     notes: external.notes,
@@ -383,11 +353,11 @@ function onEvaluate(event) {
     university: external.university,
     externalCode: external.externalCode,
     externalName: external.externalName,
+    externalSummary: external.externalSummary,
     externalCredits: external.externalCredits,
     coverage: external.coverage,
     notes: external.notes,
     evaluation,
-    suneduValidated: !elements.requireSunedu.checked || isSuneduValid(),
     coordinatorDecision: "Pendiente",
     coordinatorNote: "",
   };
@@ -398,42 +368,54 @@ function onEvaluate(event) {
   renderHistory();
 }
 
-function evaluateEquivalence({ uptCourse, externalName, externalCredits, coverage }) {
+function evaluateEquivalence({ uptCourse, externalName, externalSummary, externalCredits, coverage }) {
   let score = 0;
   const reasons = [];
 
   const nameSimilarity = similarity(normalize(uptCourse.name), normalize(externalName));
   if (nameSimilarity >= 0.7) {
-    score += 45;
+    score += 35;
     reasons.push("Nombre del curso muy similar");
   } else if (nameSimilarity >= 0.45) {
-    score += 30;
+    score += 24;
     reasons.push("Nombre del curso parcialmente similar");
   } else {
-    score += 10;
-    reasons.push("Nombre con baja similitud");
+    score += 8;
+    reasons.push("Nombre con similitud baja o moderada");
+  }
+
+  const contentSimilarity = similarity(normalize(uptCourse.name), normalize(externalSummary));
+  if (contentSimilarity >= 0.35) {
+    score += 30;
+    reasons.push("Contenido del resumen alineado con el curso UPT");
+  } else if (contentSimilarity >= 0.2) {
+    score += 20;
+    reasons.push("Contenido parcialmente alineado");
+  } else {
+    score += 8;
+    reasons.push("Resumen con baja alineación de contenido");
   }
 
   const creditDiff = Math.abs((uptCourse.credits || 0) - externalCredits);
   if (creditDiff <= 1) {
-    score += 30;
+    score += 20;
     reasons.push("Créditos en rango aceptable");
   } else if (creditDiff === 2) {
-    score += 18;
+    score += 12;
     reasons.push("Créditos con diferencia moderada");
   } else {
-    score += 6;
+    score += 4;
     reasons.push("Diferencia alta de créditos");
   }
 
   if (coverage >= 80) {
-    score += 25;
+    score += 15;
     reasons.push("Alta cobertura de sílabo");
   } else if (coverage >= 60) {
-    score += 16;
+    score += 10;
     reasons.push("Cobertura media de sílabo");
   } else {
-    score += 7;
+    score += 4;
     reasons.push("Cobertura baja de sílabo");
   }
 
@@ -452,7 +434,7 @@ function evaluateEquivalence({ uptCourse, externalName, externalCredits, coverag
 }
 
 function renderResult(payload) {
-  const { evaluation, university, externalCode, externalName, externalCredits, coverage, notes } = payload;
+  const { evaluation, university, externalCode, externalName, externalSummary, externalCredits, coverage, notes } = payload;
 
   elements.resultCard.classList.remove("hidden", "status-aprobable", "status-revisar", "status-no-equivalente");
 
@@ -472,6 +454,7 @@ function renderResult(payload) {
       Universidad de origen: <strong>${university}</strong><br />
       Créditos: <strong>${externalCredits}</strong> · Cobertura de sílabo: <strong>${coverage}%</strong>
     </p>
+    <p><strong>Resumen del curso externo:</strong> ${escapeHtml(externalSummary || "Sin resumen")}</p>
     <p>Razones: ${evaluation.reasons.join(" · ")}</p>
     ${notes ? `<p>Observaciones: ${escapeHtml(notes)}</p>` : ""}
     <p><em>Validación final: Coordinación Académica / Escuela.</em></p>
@@ -491,7 +474,7 @@ function renderSuggestionForSelectedExternal() {
   elements.suggestionCard.classList.add("status-revisar");
   elements.suggestionCard.innerHTML = `
     <strong>Sugerencias para ${external.externalCode} - ${external.externalName}</strong>
-    <p>Se muestran cursos UPT con mayor similitud dentro de ciclos I-VI (sin subtemas).</p>
+    <p>Se prioriza coincidencia de nombre, resumen de contenido, créditos y cobertura de sílabo.</p>
     ${matches
       .map(
         (item) =>
@@ -520,6 +503,7 @@ function getTopMatches(external, limit) {
       evaluation: evaluateEquivalence({
         uptCourse: upt,
         externalName: external.externalName,
+        externalSummary: external.externalSummary,
         externalCredits: external.externalCredits,
         coverage: external.coverage,
       }),
@@ -543,7 +527,7 @@ function renderHistory() {
           <strong>${record.evaluation.status}</strong> · Puntaje ${record.evaluation.score}<br />
           UPT: ${record.uptCourse.code} - ${record.uptCourse.name}<br />
           Externo: ${record.externalCode} - ${record.externalName} (${record.university})<br />
-          SUNEDU: ${record.suneduValidated ? "Validado" : "No"}<br />
+          Resumen externo: ${escapeHtml(record.externalSummary || "Sin resumen")}<br />
           Fecha: ${date}<br />
           <label>
             Decisión de coordinador
@@ -667,12 +651,6 @@ function applyQuickMode() {
   elements.suggestionCard.classList.toggle("hidden", quick && !getSelectedExternalCourse());
 }
 
-function setActionButtonsEnabled(enabled) {
-  elements.addExternalBtn.disabled = !enabled;
-  elements.evaluateBtn.disabled = !enabled;
-  elements.autoEvaluateBtn.disabled = !enabled;
-}
-
 function showFormStatus(message, isOk) {
   elements.externalFormStatus.textContent = message;
   elements.externalFormStatus.classList.toggle("ok", isOk);
@@ -763,10 +741,6 @@ function getEligibilityMessage(course) {
   return `Curso fuera de política activa porque ${reasons.join(" y ")}.`;
 }
 
-function isSuneduValid() {
-  return elements.suneduLicensed.checked && elements.suneduProgramValid.checked;
-}
-
 function normalize(text = "") {
   return text
     .toLowerCase()
@@ -790,8 +764,8 @@ function similarity(a, b) {
   return union === 0 ? 0 : intersection / union;
 }
 
-function escapeHtml(text) {
-  return text
+function escapeHtml(text = "") {
+  return String(text)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")

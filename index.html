@@ -48,10 +48,6 @@
             <input id="strictGeneralOnly" type="checkbox" />
             Modo estricto: solo cursos generales (código EG-)
           </label>
-          <label class="inline-check" for="requireSunedu">
-            <input id="requireSunedu" type="checkbox" checked />
-            Exigir validación SUNEDU obligatoria
-          </label>
           <label class="inline-check" for="quickMode">
             <input id="quickMode" type="checkbox" checked />
             Modo rápido (menos texto y flujo corto)
@@ -73,17 +69,12 @@
       <section class="panel" aria-labelledby="panel-evaluacion">
         <h2 id="panel-evaluacion">Evaluación de Convalidación</h2>
 
-        <div class="sunedu-box">
-          <strong>Validación SUNEDU (obligatoria)</strong>
-          <label class="inline-check" for="suneduLicensed">
-            <input id="suneduLicensed" type="checkbox" />
-            Universidad de origen habilitada/licenciada por SUNEDU
-          </label>
-          <label class="inline-check" for="suneduProgramValid">
-            <input id="suneduProgramValid" type="checkbox" />
-            Programa/carrera de origen con condición válida para convalidación
-          </label>
-          <p id="suneduStatus" class="sunedu-status">Debes marcar ambas validaciones para continuar.</p>
+        <div class="guide-box">
+          <strong>¿Qué curso deseas convalidar?</strong>
+          <p>
+            Registra el curso externo y describe brevemente su contenido. Aunque el nombre no sea igual al curso UPT,
+            la evaluación también tomará en cuenta temas, competencias y enfoque del sílabo.
+          </p>
         </div>
 
         <form id="externalCourseForm" class="form-grid form-block">
@@ -102,6 +93,16 @@
           <label class="full-row">
             Nombre del curso externo
             <input id="externalName" type="text" required placeholder="Ej.: Programación Orientada a Objetos" />
+          </label>
+
+          <label class="full-row">
+            Resumen del contenido del curso externo
+            <textarea
+              id="externalSummary"
+              rows="3"
+              required
+              placeholder="Ej.: Diseño de clases, encapsulamiento, herencia, polimorfismo, patrones básicos y desarrollo de proyectos orientados a objetos."
+            ></textarea>
           </label>
 
           <label>
@@ -128,7 +129,7 @@
             Confirmo que este curso externo ya fue aprobado
           </label>
 
-          <button type="submit" id="addExternalBtn">Agregar curso externo</button>
+          <button type="submit" id="addExternalBtn">Registrar curso para comparar</button>
           <p id="externalFormStatus" class="form-status full-row"></p>
         </form>
 
