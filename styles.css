@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  width: min(1200px, 92%);
+  width: min(1280px, 96%);
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .hero {
-  padding: 2.5rem 0 1.5rem;
+  padding: 1.7rem 0 1rem;
   animation: rise 600ms ease;
 }
 
@@ -108,7 +108,7 @@ h1 {
   background: var(--panel);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1rem;
+  padding: 0.82rem;
   margin-bottom: 1rem;
 }
 
@@ -173,23 +173,24 @@ textarea {
 }
 
 .search-row {
-  margin: 0.8rem 0;
+  margin: 0.55rem 0;
 }
 
 .course-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 520px;
+  max-height: none;
   overflow: auto;
   display: grid;
-  gap: 0.55rem;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .course-item {
   border: 1px solid #dce6f0;
   border-radius: 12px;
-  padding: 0.65rem;
+  padding: 0.55rem;
   cursor: pointer;
   transition: transform 120ms ease, border-color 120ms ease;
 }
@@ -220,7 +221,10 @@ textarea {
 }
 
 .course-actions-row {
-  margin-top: 0.5rem;
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
 .detail-btn {
@@ -237,11 +241,11 @@ textarea {
 }
 
 .selection-box {
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   border: 1px solid #cfe0ef;
   border-radius: 14px;
   background: #f8fcff;
-  padding: 0.8rem;
+  padding: 0.7rem;
 }
 
 .selection-header {
@@ -298,9 +302,10 @@ textarea {
 .selected-course {
   border: 1px dashed #bdd0e3;
   border-radius: 12px;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
+  padding: 0.55rem;
+  margin-bottom: 0.6rem;
   background: #f8fbff;
+  font-size: 0.9rem;
 }
 
 .selected-course.empty {
@@ -310,8 +315,8 @@ textarea {
 .guide-box {
   border: 1px solid #c5d6e8;
   border-radius: 12px;
-  padding: 0.85rem;
-  margin-bottom: 0.9rem;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
   background: linear-gradient(130deg, #f7fbff 0%, #eef8ff 100%);
 }
 
@@ -453,7 +458,7 @@ button:disabled {
 
 @media (max-width: 980px) {
   .course-list {
-    max-height: 420px;
+    grid-template-columns: 1fr;
   }
 }
 

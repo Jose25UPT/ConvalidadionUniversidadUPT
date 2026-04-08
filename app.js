@@ -99,9 +99,9 @@ function renderCourseList() {
           <div class="course-name">${course.name}</div>
           <div class="course-meta">${credits} · Prerrequisito: ${course.prerequisite || "Ninguno"}</div>
           <div class="course-actions-row">
-            <button class="mini-btn detail-btn" type="button" data-action="details" data-code="${course.code}">Ver detalles</button>
+            <button class="mini-btn detail-btn" type="button" data-action="details" data-code="${course.code}">Detalles</button>
             <button class="mini-btn add-btn ${inSelection ? "active" : ""}" type="button" data-action="toggle-select" data-code="${course.code}">
-              ${inSelection ? "Quitar de mi lista" : "Agregar a mi lista"}
+              ${inSelection ? "Quitar" : "Agregar"}
             </button>
           </div>
         </li>
@@ -191,7 +191,7 @@ function selectCourse(course) {
 
   elements.selectedCourse.innerHTML = `
     <strong>${course.code} - ${course.name}</strong><br />
-    Ciclo: ${course.cycle} · Creditos: ${course.credits || "N/A"} · Prerrequisito: ${course.prerequisite || "Ninguno"}<br />
+    Ciclo: ${course.cycle} · Creditos: ${course.credits || "N/A"} · Prerrequisito: ${course.prerequisite || "Ninguno"}
     <em>${policy}</em>
   `;
 }
@@ -217,59 +217,139 @@ function closeCourseDetails() {
 
 function buildCourseDetails(course) {
   const name = normalize(course.name);
+  const code = String(course.code || "");
+  const has = (...tokens) => tokens.some((token) => name.includes(token));
 
-  const topicMap = [
+  const rules = [
     {
-      token: "programacion",
-      taught: "aprenderas a resolver problemas con codigo, usando variables, condicionales, ciclos y funciones",
-      learn: "podras crear programas basicos y entender como mejorar su estructura",
-      tip: "Si ya llevaste un curso parecido, compara proyectos o practicas que realizaste."
+      match: () => has("comunicacion"),
+      taught: "se practican lectura, redaccion y exposicion de ideas",
+      learn: "podras comunicarte mejor en informes y presentaciones",
+      tip: "Compara si tu curso tuvo redaccion academica y exposicion oral.",
     },
     {
-      token: "base de datos",
-      taught: "veras como organizar informacion en tablas, relacionarla y hacer consultas",
-      learn: "podras disenar una base de datos simple y obtener informacion con consultas SQL",
-      tip: "Busca en tu silabo temas como modelo entidad-relacion, normalizacion y SQL."
+      match: () => has("aprendizaje", "autonomo"),
+      taught: "se trabajan tecnicas de estudio, organizacion y gestion del tiempo",
+      learn: "podras estudiar con mas orden y autonomia",
+      tip: "Revisa si en tu silabo hubo estrategias de aprendizaje y autoevaluacion.",
     },
     {
-      token: "matematica",
-      taught: "reforzaras razonamiento numerico y metodos para resolver ejercicios de ingenieria",
-      learn: "podras plantear y resolver problemas matematicos aplicados a tecnologia",
-      tip: "Compara unidades tematicas y nivel de ejercicios entre ambos cursos."
+      match: () => has("liderazgo", "desarrollo personal", "emprendimiento"),
+      taught: "se fortalecen habilidades blandas, liderazgo y trabajo en equipo",
+      learn: "podras participar y liderar mejor en proyectos grupales",
+      tip: "Busca evidencias de dinamicas grupales, liderazgo y presentaciones.",
     },
     {
-      token: "sistemas operativos",
-      taught: "conoceras como funciona el sistema operativo y como administra recursos",
-      learn: "podras explicar procesos, memoria y archivos en un entorno real",
-      tip: "Revisa si en tu curso previo trabajaste procesos, hilos y administracion de memoria."
+      match: () => has("competencias digitales"),
+      taught: "se usan herramientas digitales para productividad y colaboracion",
+      learn: "podras aplicar herramientas informaticas en tareas academicas",
+      tip: "Compara si trabajaron ofimatica, colaboracion en linea y presentaciones.",
     },
     {
-      token: "redes",
-      taught: "estudiaras comunicacion de datos, protocolos y configuraciones de red",
-      learn: "podras identificar componentes de red y entender su funcionamiento basico",
-      tip: "Compara si viste modelo OSI/TCP-IP, direccionamiento y practicas de conectividad."
+      match: () => has("matematica discreta"),
+      taught: "se estudian logica, conjuntos, relaciones y grafos",
+      learn: "podras modelar problemas de computacion con razonamiento logico",
+      tip: "Verifica temas de logica proposicional y grafos.",
     },
     {
-      token: "software",
-      taught: "trabajaras analisis, diseno y construccion de soluciones de software",
-      learn: "podras documentar requisitos y aplicar buenas practicas en desarrollo",
-      tip: "Sirve como equivalencia cuando tu curso tuvo analisis, diseno y desarrollo de sistemas."
+      match: () => has("matematica"),
+      taught: "se refuerzan bases matematicas para resolver problemas de ingenieria",
+      learn: "podras resolver ejercicios numericos con mayor precision",
+      tip: "Compara unidades tematicas y nivel de practicas.",
     },
     {
-      token: "estadistica",
-      taught: "aprenderas a interpretar datos, calcular medidas y analizar resultados",
-      learn: "podras sustentar decisiones con evidencia numerica",
-      tip: "Revisa si hubo uso de tablas, distribuciones y analisis de resultados."
+      match: () => has("fisica"),
+      taught: "se revisan principios fisicos y su aplicacion en ejercicios",
+      learn: "podras interpretar y resolver problemas fisicos basicos",
+      tip: "Mira si hubo laboratorio o practicas aplicadas.",
     },
     {
-      token: "tesis",
-      taught: "desarrollaras metodologia de investigacion y estructura de proyecto academico",
-      learn: "podras plantear problema, objetivos y avances de investigacion",
-      tip: "Compara entregables como planteamiento, marco teorico y avance de proyecto."
+      match: () => has("tecnicas de programacion"),
+      taught: "se introducen algoritmos, variables, condicionales y ciclos",
+      learn: "podras construir programas basicos para resolver problemas",
+      tip: "Compara si hubo practicas de laboratorio y ejercicios de algoritmo.",
+    },
+    {
+      match: () => has("programacion web"),
+      taught: "se crean aplicaciones web con interfaz, logica y manejo de datos",
+      learn: "podras desarrollar modulos web funcionales",
+      tip: "Verifica si se trabajo HTML, CSS, JavaScript y servicios.",
+    },
+    {
+      match: () => has("programacion"),
+      taught: "se profundiza en codigo, estructuras y buenas practicas",
+      learn: "podras desarrollar software con mejor estructura",
+      tip: "Compara lenguaje usado, proyectos y nivel de complejidad.",
+    },
+    {
+      match: () => has("estructura de datos"),
+      taught: "se trabajan listas, pilas, colas, arboles y busqueda",
+      learn: "podras elegir la estructura adecuada para cada problema",
+      tip: "Valida si se implementaron estructuras lineales y no lineales.",
+    },
+    {
+      match: () => has("base de datos"),
+      taught: "se estudia modelado de datos, normalizacion y SQL",
+      learn: "podras disenar bases de datos y hacer consultas",
+      tip: "Revisa temas de modelo ER, SQL y consultas avanzadas.",
+    },
+    {
+      match: () => has("requerimientos"),
+      taught: "se identifican necesidades del usuario y se documentan requisitos",
+      learn: "podras redactar requisitos claros para un sistema",
+      tip: "Compara si trabajaron casos de uso o historias de usuario.",
+    },
+    {
+      match: () => has("ingenieria de software", "arquitectura de software", "construccion de software", "calidad"),
+      taught: "se cubren analisis, diseno, desarrollo y calidad de software",
+      learn: "podras construir soluciones con enfoque profesional",
+      tip: "Busca coincidencias en ciclo de vida, pruebas y documentacion.",
+    },
+    {
+      match: () => has("sistemas operativos"),
+      taught: "se analiza como el sistema operativo gestiona procesos y memoria",
+      learn: "podras explicar funcionamiento interno de un sistema operativo",
+      tip: "Verifica si se incluyeron procesos, hilos y memoria.",
+    },
+    {
+      match: () => has("redes", "comunicacion de datos"),
+      taught: "se estudian protocolos, direccionamiento y configuracion de redes",
+      learn: "podras entender conectividad y comunicacion entre equipos",
+      tip: "Compara si se trabajo OSI/TCP-IP, subredes y practicas de red.",
+    },
+    {
+      match: () => has("estadistica", "probabilidades", "analisis de datos"),
+      taught: "se aplican metodos estadisticos para analizar informacion",
+      learn: "podras sustentar decisiones con datos",
+      tip: "Revisa si hubo inferencia, distribuciones y analisis de resultados.",
+    },
+    {
+      match: () => has("economia", "financiera"),
+      taught: "se revisan costos, inversion y evaluacion economica",
+      learn: "podras analizar viabilidad economica de proyectos",
+      tip: "Busca temas como flujo de caja, VAN o TIR.",
+    },
+    {
+      match: () => has("sistemas de informacion", "modelamiento de procesos"),
+      taught: "se analiza como la informacion apoya procesos de una organizacion",
+      learn: "podras modelar procesos y proponer mejoras",
+      tip: "Compara si el curso incluyo modelado de procesos y analisis organizacional.",
+    },
+    {
+      match: () => has("inteligencia artificial", "machine learning"),
+      taught: "se introducen metodos de IA y modelos predictivos",
+      learn: "podras aplicar tecnicas basicas de inteligencia artificial",
+      tip: "Revisa algoritmos vistos y practicas con datos.",
+    },
+    {
+      match: () => has("tesis", "investigacion"),
+      taught: "se desarrolla metodologia de investigacion y avance academico",
+      learn: "podras plantear problema, objetivos y resultados esperados",
+      tip: "Compara entregables: propuesta, marco teorico y avance.",
     },
   ];
 
-  const matched = topicMap.find((topic) => name.includes(topic.token));
+  const matched = rules.find((item) => item.match());
 
   if (matched) {
     return {
@@ -279,10 +359,26 @@ function buildCourseDetails(course) {
     };
   }
 
+  if (code.startsWith("EG-")) {
+    return {
+      whatIsTaught: "se desarrollan competencias generales para tu formacion universitaria.",
+      whatYouLearn: "tendras una base academica transversal para los siguientes ciclos.",
+      studentTip: "Compara resultados de aprendizaje y competencias generales.",
+    };
+  }
+
+  if (code.startsWith("SI-") || code.startsWith("INE-")) {
+    return {
+      whatIsTaught: `se abordan contenidos tecnicos asociados a ${course.name.toLowerCase()}.`,
+      whatYouLearn: "podras aplicar estos conceptos en practicas, laboratorios o proyectos.",
+      studentTip: "Compara temas, horas practicas y nivel de trabajo aplicado.",
+    };
+  }
+
   return {
-    whatIsTaught: "En este curso se trabajan contenidos teoricos y practicos del plan de Ingenieria de Sistemas.",
-    whatYouLearn: "Al terminar, deberias entender los conceptos clave y aplicarlos en ejercicios o proyectos.",
-    studentTip: "Si no coincide el nombre, compara temas, practicas y resultados de aprendizaje.",
+    whatIsTaught: `en ${course.name.toLowerCase()} se trabajan contenidos teoricos y practicos del plan de estudios.`,
+    whatYouLearn: "al terminar, deberias entender los conceptos clave y aplicarlos en ejercicios.",
+    studentTip: "si no coincide el nombre, compara temas, practicas y logros del curso.",
   };
 }
 
@@ -307,7 +403,7 @@ function toggleCourseSelection(course) {
 
 function renderSelectedCourses() {
   if (state.selectedCourses.length === 0) {
-    elements.selectedCoursesList.innerHTML = "<p class=\"selected-empty\">Aun no agregaste cursos. Usa \"Agregar a mi lista\" para empezar.</p>";
+    elements.selectedCoursesList.innerHTML = "<p class=\"selected-empty\">Aun no agregaste cursos. Usa \"Agregar\" para empezar.</p>";
     return;
   }
 
