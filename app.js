@@ -564,7 +564,6 @@ function openCourseDetails(course) {
     <p><strong>Prerrequisito:</strong> ${course.prerequisite || "Ninguno"}</p>
     <p><strong>Que se hace en este curso:</strong> ${detail.whatIsTaught}</p>
     <p><strong>Que deberias saber al terminar:</strong> ${detail.whatYouLearn}</p>
-    <p><strong>Nota para el estudiante:</strong> ${detail.studentTip}</p>
   `;
 
   elements.courseDetailModal.classList.remove("hidden");
