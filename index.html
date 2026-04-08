@@ -67,101 +67,28 @@
       </section>
 
       <section class="panel" aria-labelledby="panel-evaluacion">
-        <h2 id="panel-evaluacion">Evaluación de Convalidación</h2>
+        <h2 id="panel-evaluacion">Detalle del curso</h2>
 
         <div class="guide-box">
-          <strong>¿Qué curso deseas convalidar?</strong>
+          <strong>Flujo rápido</strong>
           <p>
-            Registra el curso externo y describe brevemente su contenido. Aunque el nombre no sea igual al curso UPT,
-            la evaluación también tomará en cuenta temas, competencias y enfoque del sílabo.
+            Solo selecciona un curso UPT y presiona <em>Ver detalles</em> para conocer qué se dicta y qué competencias se esperan.
           </p>
         </div>
 
-        <form id="externalCourseForm" class="form-grid form-block">
-          <h3 class="full-row">Registrar curso externo</h3>
-
-          <label>
-            Universidad de origen
-            <input id="originUniversity" type="text" required placeholder="Ej.: Universidad X" />
-          </label>
-
-          <label>
-            Código del curso externo
-            <input id="externalCode" type="text" required placeholder="Ej.: SIS-201" />
-          </label>
-
-          <label class="full-row">
-            Nombre del curso externo
-            <input id="externalName" type="text" required placeholder="Ej.: Programación Orientada a Objetos" />
-          </label>
-
-          <label class="full-row">
-            Resumen del contenido del curso externo
-            <textarea
-              id="externalSummary"
-              rows="3"
-              required
-              placeholder="Ej.: Diseño de clases, encapsulamiento, herencia, polimorfismo, patrones básicos y desarrollo de proyectos orientados a objetos."
-            ></textarea>
-          </label>
-
-          <label>
-            Créditos del curso externo
-            <input id="externalCredits" type="number" min="1" max="10" required />
-          </label>
-
-          <label>
-            Cobertura referencial de sílabo (%)
-            <input id="syllabusCoverage" type="number" min="0" max="100" value="70" required />
-          </label>
-
-          <label class="full-row optional-notes">
-            Observaciones
-            <textarea
-              id="notes"
-              rows="2"
-              placeholder="Opcional: comentarios generales del curso externo."
-            ></textarea>
-          </label>
-
-          <label class="full-row inline-check" for="externalPassed">
-            <input id="externalPassed" type="checkbox" checked />
-            Confirmo que este curso externo ya fue aprobado
-          </label>
-
-          <button type="submit" id="addExternalBtn">Registrar curso para comparar</button>
-          <p id="externalFormStatus" class="form-status full-row"></p>
-        </form>
-
-        <div class="external-list-wrap">
-          <h3>Mis cursos externos registrados</h3>
-          <div id="externalCourseList" class="history-list"></div>
-        </div>
-
         <div id="selectedCourse" class="selected-course empty">
-          Selecciona un curso UPT para evaluar contra un curso externo registrado.
+          Selecciona un curso de la lista para ver su información principal.
         </div>
-
-        <form id="evaluationForm" class="form-grid">
-          <button type="submit" id="evaluateBtn">Evaluar convalidación</button>
-          <button type="button" id="autoEvaluateBtn">Autoevaluar mejor equivalencia</button>
-        </form>
-
-        <div id="resultCard" class="result-card hidden" aria-live="polite"></div>
-        <div id="suggestionCard" class="result-card hidden" aria-live="polite"></div>
       </section>
     </main>
 
-    <section class="container panel history-panel" aria-labelledby="panel-historial">
-      <div class="history-header">
-        <h2 id="panel-historial">Historial de Evaluaciones</h2>
-        <div class="header-actions">
-          <button id="printReportBtn" class="ghost-btn">Reporte imprimible</button>
-          <button id="clearHistoryBtn" class="ghost-btn">Limpiar historial</button>
-        </div>
+    <div id="courseDetailModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="courseDetailTitle">
+      <div class="modal-content">
+        <button id="closeCourseDetailModal" class="modal-close" type="button" aria-label="Cerrar">×</button>
+        <h3 id="courseDetailTitle">Detalle del curso</h3>
+        <div id="courseDetailBody" class="course-detail-body"></div>
       </div>
-      <div id="historyList" class="history-list"></div>
-    </section>
+    </div>
 
     <footer class="container footer-note">
       <p>
