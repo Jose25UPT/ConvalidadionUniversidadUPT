@@ -2,11 +2,7 @@
   "metadata": {
     "carrera": "Ingeniería de Sistemas",
     "version_plan": "Adecuación 2024-II",
-    "creditos_obligatorios": 211,
-    "creditos_electivos": 9,
-    "actividades_extracurriculares": 2,
-    "practicas_preprofesionales": 3,
-    "total_creditos": 225
+    "creditos_totales": 225
   },
   "ciclos": [
     {
@@ -20,10 +16,7 @@
           "hp": 2,
           "th": 5,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Desarrollar competencias de comunicación escrita y oral para el entorno académico universitario.",
-          "actividades_practicas": ["Taller de lectura crítica académica", "Práctica de paráfrasis y síntesis", "Estructuración de ensayos breves", "Exposiciones orales con apoyo visual", "Revisión por pares"],
-          "entregables_evidencia": ["Ensayo argumentativo (800-1200 palabras)", "Presentación oral individual (5-7 min)", "Portafolio con 3 versiones de un texto"],
-          "checklist_convalidacion": ["Producción de textos académicos formales", "Evaluación de oralidad con rúbrica", "Uso de normas de citación", "Proceso de retroalimentación y reescritura"]
+          "que_aprenderas": "Comunicación escrita y oral académica: redacción de textos universitarios, exposiciones claras y uso básico de normas de citación."
         },
         {
           "codigo": "EG-182",
@@ -33,10 +26,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Fortalecer fundamentos algebraicos y de razonamiento lógico para aplicaciones en ingeniería.",
-          "actividades_practicas": ["Resolución de ecuaciones e inecuaciones", "Modelado con funciones lineales y cuadráticas", "Uso de herramientas gráficas (GeoGebra/Desmos)", "Talleres de lógica proposicional"],
-          "entregables_evidencia": ["Exámenes de aplicación práctica", "Informes de modelamiento matemático", "Ejercicios de razonamiento lógico"],
-          "checklist_convalidacion": ["Álgebra universitaria aplicada", "Funciones y gráficas", "Lógica matemática básica", "Evaluación con resolución de problemas"]
+          "que_aprenderas": "Fundamentos de álgebra, funciones y razonamiento lógico aplicados a problemas de ingeniería."
         },
         {
           "codigo": "EG-183",
@@ -46,10 +36,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Desarrollar habilidades metacognitivas y técnicas de estudio para la formación universitaria independiente.",
-          "actividades_practicas": ["Diseño de planes de estudio personales", "Práctica de técnicas de memorización y comprensión", "Gestión del tiempo y priorización académica", "Autorreflexión metacognitiva"],
-          "entregables_evidencia": ["Bitácora de aprendizaje semanal", "Plan de estudio semestral validado", "Reflexión crítica sobre hábitos de estudio"],
-          "checklist_convalidacion": ["Enfoque en metacognición", "Estrategias de estudio universitario", "Seguimiento y autorregulación", "No ser curso meramente teórico o motivacional"]
+          "que_aprenderas": "Técnicas de estudio, gestión del tiempo y herramientas metacognitivas para el aprendizaje universitario independiente."
         },
         {
           "codigo": "EG-184",
@@ -59,10 +46,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Fortalecer competencias socioemocionales, éticas y de liderazgo para el trabajo en equipo profesional.",
-          "actividades_practicas": ["Talleres de inteligencia emocional", "Simulaciones de liderazgo y toma de decisiones", "Análisis de casos de liderazgo en TI", "Dinámicas de trabajo colaborativo"],
-          "entregables_evidencia": ["Portafolio de competencias blandas", "Proyecto grupal con rol de liderazgo rotativo", "Autoevaluación y coevaluación estructurada"],
-          "checklist_convalidacion": ["Enfoque en habilidades interpersonales", "Práctica de liderazgo aplicado", "Evaluación formativa", "Contexto universitario o profesional"]
+          "que_aprenderas": "Habilidades socioemocionales, trabajo en equipo y liderazgo aplicado al entorno profesional."
         },
         {
           "codigo": "EG-185",
@@ -72,10 +56,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Dominar herramientas digitales esenciales para la gestión académica y profesional en ingeniería.",
-          "actividades_practicas": ["Búsqueda y curación de información académica", "Ofimática avanzada para ingeniería", "Colaboración en entornos cloud", "Seguridad digital básica y ciudadanía digital"],
-          "entregables_evidencia": ["Informe técnico en procesador de texto", "Hoja de cálculo con análisis de datos", "Proyecto colaborativo en plataforma virtual"],
-          "checklist_convalidacion": ["Uso práctico de herramientas digitales", "Gestión documental y de datos", "Trabajo colaborativo en la nube", "No ser solo curso de alfabetización informática básica"]
+          "que_aprenderas": "Herramientas digitales esenciales: ofimática avanzada, búsqueda académica, colaboración en la nube y seguridad digital básica."
         },
         {
           "codigo": "INE-186",
@@ -85,10 +66,7 @@
           "hp": 2,
           "th": 6,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Introducir cálculo diferencial aplicado a modelamiento y optimización en ingeniería de sistemas.",
-          "actividades_practicas": ["Cálculo de límites y derivadas", "Aplicaciones a optimización de funciones", "Análisis de tasas de cambio", "Modelado de fenómenos discretos"],
-          "entregables_evidencia": ["Exámenes teórico-prácticos", "Proyecto de modelamiento matemático", "Talleres de aplicación a problemas de TI"],
-          "checklist_convalidacion": ["Cálculo diferencial universitario", "Aplicaciones a ingeniería", "Evaluación con problemas contextualizados", "Carga horaria ≥4 horas prácticas/semana"]
+          "que_aprenderas": "Cálculo diferencial aplicado: límites, derivadas y optimización para modelamiento en ingeniería de sistemas."
         }
       ]
     },
@@ -103,10 +81,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "EG-181",
-          "objetivo_aprendizaje": "Profundizar en argumentación académica, debate estructurado y producción de textos complejos.",
-          "actividades_practicas": ["Análisis de falacias y argumentos", "Debates con roles asignados", "Redacción de artículos de revisión", "Presentaciones técnicas para audiencias especializadas"],
-          "entregables_evidencia": ["Artículo de revisión (1500-2000 palabras)", "Participación en debate evaluado", "Presentación técnica con soporte visual"],
-          "checklist_convalidacion": ["Enfoque argumentativo y crítico", "Producción de textos de análisis", "Evaluación de oralidad técnica", "Proceso de revisión y reescritura"]
+          "que_aprenderas": "Comunicación académica avanzada: argumentación, debate estructurado y redacción de textos técnicos complejos."
         },
         {
           "codigo": "EG-282",
@@ -116,10 +91,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Comprender la geografía, historia y políticas de defensa y seguridad nacional del Perú.",
-          "actividades_practicas": ["Análisis de mapas y recursos estratégicos", "Estudio de políticas de seguridad", "Debates sobre soberanía y defensa civil", "Investigación de riesgos naturales y antrópicos"],
-          "entregables_evidencia": ["Ensayo geopolítico", "Mapa de análisis de riesgos", "Participación en foros temáticos"],
-          "checklist_convalidacion": ["Contenido geopolítico peruano", "Enfoque en seguridad y defensa", "Análisis crítico de fuentes", "No ser curso cívico básico escolar"]
+          "que_aprenderas": "Geopolítica peruana, recursos estratégicos y políticas de defensa y seguridad nacional."
         },
         {
           "codigo": "EG-283",
@@ -129,10 +101,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Desarrollar pensamiento crítico y ético mediante el estudio de corrientes filosóficas y su aplicación a dilemas contemporáneos.",
-          "actividades_practicas": ["Lectura guiada de textos clásicos y modernos", "Análisis de dilemas éticos en tecnología", "Debates socráticos", "Ensayos de reflexión filosófica"],
-          "entregables_evidencia": ["Ensayo filosófico argumentado", "Participación en seminarios de discusión", "Mapa conceptual de corrientes filosóficas"],
-          "checklist_convalidacion": ["Enfoque en pensamiento crítico", "Análisis de textos filosóficos", "Aplicación a dilemas contemporáneos", "Evaluación basada en argumentación"]
+          "que_aprenderas": "Pensamiento crítico y ético mediante el estudio de corrientes filosóficas aplicadas a dilemas tecnológicos."
         },
         {
           "codigo": "INE-284",
@@ -142,10 +111,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Introducir lógica algorítmica y resolución de problemas mediante programación estructurada.",
-          "actividades_practicas": ["Diseño de algoritmos con pseudocódigo", "Implementación de estructuras de control", "Uso de funciones y modularidad", "Depuración y pruebas básicas"],
-          "entregables_evidencia": ["Ejercicios prácticos progresivos", "Proyecto integrador (programa funcional)", "Informes de depuración y pruebas"],
-          "checklist_convalidacion": ["Práctica real de codificación", "Estructuras de control y funciones", "Proyecto aplicado evaluado", "Lenguaje de programación estándar actual"]
+          "que_aprenderas": "Lógica algorítmica y programación estructurada: variables, estructuras de control, funciones y resolución de problemas con código."
         },
         {
           "codigo": "INE-285",
@@ -155,10 +121,7 @@
           "hp": 2,
           "th": 5,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Aplicar principios de mecánica clásica a fenómenos físicos relevantes para ingeniería.",
-          "actividades_practicas": ["Resolución de problemas de cinemática y dinámica", "Laboratorios virtuales o presenciales", "Análisis de fuerzas y movimiento", "Modelado matemático de sistemas físicos"],
-          "entregables_evidencia": ["Informes de laboratorio", "Exámenes de aplicación práctica", "Proyecto de modelamiento físico"],
-          "checklist_convalidacion": ["Mecánica clásica universitaria", "Componente experimental/laboratorio", "Aplicación a ingeniería", "Evaluación con resolución de problemas"]
+          "que_aprenderas": "Mecánica clásica aplicada: cinemática, dinámica y modelamiento físico para ingeniería."
         },
         {
           "codigo": "INE-286",
@@ -168,10 +131,7 @@
           "hp": 2,
           "th": 6,
           "prerrequisito": "INE-186",
-          "objetivo_aprendizaje": "Dominar cálculo integral y series para modelamiento y análisis en ingeniería de sistemas.",
-          "actividades_practicas": ["Integración definida e indefinida", "Aplicaciones a cálculo de áreas y volúmenes", "Series y sucesiones aplicadas a algoritmos", "Modelado de probabilidades continuas"],
-          "entregables_evidencia": ["Exámenes teórico-prácticos", "Proyecto de análisis con integrales", "Talleres de complejidad algorítmica"],
-          "checklist_convalidacion": ["Cálculo integral universitario", "Series y sucesiones", "Aplicación a ingeniería/sistemas", "Prerrequisito: Cálculo Diferencial"]
+          "que_aprenderas": "Cálculo integral y series aplicadas: integración, modelado continuo y análisis de algoritmos."
         }
       ]
     },
@@ -186,10 +146,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Comprender fundamentos micro y macroeconómicos aplicados a la toma de decisiones en proyectos tecnológicos.",
-          "actividades_practicas": ["Análisis de oferta, demanda y mercados", "Estudio de políticas fiscales y monetarias", "Cálculo de indicadores económicos", "Análisis de casos de startups y TI"],
-          "entregables_evidencia": ["Informes de análisis de mercado", "Proyecciones económicas básicas", "Participación en debates económicos"],
-          "checklist_convalidacion": ["Fundamentos de micro y macroeconomía", "Aplicación a tecnología/negocios", "Análisis de datos económicos", "Nivel universitario"]
+          "que_aprenderas": "Fundamentos micro y macroeconómicos aplicados a la toma de decisiones en proyectos tecnológicos."
         },
         {
           "codigo": "EG-382",
@@ -199,10 +156,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "EG-283",
-          "objetivo_aprendizaje": "Analizar dilemas éticos profesionales y desarrollar un marco de responsabilidad en ingeniería y tecnología.",
-          "actividades_practicas": ["Estudio de códigos de ética profesional", "Análisis de casos de impacto tecnológico", "Debates sobre privacidad, IA y sesgo algorítmico", "Construcción de manuales de conducta ética"],
-          "entregables_evidencia": ["Ensayo de ética aplicada", "Caso de estudio analizado", "Participación en foros éticos"],
-          "checklist_convalidacion": ["Enfoque en ética profesional/tecnológica", "Análisis de casos reales", "Reflexión crítica estructurada", "No ser curso de moral general"]
+          "que_aprenderas": "Ética profesional aplicada a la tecnología: privacidad, responsabilidad y dilemas en ingeniería de sistemas."
         },
         {
           "codigo": "INE-383",
@@ -212,10 +166,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Aplicar métodos estadísticos y probabilísticos para análisis de datos en proyectos de TI.",
-          "actividades_practicas": ["Distribuciones de probabilidad", "Muestreo e intervalos de confianza", "Regresión lineal y correlación", "Uso de software estadístico (Excel/Python/R)"],
-          "entregables_evidencia": ["Informes de análisis de datos", "Proyecto con dataset real", "Ejercicios de modelado probabilístico"],
-          "checklist_convalidacion": ["Estadística inferencial básica", "Probabilidad aplicada", "Uso de software estadístico", "Análisis de datos reales"]
+          "que_aprenderas": "Métodos estadísticos y probabilísticos para análisis de datos en proyectos de TI."
         },
         {
           "codigo": "SI-384",
@@ -225,10 +176,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "INE-284",
-          "objetivo_aprendizaje": "Diseñar e implementar estructuras eficientes para organización y procesamiento de información.",
-          "actividades_practicas": ["Implementación de listas, pilas y colas", "Árboles binarios y tablas hash", "Algoritmos de búsqueda y ordenamiento", "Análisis de complejidad (Big O)"],
-          "entregables_evidencia": ["Proyecto integrador con estructuras múltiples", "Informes de complejidad algorítmica", "Pruebas de rendimiento comparativo"],
-          "checklist_convalidacion": ["Implementación práctica de ≥4 estructuras", "Análisis de complejidad temporal/espacial", "Proyecto funcional evaluado", "Lenguaje de programación actual"]
+          "que_aprenderas": "Diseño e implementación de estructuras eficientes: listas, pilas, colas, árboles y análisis de complejidad algorítmica."
         },
         {
           "codigo": "SI-385",
@@ -238,10 +186,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Comprender el rol, arquitectura y gestión de sistemas de información en organizaciones.",
-          "actividades_practicas": ["Mapeo de flujos de información", "Análisis de ERP/CRM básicos", "Diseño de diagramas de contexto y procesos", "Estudio de gobernanza de datos"],
-          "entregables_evidencia": ["Documentación de sistema de información", "Diagramas de procesos empresariales", "Informe de evaluación tecnológica"],
-          "checklist_convalidacion": ["Enfoque en SI organizacionales", "Diagramación de procesos", "Análisis de arquitectura de SI", "No ser solo curso de ofimática"]
+          "que_aprenderas": "Arquitectura y gestión de sistemas de información organizacionales: flujos de datos, procesos y gobernanza."
         },
         {
           "codigo": "SI-386",
@@ -251,10 +196,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "INE-286",
-          "objetivo_aprendizaje": "Dominar fundamentos matemáticos discretos aplicados a ciencias de la computación.",
-          "actividades_practicas": ["Lógica proposicional y cuantificadores", "Teoría de conjuntos y relaciones", "Grafos y árboles", "Combinatoria y principios de conteo"],
-          "entregables_evidencia": ["Ejercicios de demostración formal", "Proyecto de modelado con grafos", "Exámenes de lógica y estructuras discretas"],
-          "checklist_convalidacion": ["Lógica, conjuntos, relaciones, grafos", "Enfoque en demostraciones y modelado", "Aplicación a computación", "Nivel universitario avanzado"]
+          "que_aprenderas": "Fundamentos matemáticos para computación: lógica, conjuntos, grafos, relaciones y combinatoria aplicada."
         }
       ]
     },
@@ -269,10 +211,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-385",
-          "objetivo_aprendizaje": "Especificar, modelar y optimizar procesos de negocio usando notaciones y herramientas estándar.",
-          "actividades_practicas": ["Diagramación BPMN", "Identificación de actores y flujos", "Simulación de procesos básicos", "Optimización de cuellos de botella"],
-          "entregables_evidencia": ["Modelo BPMN de proceso real", "Informe de análisis y mejora", "Simulación documentada"],
-          "checklist_convalidacion": ["Uso de BPMN o estándar similar", "Modelado de procesos de negocio", "Herramientas de diseño (Bizagi, Camunda, etc.)", "Enfoque en optimización"]
+          "que_aprenderas": "Especificación y optimización de procesos de negocio usando BPMN y herramientas de modelamiento estándar."
         },
         {
           "codigo": "SI-482",
@@ -282,10 +221,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "INE-381",
-          "objetivo_aprendizaje": "Aplicar herramientas financieras y de evaluación económica a proyectos de ingeniería y TI.",
-          "actividades_practicas": ["Cálculo de VAN, TIR y costo-beneficio", "Análisis de flujos de caja", "Evaluación de alternativas de inversión", "Presupuestación de proyectos TI"],
-          "entregables_evidencia": ["Informe de evaluación financiera", "Modelo de flujo de caja en Excel", "Propuesta de inversión justificada"],
-          "checklist_convalidacion": ["Métricas financieras (VAN, TIR, ROI)", "Flujos de caja y depreciación", "Aplicación a proyectos de ingeniería", "Herramientas de análisis financiero"]
+          "que_aprenderas": "Evaluación financiera de proyectos TI: VAN, TIR, flujos de caja y análisis de inversión tecnológica."
         },
         {
           "codigo": "SI-483",
@@ -295,10 +231,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Diseñar interfaces centradas en el usuario aplicando principios de usabilidad y experiencia de usuario (UX/UI).",
-          "actividades_practicas": ["Investigación de usuarios", "Wireframing y prototipado", "Pruebas de usabilidad básicas", "Aplicación de heurísticas de Nielsen"],
-          "entregables_evidencia": ["Prototipo interactivo (Figma/Adobe XD)", "Informe de pruebas de usabilidad", "Documentación de decisiones de diseño"],
-          "checklist_convalidacion": ["Enfoque en UX/UI", "Prototipado interactivo", "Pruebas con usuarios reales o simulados", "Herramientas de diseño actuales"]
+          "que_aprenderas": "Diseño centrado en el usuario: wireframing, prototipado, usabilidad y principios UX/UI aplicados."
         },
         {
           "codigo": "INE-484",
@@ -308,10 +241,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Aplicar metodologías de diseño técnico y creativo para resolver problemas de ingeniería.",
-          "actividades_practicas": ["Fases del diseño ingenieril", "Bocetado técnico y modelado 3D", "Selección de materiales y componentes", "Validación de prototipos funcionales"],
-          "entregables_evidencia": ["Portafolio de diseño técnico", "Prototipo físico o digital", "Informe de validación"],
-          "checklist_convalidacion": ["Metodología de diseño estructurada", "Prototipado funcional", "Documentación técnica", "Enfoque interdisciplinario"]
+          "que_aprenderas": "Metodologías de diseño técnico: bocetado, modelado 3D, selección de componentes y validación de prototipos."
         },
         {
           "codigo": "SI-485",
@@ -321,10 +251,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-386",
-          "objetivo_aprendizaje": "Diseñar y analizar circuitos digitales y sistemas embebidos básicos.",
-          "actividades_practicas": ["Álgebra de Boole y simplificación", "Diseño con compuertas lógicas", "Contadores y registros", "Simulación con software electrónico"],
-          "entregables_evidencia": ["Diseño de circuito lógico", "Informe de simulación", "Proyecto de sistema digital básico"],
-          "checklist_convalidacion": ["Lógica digital y compuertas", "Simulación de circuitos", "Diseño secuencial y combinacional", "Herramientas EDA o simuladores"]
+          "que_aprenderas": "Diseño de circuitos digitales: álgebra de Boole, compuertas lógicas, contadores y simulación de sistemas embebidos."
         },
         {
           "codigo": "SI-486",
@@ -334,10 +261,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-384",
-          "objetivo_aprendizaje": "Programar soluciones estructuradas usando paradigmas orientados a objetos y manejo de errores.",
-          "actividades_practicas": ["Clases, objetos y herencia", "Encapsulamiento y polimorfismo", "Manejo de excepciones", "Uso de librerías estándar"],
-          "entregables_evidencia": ["Proyecto OOP funcional", "Documentación de código", "Pruebas unitarias básicas"],
-          "checklist_convalidacion": ["Programación orientada a objetos", "Manejo de excepciones", "Proyecto integrado evaluado", "Lenguaje OOP (Java, C#, C++, Python)"]
+          "que_aprenderas": "Programación orientada a objetos: clases, herencia, polimorfismo, encapsulamiento y manejo de excepciones."
         }
       ]
     },
@@ -352,10 +276,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-485",
-          "objetivo_aprendizaje": "Comprender la organización interna de sistemas computacionales y su impacto en el rendimiento.",
-          "actividades_practicas": ["Estudio de CPU, memoria y buses", "Simulación de ensamblador básico", "Análisis de jerarquía de memoria", "Evaluación de rendimiento"],
-          "entregables_evidencia": ["Informes de simulación", "Diseño de componentes lógicos", "Análisis comparativo de arquitecturas"],
-          "checklist_convalidacion": ["Arquitectura Von Neumann/Harvard", "Nivel de ensamblador o simulación", "Jerarquía de memoria y caché", "Evaluación de rendimiento"]
+          "que_aprenderas": "Organización interna de sistemas computacionales: CPU, memoria, buses y análisis de rendimiento."
         },
         {
           "codigo": "SI-582",
@@ -365,10 +286,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-481",
-          "objetivo_aprendizaje": "Modelar bases de datos relacionales aplicando normalización y diseño conceptual/lógico.",
-          "actividades_practicas": ["Modelo Entidad-Relación", "Normalización hasta 3FN/BCNF", "SQL DDL y DML básico", "Optimización de consultas simples"],
-          "entregables_evidencia": ["Diagrama ER completo", "Script SQL de creación", "Informe de normalización"],
-          "checklist_convalidacion": ["Modelado conceptual y lógico", "Normalización aplicada", "SQL estructurado", "Proyecto de base de datos funcional"]
+          "que_aprenderas": "Modelado de bases de datos relacionales: modelo ER, normalización y SQL estructurado."
         },
         {
           "codigo": "SI-583",
@@ -378,10 +296,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "INE-484",
-          "objetivo_aprendizaje": "Crear modelos tridimensionales y entornos virtuales aplicados a visualización y simulación.",
-          "actividades_practicas": ["Modelado 3D básico", "Texturizado e iluminación", "Exportación a motores visuales", "Aplicaciones a visualización técnica"],
-          "entregables_evidencia": ["Modelo 3D funcional", "Render o escena virtual", "Documentación de flujo de trabajo"],
-          "checklist_convalidacion": ["Herramientas 3D (Blender, Maya, Unity, etc.)", "Flujo de modelado completo", "Aplicación técnica o académica", "No ser solo curso de arte digital"]
+          "que_aprenderas": "Creación de modelos 3D y entornos virtuales aplicados a visualización técnica y simulación."
         },
         {
           "codigo": "SI-584",
@@ -391,10 +306,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-481",
-          "objetivo_aprendizaje": "Elicitar, analizar, especificar y validar requerimientos de software mediante estándares y casos reales.",
-          "actividades_practicas": ["Técnicas de elicitation", "Historias de usuario y casos de uso", "Especificación SRS", "Validación con stakeholders"],
-          "entregables_evidencia": ["Documento SRS completo", "Matriz de trazabilidad", "Presentación de validación"],
-          "checklist_convalidacion": ["Estándar IEEE/Agile para requerimientos", "Documento SRS o backlog", "Técnicas de elicitation reales", "Validación con usuarios"]
+          "que_aprenderas": "Elicitación, especificación y validación de requerimientos de software mediante estándares y casos reales."
         },
         {
           "codigo": "SI-585",
@@ -404,10 +316,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-483",
-          "objetivo_aprendizaje": "Aplicar ciclo de vida de desarrollo, metodologías ágiles y buenas prácticas de ingeniería.",
-          "actividades_practicas": ["Ciclos de vida (cascada, ágil, iterativo)", "Scrum/Kanban aplicado", "Gestión de versiones (Git)", "Revisión de código y estándares"],
-          "entregables_evidencia": ["Plan de proyecto ágil", "Repositorio Git activo", "Entrega incremental funcional"],
-          "checklist_convalidacion": ["Metodología formal o ágil", "Gestión de versiones", "Entregas iterativas", "No ser solo curso de programación"]
+          "que_aprenderas": "Ciclo de vida de desarrollo de software: metodologías ágiles, gestión de versiones y buenas prácticas de ingeniería."
         },
         {
           "codigo": "SI-586",
@@ -417,10 +326,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-486",
-          "objetivo_aprendizaje": "Desarrollar aplicaciones robustas aplicando patrones de diseño, concurrencia y persistencia.",
-          "actividades_practicas": ["Patrones de diseño creacionales/estructurales", "Manejo de hilos y concurrencia", "Conexión a bases de datos", "APIs REST básicas"],
-          "entregables_evidencia": ["Aplicación con patrones aplicados", "Integración BD + lógica", "Documentación técnica"],
-          "checklist_convalidacion": ["Patrones de diseño aplicados", "Persistencia de datos", "Concurrencia o asincronía", "Proyecto integrador evaluado"]
+          "que_aprenderas": "Desarrollo de aplicaciones robustas: patrones de diseño, persistencia de datos y concurrencia."
         }
       ]
     },
@@ -435,10 +341,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Analizar problemas ambientales y promover prácticas de sostenibilidad en proyectos de ingeniería.",
-          "actividades_practicas": ["Huella de carbono y ciclo de vida", "Economía circular aplicada a TI", "Análisis de impacto ambiental", "Diseño de proyectos sostenibles"],
-          "entregables_evidencia": ["Informe de sostenibilidad", "Propuesta de proyecto ecoeficiente", "Participación en foros ambientales"],
-          "checklist_convalidacion": ["Enfoque en sostenibilidad/medio ambiente", "Aplicación a ingeniería/proyectos", "Análisis de impacto", "No ser curso de ecología general escolar"]
+          "que_aprenderas": "Sostenibilidad aplicada a ingeniería: huella de carbono, economía circular y diseño de proyectos ecoeficientes."
         },
         {
           "codigo": "SI-682",
@@ -448,10 +351,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-581",
-          "objetivo_aprendizaje": "Comprender y administrar sistemas operativos, procesos, memoria y sistemas de archivos.",
-          "actividades_practicas": ["Gestión de procesos y hilos", "Planificación de CPU y memoria virtual", "Sistemas de archivos y permisos", "Administración de Linux/Windows"],
-          "entregables_evidencia": ["Informes de laboratorio", "Scripts de administración", "Configuración de entorno SO"],
-          "checklist_convalidacion": ["Administración de SO reales", "Gestión de procesos/memoria", "Línea de comandos y scripting", "Laboratorios prácticos evaluados"]
+          "que_aprenderas": "Administración de sistemas operativos: gestión de procesos, memoria virtual, sistemas de archivos y scripting."
         },
         {
           "codigo": "SI-683",
@@ -461,10 +361,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-582",
-          "objetivo_aprendizaje": "Implementar y administrar bases de datos relacionales avanzadas con optimización y seguridad.",
-          "actividades_practicas": ["SQL avanzado y subconsultas", "Índices y optimización de consultas", "Vistas, triggers y procedimientos", "Backups y control de acceso"],
-          "entregables_evidencia": ["Base de datos optimizada", "Scripts de automatización", "Informe de rendimiento"],
-          "checklist_convalidacion": ["SQL avanzado", "Optimización y administración", "Seguridad y backups", "Proyecto funcional evaluado"]
+          "que_aprenderas": "Implementación y administración avanzada de bases de datos relacionales: SQL, optimización, seguridad y backups."
         },
         {
           "codigo": "SI-684",
@@ -474,10 +371,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-585",
-          "objetivo_aprendizaje": "Aplicar modelos matemáticos y algoritmos para optimización de recursos y toma de decisiones.",
-          "actividades_practicas": ["Programación lineal y simplex", "Modelos de transporte y asignación", "Teoría de colas", "Uso de solver (Excel/Python/Gurobi)"],
-          "entregables_evidencia": ["Informes de modelado y optimización", "Soluciones con software especializado", "Análisis de sensibilidad"],
-          "checklist_convalidacion": ["Programación lineal y modelos de optimización", "Software de resolución", "Aplicación a problemas reales", "Enfoque cuantitativo"]
+          "que_aprenderas": "Modelos de optimización matemática: programación lineal, transporte, colas y toma de decisiones cuantitativas."
         },
         {
           "codigo": "SI-685",
@@ -487,10 +381,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-584",
-          "objetivo_aprendizaje": "Diseñar arquitecturas escalables, mantenibles y alineadas a requisitos no funcionales.",
-          "actividades_practicas": ["Patrones arquitectónicos (MVC, Microservicios, Layered)", "Diagramas UML de arquitectura", "Evaluación de atributos de calidad", "Documentación técnica"],
-          "entregables_evidencia": ["Documento de arquitectura de software", "Diagramas UML completos", "Justificación de decisiones técnicas"],
-          "checklist_convalidacion": ["Patrones arquitectónicos aplicados", "UML o estándar similar", "Atributos de calidad evaluados", "Documentación profesional"]
+          "que_aprenderas": "Diseño de arquitecturas escalables: patrones MVC, microservicios, UML y atributos de calidad."
         },
         {
           "codigo": "SI-686",
@@ -500,10 +391,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-586",
-          "objetivo_aprendizaje": "Desarrollar sistemas distribuidos y aplicaciones empresariales con integración de servicios.",
-          "actividades_practicas": ["APIs RESTful y GraphQL", "Autenticación y autorización", "Contenedores (Docker básico)", "Despliegue en entornos cloud"],
-          "entregables_evidencia": ["API funcional documentada", "Contenedor desplegable", "Informe de integración"],
-          "checklist_convalidacion": ["Desarrollo de APIs", "Seguridad básica", "Contenedores o despliegue", "Proyecto distribuido evaluado"]
+          "que_aprenderas": "Desarrollo de sistemas distribuidos: APIs REST, autenticación, contenedores y despliegue en entornos cloud."
         }
       ]
     },
@@ -518,10 +406,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Analizar desafíos socioeconómicos y tecnológicos del Perú en contexto global y proponer soluciones innovadoras.",
-          "actividades_practicas": ["Investigación de brechas tecnológicas", "Análisis de políticas públicas", "Diseño de propuestas de impacto", "Debates multidisciplinarios"],
-          "entregables_evidencia": ["Ensayo de propuesta de solución", "Presentación de caso país", "Participación en paneles"],
-          "checklist_convalidacion": ["Enfoque en desarrollo nacional/global", "Análisis crítico de problemas reales", "Propuestas de impacto", "Nivel universitario"]
+          "que_aprenderas": "Análisis de desafíos socioeconómicos y tecnológicos del Perú en contexto global y propuestas de innovación."
         },
         {
           "codigo": "SI-782",
@@ -531,10 +416,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-682",
-          "objetivo_aprendizaje": "Profundizar en virtualización, redes a nivel SO, seguridad y automatización de administración.",
-          "actividades_practicas": ["Virtualización (VMware/VirtualBox)", "Redes y firewalls a nivel SO", "Automatización con Bash/PowerShell", "Hardening y auditoría básica"],
-          "entregables_evidencia": ["Entorno virtual configurado", "Scripts de automatización", "Informe de seguridad"],
-          "checklist_convalidacion": ["Virtualización práctica", "Administración avanzada de SO", "Seguridad y hardening", "Automatización de tareas"]
+          "que_aprenderas": "Virtualización, redes a nivel SO, seguridad avanzada y automatización de administración de sistemas."
         },
         {
           "codigo": "SI-783",
@@ -544,10 +426,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-683",
-          "objetivo_aprendizaje": "Implementar bases de datos NoSQL, distribuidas y técnicas de big data básico.",
-          "actividades_practicas": ["MongoDB/Cassandra/Redis", "Modelado documental y clave-valor", "Replicación y sharding", "ETL básico"],
-          "entregables_evidencia": ["Base NoSQL funcional", "Migración de datos SQL/NoSQL", "Informe de comparación de tecnologías"],
-          "checklist_convalidacion": ["NoSQL aplicado", "Distribución y escalabilidad", "Herramientas actuales", "Proyecto integrado evaluado"]
+          "que_aprenderas": "Bases de datos NoSQL y distribuidas: MongoDB, replicación, sharding y técnicas de big data básico."
         },
         {
           "codigo": "SI-784",
@@ -557,10 +436,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-686",
-          "objetivo_aprendizaje": "Diseñar, ejecutar y automatizar pruebas de software para garantizar calidad y cumplimiento de estándares.",
-          "actividades_practicas": ["Tipos de pruebas (unitarias, integración, sistema)", "Automatización con frameworks", "Métricas de calidad", "Informes de defectos y seguimiento"],
-          "entregables_evidencia": ["Plan de pruebas", "Suite automatizada", "Informe de calidad y métricas"],
-          "checklist_convalidacion": ["Automatización de pruebas", "Frameworks actuales (Selenium, JUnit, etc.)", "Métricas de calidad", "Entregables profesionales"]
+          "que_aprenderas": "Diseño y automatización de pruebas de software: unitarias, integración, métricas de calidad y frameworks de testing."
         },
         {
           "codigo": "SI-785",
@@ -570,10 +446,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-684",
-          "objetivo_aprendizaje": "Planificar, ejecutar y cerrar proyectos de TI usando estándares PMI y metodologías ágiles.",
-          "actividades_practicas": ["WBS, cronogramas y presupuesto", "Gestión de riesgos y comunicación", "Seguimiento con herramientas (Jira, MS Project)", "Cierre y lecciones aprendidas"],
-          "entregables_evidencia": ["Plan de proyecto completo", "Registro de riesgos y seguimiento", "Informe de cierre"],
-          "checklist_convalidacion": ["Estándar PMI o ágil estructurado", "Herramientas de gestión", "Documentación profesional", "Simulación o proyecto real"]
+          "que_aprenderas": "Planificación y ejecución de proyectos TI: estándares PMI, metodologías ágiles, gestión de riesgos y herramientas profesionales."
         },
         {
           "codigo": "SI-786",
@@ -583,10 +456,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-683",
-          "objetivo_aprendizaje": "Desarrollar aplicaciones web fullstack básicas integrando frontend, backend y bases de datos.",
-          "actividades_practicas": ["HTML/CSS/JS moderno", "Frameworks frontend (React/Vue/Angular básico)", "Backend con Node/Python/PHP", "Integración con BD relacional"],
-          "entregables_evidencia": ["Aplicación web funcional", "Código documentado", "Despliegue básico"],
-          "checklist_convalidacion": ["Fullstack básico", "Frameworks actuales", "Integración BD", "Proyecto desplegado o funcional"]
+          "que_aprenderas": "Desarrollo web fullstack básico: frontend moderno, backend, integración con bases de datos y despliegue inicial."
         }
       ]
     },
@@ -601,10 +471,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-783",
-          "objetivo_aprendizaje": "Comprender fundamentos de IA y aplicar algoritmos básicos de aprendizaje automático.",
-          "actividades_practicas": ["Búsqueda y optimización", "Redes neuronales básicas", "Clasificación y regresión", "Ética y sesgo en IA"],
-          "entregables_evidencia": ["Modelo de ML básico", "Informe de entrenamiento y métricas", "Presentación de caso de uso"],
-          "checklist_convalidacion": ["Fundamentos de IA/ML", "Implementación con librerías (scikit-learn, etc.)", "Evaluación de métricas", "Enfoque aplicado"]
+          "que_aprenderas": "Fundamentos de IA y aprendizaje automático: algoritmos de clasificación, regresión y ética en sistemas inteligentes."
         },
         {
           "codigo": "SI-882",
@@ -614,10 +481,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-782",
-          "objetivo_aprendizaje": "Diseñar y administrar redes LAN/WAN aplicando modelo OSI/TCP-IP y protocolos estándar.",
-          "actividades_practicas": ["Direccionamiento IP y subredes", "Configuración de routers/switches", "Protocolos de enrutamiento", "Análisis de tráfico con Wireshark"],
-          "entregables_evidencia": ["Topología configurada", "Capturas y análisis de paquetes", "Informe de diseño de red"],
-          "checklist_convalidacion": ["Modelo OSI/TCP-IP aplicado", "Configuración práctica de dispositivos", "Subnetting y enrutamiento", "Herramientas de diagnóstico"]
+          "que_aprenderas": "Diseño y administración de redes: modelo OSI/TCP-IP, enrutamiento, subredes y análisis de tráfico."
         },
         {
           "codigo": "SI-883",
@@ -627,10 +491,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-786",
-          "objetivo_aprendizaje": "Desarrollar aplicaciones móviles nativas o híbridas para Android/iOS.",
-          "actividades_practicas": ["UI/UX móvil", "Ciclo de vida de apps", "Acceso a sensores y almacenamiento local", "Publicación en stores"],
-          "entregables_evidencia": ["App móvil funcional", "Código documentado", "Manual de usuario"],
-          "checklist_convalidacion": ["Desarrollo móvil real", "Frameworks actuales (Flutter, React Native, Kotlin, Swift)", "Integración de hardware/servicios", "Proyecto funcional evaluado"]
+          "que_aprenderas": "Desarrollo de aplicaciones móviles nativas o híbridas: UI móvil, sensores, almacenamiento local y publicación."
         },
         {
           "codigo": "SI-884",
@@ -640,10 +501,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-783",
-          "objetivo_aprendizaje": "Aplicar inferencia estadística y técnicas de análisis exploratorio para toma de decisiones basada en datos.",
-          "actividades_practicas": ["Pruebas de hipótesis", "ANOVA y regresión múltiple", "Limpieza y visualización de datos", "Dashboards interactivos"],
-          "entregables_evidencia": ["Informe estadístico completo", "Dashboard o visualización", "Código de análisis (R/Python)"],
-          "checklist_convalidacion": ["Inferencia estadística aplicada", "Software de análisis", "Visualización profesional", "Proyecto con datos reales"]
+          "que_aprenderas": "Inferencia estadística aplicada: pruebas de hipótesis, regresión múltiple, visualización y dashboards interactivos."
         },
         {
           "codigo": "SI-885",
@@ -653,10 +511,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-783",
-          "objetivo_aprendizaje": "Implementar soluciones BI para transformar datos en información estratégica para la organización.",
-          "actividades_practicas": ["ETL y data warehousing básico", "Modelado dimensional", "Dashboards con Power BI/Tableau", "KPIs y scorecards"],
-          "entregables_evidencia": ["Reporte BI funcional", "Documento de arquitectura de datos", "Presentación ejecutiva"],
-          "checklist_convalidacion": ["Herramientas BI actuales", "Modelado dimensional", "ETL aplicado", "Enfoque en toma de decisiones"]
+          "que_aprenderas": "Soluciones BI para transformación de datos: ETL, modelado dimensional, dashboards y KPIs estratégicos."
         },
         {
           "codigo": "SI-886",
@@ -666,10 +521,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-785",
-          "objetivo_aprendizaje": "Alinear estrategias de TI con objetivos de negocio usando marcos de gobernanza y arquitectura empresarial.",
-          "actividades_practicas": ["Análisis FODA y alineación estratégica", "TOGAF/COBIT básico", "Roadmap tecnológico", "Gestión de portafolio TI"],
-          "entregables_evidencia": ["Plan estratégico de TI", "Matriz de alineación", "Presentación ejecutiva"],
-          "checklist_convalidacion": ["Marcos de gobernanza TI", "Alineación con negocio", "Roadmap estructurado", "Documentación ejecutiva"]
+          "que_aprenderas": "Alineación estratégica de TI con el negocio: gobernanza, arquitectura empresarial y roadmap tecnológico."
         }
       ]
     },
@@ -684,10 +536,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "SI-884",
-          "objetivo_aprendizaje": "Formular y estructurar un proyecto de investigación científica aplicada a ingeniería de sistemas.",
-          "actividades_practicas": ["Formulación de problema y objetivos", "Marco teórico y estado del arte", "Diseño metodológico", "Revisión por comité académico"],
-          "entregables_evidencia": ["Protocolo de investigación aprobado", "Revisión bibliográfica sistematizada", "Presentación de avance"],
-          "checklist_convalidacion": ["Metodología científica aplicada", "Documento estructurado (protocolo)", "Aprobación académica", "No ser solo curso de metodología general"]
+          "que_aprenderas": "Formulación de investigación científica aplicada: problema, marco teórico, metodología y protocolo de tesis."
         },
         {
           "codigo": "SI-982",
@@ -697,10 +546,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-883",
-          "objetivo_aprendizaje": "Desarrollar aplicaciones web escalables, seguras y con arquitectura moderna.",
-          "actividades_practicas": ["Arquitecturas SPA/PWA", "Autenticación JWT/OAuth", "CI/CD básico", "Optimización de rendimiento"],
-          "entregables_evidencia": ["Aplicación web avanzada", "Pipeline de despliegue", "Informe de pruebas y seguridad"],
-          "checklist_convalidacion": ["Arquitectura moderna web", "Seguridad y autenticación", "CI/CD aplicado", "Proyecto funcional y desplegado"]
+          "que_aprenderas": "Aplicaciones web avanzadas: arquitecturas SPA/PWA, autenticación, CI/CD y optimización de rendimiento."
         },
         {
           "codigo": "SI-983",
@@ -710,10 +556,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-883",
-          "objetivo_aprendizaje": "Implementar software profesional aplicando estándares de codificación, versionamiento y pruebas automatizadas.",
-          "actividades_practicas": ["Refactorización y clean code", "Testing avanzado (integración, E2E)", "Documentación técnica automatizada", "Gestión de ramas y merges"],
-          "entregables_evidencia": ["Repositorio profesional completo", "Suite de pruebas automatizada", "Documentación generada"],
-          "checklist_convalidacion": ["Estándares de codificación", "Testing automatizado avanzado", "Control de versiones profesional", "Entrega de código production-ready"]
+          "que_aprenderas": "Desarrollo profesional de software: clean code, testing avanzado, documentación automatizada y control de versiones."
         },
         {
           "codigo": "SI-984",
@@ -723,10 +566,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-882",
-          "objetivo_aprendizaje": "Administrar redes avanzadas, servicios cloud y seguridad perimetral.",
-          "actividades_practicas": ["VLANs y trunking", "Firewalls y VPNs", "Servicios DNS/DHCP/NAT", "Monitoreo con SNMP/Zabbix"],
-          "entregables_evidencia": ["Red segmentada y segura", "Configuraciones documentadas", "Informe de monitoreo"],
-          "checklist_convalidacion": ["Redes avanzadas y segmentación", "Seguridad perimetral", "Herramientas de monitoreo", "Prácticas evaluadas en laboratorio"]
+          "que_aprenderas": "Redes avanzadas y seguridad: VLANs, firewalls, VPNs, servicios de red y monitoreo profesional."
         },
         {
           "codigo": "SI-985",
@@ -736,10 +576,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-885",
-          "objetivo_aprendizaje": "Implementar control de versiones, gestión de releases y automatización de despliegues.",
-          "actividades_practicas": ["Git avanzado y flujo de trabajo", "Gestión de dependencias", "Contenedores y orquestación básica", "Lanzamientos y rollback"],
-          "entregables_evidencia": ["Pipeline de configuración completo", "Documentación de releases", "Informe de automatización"],
-          "checklist_convalidacion": ["Git avanzado y branching", "Automatización de builds/deploy", "Gestión de configuración", "Herramientas DevOps básicas"]
+          "que_aprenderas": "Control de versiones y automatización: Git avanzado, gestión de releases, contenedores y pipelines de despliegue."
         },
         {
           "codigo": "SI-986",
@@ -749,10 +586,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "*Inglés Intermedio",
-          "objetivo_aprendizaje": "Comprender y producir textos técnicos en inglés aplicados a documentación, manuales y comunicación profesional.",
-          "actividades_practicas": ["Lectura de documentación técnica", "Redacción de manuales y reportes", "Presentaciones técnicas en inglés", "Vocabulario especializado TI"],
-          "entregables_evidencia": ["Documentación técnica en inglés", "Presentación grabada o en vivo", "Prueba de comprensión lectora"],
-          "checklist_convalidacion": ["Nivel intermedio-avanzado comprobable", "Enfoque técnico/ingeniería", "Producción escrita y oral", "Certificación o evaluación oficial recomendada"]
+          "que_aprenderas": "Comunicación técnica en inglés: lectura de documentación, redacción de manuales y presentaciones profesionales."
         }
       ]
     },
@@ -767,10 +601,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-985",
-          "objetivo_aprendizaje": "Aplicar principios de ciberseguridad para proteger infraestructura, datos y aplicaciones.",
-          "actividades_practicas": ["Análisis de vulnerabilidades", "Políticas de seguridad y cumplimiento", "Criptografía aplicada", "Respuesta a incidentes básicos"],
-          "entregables_evidencia": ["Auditoría de seguridad básica", "Plan de respuesta a incidentes", "Informe de hardening"],
-          "checklist_convalidacion": ["Prácticas de seguridad ofensiva/defensiva", "Herramientas de escaneo", "Políticas y cumplimiento", "Enfoque aplicado a entornos reales"]
+          "que_aprenderas": "Ciberseguridad aplicada: análisis de vulnerabilidades, criptografía, políticas de seguridad y respuesta a incidentes."
         },
         {
           "codigo": "SI-083",
@@ -780,10 +611,7 @@
           "hp": 4,
           "th": 6,
           "prerrequisito": "SI-983",
-          "objetivo_aprendizaje": "Desarrollar soluciones empresariales complejas integrando microservicios, APIs y arquitecturas cloud.",
-          "actividades_practicas": ["Microservicios y comunicación", "Mensajería asíncrona", "Integración con servicios cloud", "Monitoreo y logging distribuido"],
-          "entregables_evidencia": ["Sistema distribuido funcional", "Documentación de arquitectura", "Despliegue en entorno cloud"],
-          "checklist_convalidacion": ["Microservicios aplicados", "Integración cloud", "Observabilidad básica", "Proyecto complejo evaluado"]
+          "que_aprenderas": "Soluciones empresariales complejas: microservicios, mensajería asíncrona, integración cloud y observabilidad."
         },
         {
           "codigo": "SI-084",
@@ -793,10 +621,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-985",
-          "objetivo_aprendizaje": "Evaluar controles, riesgos y cumplimiento en sistemas de información mediante estándares internacionales.",
-          "actividades_practicas": ["Marco COBIT/ITIL", "Muestreo y evidencia", "Informes de auditoría", "Recomendaciones de mejora"],
-          "entregables_evidencia": ["Informe de auditoría simulada", "Matriz de riesgos y controles", "Presentación ejecutiva"],
-          "checklist_convalidacion": ["Estándares de auditoría TI", "Metodología de evaluación", "Documentación formal", "Caso práctico evaluado"]
+          "que_aprenderas": "Evaluación de controles y riesgos en TI: estándares COBIT/ITIL, muestreo, evidencia y informes de auditoría."
         },
         {
           "codigo": "SI-085",
@@ -806,10 +631,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "Ninguno",
-          "objetivo_aprendizaje": "Desarrollar modelos de negocio innovadores y habilidades de liderazgo para proyectos tecnológicos.",
-          "actividades_practicas": ["Canvas y validación de mercado", "Pitching y comunicación de valor", "Gestión de equipos multidisciplinarios", "Simulación de startup"],
-          "entregables_evidencia": ["Modelo de negocio validado", "Pitch deck profesional", "Informe de simulación"],
-          "checklist_convalidacion": ["Metodología Lean/Canvas", "Validación con usuarios/mercado", "Presentación profesional", "Enfoque en tecnología/innovación"]
+          "que_aprenderas": "Modelos de negocio innovadores y liderazgo: Lean Canvas, validación de mercado, pitching y gestión de equipos."
         },
         {
           "codigo": "SI-086",
@@ -819,10 +641,7 @@
           "hp": 2,
           "th": 4,
           "prerrequisito": "SI-983",
-          "objetivo_aprendizaje": "Gestionar áreas de TI alineadas a estrategia organizacional, presupuesto y métricas de valor.",
-          "actividades_practicas": ["Gestión de presupuestos TI", "KPIs y dashboards gerenciales", "Outsourcing y proveedores", "Transformación digital"],
-          "entregables_evidencia": ["Plan gerencial de TI", "Cuadro de mando integral", "Presentación ejecutiva"],
-          "checklist_convalidacion": ["Enfoque gerencial/estratégico", "Métricas y KPIs", "Gestión de proveedores", "Caso real o simulación avanzada"]
+          "que_aprenderas": "Gestión estratégica de áreas de TI: presupuestos, KPIs, outsourcing y transformación digital organizacional."
         },
         {
           "codigo": "SI-080",
@@ -832,10 +651,7 @@
           "hp": 0,
           "th": 3,
           "prerrequisito": "SI-981",
-          "objetivo_aprendizaje": "Ejecutar, analizar y comunicar resultados de investigación científica en ingeniería de sistemas.",
-          "actividades_practicas": ["Ejecución de experimento/desarrollo", "Análisis estadístico de resultados", "Redacción de capítulos finales", "Defensa académica"],
-          "entregables_evidencia": ["Tesis/trabajo final completo", "Artículo o reporte técnico", "Defensa oral evaluada"],
-          "checklist_convalidacion": ["Ejecución real de investigación", "Análisis de datos válido", "Documento formal estructurado", "Evaluación por tribunal académico"]
+          "que_aprenderas": "Ejecución y comunicación de investigación: análisis de resultados, redacción final y defensa académica de tesis."
         }
       ]
     }
@@ -849,10 +665,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-685",
-      "objetivo_aprendizaje": "Configurar y administrar módulos ERP para integración de procesos organizacionales.",
-      "actividades_practicas": ["Módulos financieros, RRHH y logística", "Configuración de flujos de trabajo", "Integración de datos entre módulos", "Simulación de implementación"],
-      "entregables_evidencia": ["Entorno ERP configurado", "Documentación de procesos", "Informe de implementación"],
-      "checklist_convalidacion": ["ERP comercial (SAP, Oracle, Odoo, etc.)", "Configuración práctica", "Integración de procesos", "Caso empresarial real o simulado"]
+      "que_aprenderas": "Configuración y administración de módulos ERP para integración de procesos financieros, logísticos y de RRHH."
     },
     {
       "codigo": "SI-8811",
@@ -862,10 +675,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-783",
-      "objetivo_aprendizaje": "Explorar tecnologías emergentes en gestión de datos masivos y distribuidos.",
-      "actividades_practicas": ["Data lakes y lakehouses", "Procesamiento por lotes y streaming", "Gobernanza de datos", "Seguridad y privacidad"],
-      "entregables_evidencia": ["Pipeline de datos avanzado", "Informe de arquitectura", "Prueba de concepto"],
-      "checklist_convalidacion": ["Tecnologías de big data", "Procesamiento distribuido", "Gobernanza aplicada", "Enfoque avanzado"]
+      "que_aprenderas": "Tecnologías emergentes de datos: data lakes, procesamiento streaming, gobernanza y seguridad de información masiva."
     },
     {
       "codigo": "SI-887",
@@ -875,10 +685,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-782",
-      "objetivo_aprendizaje": "Diseñar e implementar soluciones IoT integrando sensores, comunicación y análisis de datos.",
-      "actividades_practicas": ["Programación de microcontroladores", "Protocolos MQTT/CoAP", "Dashboards de monitoreo", "Seguridad en dispositivos"],
-      "entregables_evidencia": ["Prototipo IoT funcional", "Código embebido", "Informe de arquitectura IoT"],
-      "checklist_convalidacion": ["Hardware + software integrado", "Protocolos IoT", "Visualización de datos", "Proyecto funcional evaluado"]
+      "que_aprenderas": "Soluciones IoT integradas: microcontroladores, protocolos MQTT/CoAP, dashboards de monitoreo y seguridad en dispositivos."
     },
     {
       "codigo": "SI-888",
@@ -888,10 +695,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-686",
-      "objetivo_aprendizaje": "Desarrollar videojuegos aplicando mecánicas, narrativa interactiva y motores gráficos.",
-      "actividades_practicas": ["Diseño de niveles y mecánicas", "Programación en Unity/Unreal/Godot", "Física y animación básica", "Optimización de rendimiento"],
-      "entregables_evidencia": ["Juego jugable", "Documentación de diseño", "Video de gameplay"],
-      "checklist_convalidacion": ["Motor gráfico actual", "Programación de gameplay", "Diseño estructurado", "Proyecto completo evaluado"]
+      "que_aprenderas": "Desarrollo de videojuegos: mecánicas, narrativa interactiva, programación en motores gráficos y optimización de rendimiento."
     },
     {
       "codigo": "SI-889",
@@ -901,10 +705,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-685",
-      "objetivo_aprendizaje": "Aplicar patrones de diseño y arquitectura para resolver problemas comunes de software de forma eficiente.",
-      "actividades_practicas": ["Patrones GoF (creacionales, estructurales, comportamiento)", "Patrones de integración", "Refactorización con patrones", "Evaluación de alternativas"],
-      "entregables_evidencia": ["Código refactorizado con patrones", "Informe de justificación técnica", "Comparativa de implementaciones"],
-      "checklist_convalidacion": ["Patrones clásicos y modernos aplicados", "Refactorización documentada", "Enfoque en mantenibilidad", "Evaluación técnica rigurosa"]
+      "que_aprenderas": "Aplicación de patrones de diseño y arquitectura para resolver problemas comunes de software de forma eficiente y mantenible."
     },
     {
       "codigo": "SI-987",
@@ -914,10 +715,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-783",
-      "objetivo_aprendizaje": "Diseñar, desplegar y administrar soluciones en la nube usando proveedores líderes.",
-      "actividades_practicas": ["IaaS, PaaS, SaaS", "Infraestructura como código (Terraform)", "Serverless y funciones gestionadas", "Monitoreo y costos en cloud"],
-      "entregables_evidencia": ["Arquitectura cloud desplegada", "Scripts IaC", "Informe de costos y rendimiento"],
-      "checklist_convalidacion": ["Proveedor cloud real (AWS, Azure, GCP)", "IaC aplicado", "Despliegue funcional", "Enfoque en optimización"]
+      "que_aprenderas": "Diseño y administración en la nube: IaaS/PaaS/SaaS, infraestructura como código, serverless y gestión de costos cloud."
     },
     {
       "codigo": "SI-988",
@@ -927,10 +725,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-883",
-      "objetivo_aprendizaje": "Desarrollar aplicaciones móviles avanzadas con integración de servicios externos y optimización.",
-      "actividades_practicas": ["APIs externas y OAuth", "Sincronización offline", "Push notifications", "Publicación y analytics"],
-      "entregables_evidencia": ["App avanzada publicada o funcional", "Integraciones documentadas", "Informe de analytics"],
-      "checklist_convalidacion": ["Integración de servicios externos", "Sincronización avanzada", "Publicación o despliegue", "Métricas de uso"]
+      "que_aprenderas": "Aplicaciones móviles avanzadas: integración de APIs externas, sincronización offline, notificaciones push y analytics."
     },
     {
       "codigo": "SI-989",
@@ -940,10 +735,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-881",
-      "objetivo_aprendizaje": "Implementar modelos de aprendizaje automático avanzados para predicción y clasificación.",
-      "actividades_practicas": ["Feature engineering", "Validación cruzada y tuning", "Modelos ensemble y redes profundas", "Despliegue de modelos (MLflow)"],
-      "entregables_evidencia": ["Modelo entrenado y evaluado", "Pipeline de ML reproducible", "Informe de métricas y bias"],
-      "checklist_convalidacion": ["ML avanzado aplicado", "Framework actual (TensorFlow/PyTorch/scikit-learn)", "Evaluación rigurosa", "Despliegue o serving"]
+      "que_aprenderas": "Modelos de aprendizaje automático avanzados: feature engineering, validación cruzada, redes profundas y despliegue de modelos."
     },
     {
       "codigo": "SI-087",
@@ -953,10 +745,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-984",
-      "objetivo_aprendizaje": "Diseñar y administrar infraestructura tecnológica escalable, segura y de alta disponibilidad.",
-      "actividades_practicas": ["Virtualización y contenedores avanzados", "Balanceo de carga y alta disponibilidad", "Backup y disaster recovery", "Documentación de infraestructura"],
-      "entregables_evidencia": ["Topología configurada", "Plan de DRP", "Documentación técnica"],
-      "checklist_convalidacion": ["Infraestructura enterprise", "Alta disponibilidad aplicada", "DRP documentado", "Herramientas de administración"]
+      "que_aprenderas": "Infraestructura tecnológica enterprise: virtualización avanzada, alta disponibilidad, backup y planes de recuperación ante desastres."
     },
     {
       "codigo": "SI-088",
@@ -966,10 +755,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-786",
-      "objetivo_aprendizaje": "Diseñar y validar modelos de negocio basados en tecnología, plataformas y economía digital.",
-      "actividades_practicas": ["Lean Canvas y Value Proposition", "Métricas de crecimiento (AARRR)", "Monetización y pricing digital", "Prototipado de propuesta de valor"],
-      "entregables_evidencia": ["Modelo de negocio digital validado", "Pitch deck inversor", "Plan de adquisición de usuarios"],
-      "checklist_convalidacion": ["Enfoque en plataformas/digital", "Validación con métricas", "Estrategia de crecimiento", "Caso real o simulación"]
+      "que_aprenderas": "Diseño de negocios digitales: Lean Canvas, métricas de crecimiento, monetización y validación de propuestas de valor tecnológico."
     },
     {
       "codigo": "SI-089",
@@ -979,33 +765,7 @@
       "hp": 2,
       "th": 4,
       "prerrequisito": "SI-885",
-      "objetivo_aprendizaje": "Implementar soluciones de bases de datos especializadas para análisis, grafos y series temporales.",
-      "actividades_practicas": ["Bases de datos de grafos (Neo4j)", "Series temporales (InfluxDB)", "Búsqueda full-text (Elasticsearch)", "Optimización avanzada"],
-      "entregables_evidencia": ["Prototipo con DB especializada", "Comparativa de rendimiento", "Informe de arquitectura"],
-      "checklist_convalidacion": ["DB especializada aplicada", "Caso de uso real", "Optimización documentada", "Herramientas actuales"]
+      "que_aprenderas": "Bases de datos especializadas: grafos, series temporales, búsqueda full-text y optimización avanzada para casos de uso específicos."
     }
-  ],
-  "guia_convalidacion": {
-    "criterios_generales": [
-      "El curso previo debe cubrir ≥70% de las competencias clave del curso UPAO.",
-      "Debe incluir componente práctico ≥40% de la carga horaria total.",
-      "Se requieren evidencias evaluadas con rúbrica (no solo exámenes teóricos).",
-      "El nivel académico debe ser universitario reconocido oficialmente.",
-      "Se recomienda adjuntar syllabus, trabajos calificados y rúbricas de evaluación."
-    ],
-    "documentacion_requerida": [
-      "Syllabus oficial del curso previo (temas, horas, bibliografía)",
-      "Muestras de trabajos evaluados con calificación y comentarios",
-      "Rúbrica o criterios de evaluación utilizados",
-      "Certificado de notas con carga horaria y créditos",
-      "Tabla comparativa temática (si el nombre difiere pero el contenido es similar)"
-    ],
-    "proceso_recomendado": [
-      "1. Estudiante completa checklist de convalidación por curso.",
-      "2. Adjunta documentación oficial y evidencias.",
-      "3. Coordinación académica cruza con matriz de competencias.",
-      "4. Resolución: Convalidación total, parcial (con补补) o denegada con justificación.",
-      "5. Registro en sistema académico con fecha y firma responsable."
-    ]
-  }
+  ]
 }

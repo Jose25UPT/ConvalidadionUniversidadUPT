@@ -442,7 +442,7 @@ function parseCurriculumData(raw) {
           th: course.th,
           prerequisite: course.prerrequisito,
           cycle: cycle.ciclo,
-          objective: course.objetivo_aprendizaje || "",
+          objective: course.que_aprenderas || course.objetivo_aprendizaje || "",
           activities: Array.isArray(course.actividades_practicas) ? course.actividades_practicas : [],
           evidences: Array.isArray(course.entregables_evidencia) ? course.entregables_evidencia : [],
           checklist: Array.isArray(course.checklist_convalidacion) ? course.checklist_convalidacion : [],
@@ -465,7 +465,7 @@ function parseCurriculumData(raw) {
         th: course.th || 0,
         prerequisite: course.prerrequisito || course.prerequisite || "Ninguno",
         cycle: "Electivo",
-        objective: course.objetivo_aprendizaje || "",
+        objective: course.que_aprenderas || course.objetivo_aprendizaje || "",
         activities: Array.isArray(course.actividades_practicas) ? course.actividades_practicas : [],
         evidences: Array.isArray(course.entregables_evidencia) ? course.entregables_evidencia : [],
         checklist: Array.isArray(course.checklist_convalidacion) ? course.checklist_convalidacion : [],
@@ -474,8 +474,8 @@ function parseCurriculumData(raw) {
 
     return {
       meta: {
-        totalCredits: raw.metadata?.total_creditos || 0,
-        requiredCredits: raw.metadata?.creditos_obligatorios || 0,
+        totalCredits: raw.metadata?.creditos_totales || raw.metadata?.total_creditos || 0,
+        requiredCredits: raw.metadata?.creditos_obligatorios || raw.metadata?.creditos_totales || raw.metadata?.total_creditos || 0,
       },
       cycles: [...cycles, "Electivos"],
       courses,
@@ -661,38 +661,30 @@ function selectCourse(course) {
 
 function openCourseDetails(course) {
   const detail = buildCourseDetails(course);
-  const activities = renderBulletList(course.activities, "No se registran actividades practicas en el JSON.");
-  const evidences = renderBulletList(course.evidences, "No se registran entregables de evidencia en el JSON.");
-  const checklist = renderBulletList(course.checklist, "No se registra checklist de convalidacion en el JSON.");
+  const activities = renderBulletList(course.activities);
+  const evidences = renderBulletList(course.evidences);
+  const checklist = renderBulletList(course.checklist);
+  const objective = escapeHtml(course.objective || detail.whatIsTaught);
 
   elements.courseDetailBody.innerHTML = `
     <p><strong>${course.code} - ${course.name}</strong></p>
     <p><strong>Ciclo:</strong> ${course.cycle} · <strong>Creditos:</strong> ${course.credits || "N/A"}</p>
     <p><strong>Horas:</strong> Teoria ${course.ht || 0} · Practica ${course.hp || 0} · Total ${course.th || 0}</p>
     <p><strong>Prerrequisito:</strong> ${course.prerequisite || "Ninguno"}</p>
-    <p><strong>Objetivo de aprendizaje:</strong> ${escapeHtml(course.objective || detail.whatIsTaught)}</p>
+    <p><strong>Que aprenderas:</strong> ${objective}</p>
     <p><strong>Que se hace en este curso:</strong> ${detail.whatIsTaught}</p>
     <p><strong>Que deberias saber al terminar:</strong> ${detail.whatYouLearn}</p>
-    <div class="detail-block">
-      <h4>Actividades practicas</h4>
-      ${activities}
-    </div>
-    <div class="detail-block">
-      <h4>Entregables de evidencia</h4>
-      ${evidences}
-    </div>
-    <div class="detail-block">
-      <h4>Checklist de convalidacion</h4>
-      ${checklist}
-    </div>
+    ${activities ? `<div class="detail-block"><h4>Actividades practicas</h4>${activities}</div>` : ""}
+    ${evidences ? `<div class="detail-block"><h4>Entregables de evidencia</h4>${evidences}</div>` : ""}
+    ${checklist ? `<div class="detail-block"><h4>Checklist de convalidacion</h4>${checklist}</div>` : ""}
   `;
 
   elements.courseDetailModal.classList.remove("hidden");
 }
 
-function renderBulletList(items, emptyMessage) {
+function renderBulletList(items) {
   if (!items || items.length === 0) {
-    return `<p class="detail-empty">${emptyMessage}</p>`;
+    return "";
   }
 
   return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
@@ -713,7 +705,6 @@ function buildCourseDetails(course) {
         course.checklist?.[0] ||
         course.evidences?.[0] ||
         "se espera dominio de los temas centrales y aplicacion en actividades evaluadas.",
-      studentTip: "",
     };
   }
 
@@ -722,7 +713,6 @@ function buildCourseDetails(course) {
     return {
       whatIsTaught: `En este curso ${exact.taught}.`,
       whatYouLearn: `Al terminar, ${exact.learn}.`,
-      studentTip: exact.tip,
     };
   }
 
@@ -863,7 +853,6 @@ function buildCourseDetails(course) {
     return {
       whatIsTaught: `En este curso ${matched.taught}.`,
       whatYouLearn: `Al terminar, ${matched.learn}.`,
-      studentTip: matched.tip,
     };
   }
 
@@ -871,7 +860,6 @@ function buildCourseDetails(course) {
     return {
       whatIsTaught: "se desarrollan competencias generales para tu formacion universitaria.",
       whatYouLearn: "tendras una base academica transversal para los siguientes ciclos.",
-      studentTip: "Compara resultados de aprendizaje y competencias generales.",
     };
   }
 
@@ -879,14 +867,12 @@ function buildCourseDetails(course) {
     return {
       whatIsTaught: `se abordan contenidos tecnicos asociados a ${course.name.toLowerCase()}.`,
       whatYouLearn: "podras aplicar estos conceptos en practicas, laboratorios o proyectos.",
-      studentTip: "Compara temas, horas practicas y nivel de trabajo aplicado.",
     };
   }
 
   return {
     whatIsTaught: `en ${course.name.toLowerCase()} se trabajan contenidos teoricos y practicos del plan de estudios.`,
     whatYouLearn: "al terminar, deberias entender los conceptos clave y aplicarlos en ejercicios.",
-    studentTip: "si no coincide el nombre, compara temas, practicas y logros del curso.",
   };
 }
 

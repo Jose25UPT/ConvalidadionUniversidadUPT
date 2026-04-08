@@ -1,14 +1,14 @@
 :root {
-  --bg: #f5fbff;
+  --bg: #f6fcff;
   --panel: #ffffff;
-  --text: #122335;
-  --muted: #49647a;
-  --accent: #0f7ae5;
-  --accent-2: #11b5a4;
-  --warning: #f4a261;
-  --danger: #e55d4f;
-  --ok: #148a7c;
-  --shadow: 0 16px 36px rgba(15, 57, 95, 0.14);
+  --text: #102336;
+  --muted: #3f5f78;
+  --accent: #0a84ff;
+  --accent-2: #00bfa6;
+  --warning: #f79b2f;
+  --danger: #ef5350;
+  --ok: #0f9d87;
+  --shadow: 0 16px 36px rgba(6, 69, 121, 0.16);
   --radius: 18px;
 }
 
@@ -21,9 +21,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 12% 8%, rgba(17, 181, 164, 0.2), transparent 30%),
-    radial-gradient(circle at 86% 12%, rgba(15, 122, 229, 0.22), transparent 34%),
-    linear-gradient(160deg, #f8fdff 0%, #ebf5ff 52%, #f7fbff 100%);
+    radial-gradient(circle at 10% 10%, rgba(0, 191, 166, 0.24), transparent 30%),
+    radial-gradient(circle at 88% 12%, rgba(10, 132, 255, 0.26), transparent 34%),
+    linear-gradient(165deg, #f8fdff 0%, #e9f3ff 48%, #f7fbff 100%);
   min-height: 100vh;
 }
 
@@ -217,8 +217,8 @@ textarea:focus {
 }
 
 .course-item.active {
-  border-color: #6caeea;
-  background: #eef7ff;
+  border-color: #4aa3ff;
+  background: #e8f4ff;
 }
 
 .course-code {
@@ -244,16 +244,16 @@ textarea:focus {
 }
 
 .detail-btn {
-  background: linear-gradient(180deg, #f0f7ff 0%, #dceeff 100%);
-  color: #0d507f;
-  border: 1px solid #9ec6ea;
+  background: linear-gradient(180deg, #ecf5ff 0%, #cfe7ff 100%);
+  color: #0b4f80;
+  border: 1px solid #7fbaf0;
 }
 
 .add-btn {
   margin-left: 0.35rem;
-  background: linear-gradient(180deg, #ecfffb 0%, #d0f8ef 100%);
-  color: #0d6e61;
-  border: 1px solid #8fdaca;
+  background: linear-gradient(180deg, #e7fffb 0%, #bff7ec 100%);
+  color: #06685d;
+  border: 1px solid #65d8c3;
 }
 
 .selection-box {
@@ -291,7 +291,7 @@ textarea:focus {
 
 .progress-percent {
   font-weight: 800;
-  color: #0f7ae5;
+  color: #0a84ff;
 }
 
 .progress-track {
@@ -306,7 +306,7 @@ textarea:focus {
   width: 0;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #11b5a4, #0f7ae5);
+  background: linear-gradient(90deg, #00bfa6, #0a84ff);
   transition: width 300ms ease;
 }
 
@@ -452,9 +452,9 @@ textarea:focus {
 }
 
 .mini-btn.active {
-  background: linear-gradient(90deg, #10a890, #14b59b);
+  background: linear-gradient(90deg, #00bfa6, #0a84ff);
   color: #fff;
-  border-color: #10a890;
+  border-color: #00bfa6;
 }
 
 .tag {
@@ -477,7 +477,7 @@ button {
   border: none;
   border-radius: 10px;
   padding: 0.7rem 1rem;
-  background: linear-gradient(90deg, var(--accent), #1b9fff);
+  background: linear-gradient(90deg, var(--accent), #17a2ff);
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -586,7 +586,7 @@ button:disabled {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  background: linear-gradient(90deg, #10a890, #0f7ae5);
+  background: linear-gradient(90deg, #00bfa6, #0a84ff);
   color: #ffffff;
   padding: 0.7rem 0.95rem;
   border-radius: 10px;
