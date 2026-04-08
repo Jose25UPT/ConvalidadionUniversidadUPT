@@ -181,6 +181,181 @@ const COURSE_PROFILES = {
     learn: "podras crear aplicaciones completas con mejor calidad de codigo",
     tip: "Compara nivel de proyecto, pruebas y complejidad tecnica.",
   },
+  "EG-781": {
+    taught: "se analizan desafios nacionales en un contexto global",
+    learn: "podras argumentar sobre problemas del pais con mirada critica",
+    tip: "Compara si se abordaron analisis social, economico y geopolitico.",
+  },
+  "SI-782": {
+    taught: "se profundiza administracion avanzada del sistema operativo",
+    learn: "podras analizar rendimiento y servicios del sistema",
+    tip: "Compara gestion de procesos avanzados, memoria y seguridad.",
+  },
+  "SI-783": {
+    taught: "se trabaja base de datos avanzada con diseno e implementacion",
+    learn: "podras optimizar consultas y estructuras de datos persistentes",
+    tip: "Valida temas de rendimiento, transacciones y modelado avanzado.",
+  },
+  "SI-784": {
+    taught: "se aplican pruebas de software y aseguramiento de calidad",
+    learn: "podras planificar pruebas y detectar fallos con metodo",
+    tip: "Compara pruebas unitarias, integracion y gestion de calidad.",
+  },
+  "SI-785": {
+    taught: "se gestiona proyectos TI en tiempo, costo y alcance",
+    learn: "podras planificar y controlar proyectos tecnologicos",
+    tip: "Compara si hubo cronogramas, riesgos y seguimiento de proyecto.",
+  },
+  "SI-786": {
+    taught: "se desarrolla programacion web con enfoque full stack inicial",
+    learn: "podras crear aplicaciones web con interfaz y logica",
+    tip: "Compara stack tecnologico y nivel de proyecto web.",
+  },
+  "SI-881": {
+    taught: "se introducen tecnicas de inteligencia artificial",
+    learn: "podras resolver casos basicos con metodos de IA",
+    tip: "Compara algoritmos y practicas aplicadas con datos.",
+  },
+  "SI-882": {
+    taught: "se estudian redes de datos, protocolos y topologias",
+    learn: "podras comprender diseno y operacion de redes",
+    tip: "Compara capas de red, direccionamiento y practicas de conectividad.",
+  },
+  "SI-883": {
+    taught: "se crean soluciones moviles para casos reales",
+    learn: "podras desarrollar aplicaciones moviles funcionales",
+    tip: "Compara framework movil, interfaz y consumo de servicios.",
+  },
+  "SI-884": {
+    taught: "se aplican metodos inferenciales para analisis de datos",
+    learn: "podras concluir con soporte estadistico y analitico",
+    tip: "Compara inferencia, pruebas de hipotesis y lectura de resultados.",
+  },
+  "SI-885": {
+    taught: "se trabaja inteligencia de negocios para decisiones empresariales",
+    learn: "podras transformar datos en informacion para gestion",
+    tip: "Compara dashboards, modelado BI y analisis de indicadores.",
+  },
+  "SI-886": {
+    taught: "se alinea estrategia TI con objetivos de negocio",
+    learn: "podras proponer planes estrategicos de tecnologia",
+    tip: "Compara planificacion estrategica, gobierno TI y priorizacion.",
+  },
+  "SI-981": {
+    taught: "se formula proyecto de tesis y estructura de investigacion",
+    learn: "podras definir problema, objetivos y metodologia",
+    tip: "Compara entregables academicos exigidos en el curso.",
+  },
+  "SI-982": {
+    taught: "se profundiza desarrollo web con componentes avanzados",
+    learn: "podras implementar aplicaciones web mas completas",
+    tip: "Compara arquitectura web, seguridad y despliegue.",
+  },
+  "SI-983": {
+    taught: "se construyen soluciones de software con enfoque de ingenieria",
+    learn: "podras aplicar buenas practicas de construccion y calidad",
+    tip: "Compara niveles de arquitectura, pruebas e integracion.",
+  },
+  "SI-984": {
+    taught: "se profundizan tecnologias de redes y comunicacion",
+    learn: "podras configurar y evaluar redes de mayor complejidad",
+    tip: "Compara routing, switching y practicas de laboratorio.",
+  },
+  "SI-985": {
+    taught: "se gestiona configuracion y control de versiones en software",
+    learn: "podras mantener trazabilidad y control de cambios",
+    tip: "Compara uso de repositorios, ramas y procesos de liberacion.",
+  },
+  "SI-986": {
+    taught: "se fortalece ingles tecnico para tecnologia e ingenieria",
+    learn: "podras leer y comunicarte en contexto tecnico en ingles",
+    tip: "Compara vocabulario tecnico, lecturas y ejercicios practicos.",
+  },
+  "SI-082": {
+    taught: "se revisa seguridad de informacion, riesgos y controles",
+    learn: "podras identificar vulnerabilidades y proponer mejoras",
+    tip: "Compara temas de seguridad, normas y gestion de incidentes.",
+  },
+  "SI-083": {
+    taught: "se desarrolla construccion avanzada de software",
+    learn: "podras entregar soluciones robustas con calidad tecnica",
+    tip: "Compara complejidad de proyecto, integracion y calidad de codigo.",
+  },
+  "SI-084": {
+    taught: "se auditan sistemas para evaluar cumplimiento y control",
+    learn: "podras analizar procesos TI con enfoque de auditoria",
+    tip: "Compara marcos de control, evidencias y recomendaciones.",
+  },
+  "SI-085": {
+    taught: "se trabajan emprendimiento, liderazgo y propuesta de valor",
+    learn: "podras plantear iniciativas con enfoque de negocio",
+    tip: "Compara plan de negocio, liderazgo y validacion de idea.",
+  },
+  "SI-086": {
+    taught: "se estudia gestion y direccion estrategica de TI",
+    learn: "podras tomar decisiones gerenciales sobre tecnologia",
+    tip: "Compara gobierno TI, presupuesto y alineamiento estrategico.",
+  },
+  "SI-080": {
+    taught: "se culmina el trabajo de investigacion con resultados finales",
+    learn: "podras sustentar formalmente tu investigacion",
+    tip: "Compara entregables finales, informe y sustentacion.",
+  },
+  "SI-8810": {
+    taught: "se revisan sistemas ERP y su aplicacion empresarial",
+    learn: "podras entender integracion de procesos en plataformas ERP",
+    tip: "Compara modulos ERP, procesos y casos de implementacion.",
+  },
+  "SI-8811": {
+    taught: "se estudian tecnicas avanzadas de base de datos",
+    learn: "podras optimizar y administrar estructuras complejas de datos",
+    tip: "Compara tuning, administracion avanzada y consultas complejas.",
+  },
+  "SI-887": {
+    taught: "se desarrolla internet de las cosas con dispositivos y sensores",
+    learn: "podras integrar componentes IoT para resolver problemas",
+    tip: "Compara protocolos IoT, hardware y servicios de datos.",
+  },
+  "SI-888": {
+    taught: "se disenan videojuegos con enfoque tecnico y creativo",
+    learn: "podras construir prototipos jugables",
+    tip: "Compara motor de juego, logica y diseno de niveles.",
+  },
+  "SI-889": {
+    taught: "se aplican patrones de software para mejorar diseno de soluciones",
+    learn: "podras estructurar codigo reutilizable y mantenible",
+    tip: "Compara patrones creacionales, estructurales y de comportamiento.",
+  },
+  "SI-987": {
+    taught: "se estudia computacion en la nube y arquitectura cloud",
+    learn: "podras desplegar servicios en entornos cloud",
+    tip: "Compara servicios IaaS/PaaS/SaaS y practicas de despliegue.",
+  },
+  "SI-988": {
+    taught: "se profundiza el desarrollo movil en escenarios avanzados",
+    learn: "podras integrar funcionalidades moviles de mayor complejidad",
+    tip: "Compara integraciones, rendimiento y arquitectura movil.",
+  },
+  "SI-989": {
+    taught: "se aplican algoritmos de aprendizaje automatico",
+    learn: "podras entrenar y evaluar modelos de machine learning",
+    tip: "Compara pipeline de datos, entrenamiento y metricas.",
+  },
+  "SI-087": {
+    taught: "se estudia infraestructura TI para soporte de servicios",
+    learn: "podras planificar recursos de infraestructura tecnologica",
+    tip: "Compara servidores, virtualizacion y capacidad operativa.",
+  },
+  "SI-088": {
+    taught: "se construyen modelos de negocio digitales",
+    learn: "podras plantear propuestas digitales con viabilidad",
+    tip: "Compara canvas, propuesta de valor y validacion de mercado.",
+  },
+  "SI-089": {
+    taught: "se profundizan topicos avanzados de bases de datos",
+    learn: "podras resolver problemas complejos de almacenamiento y consulta",
+    tip: "Compara arquitectura avanzada y administracion especializada.",
+  },
 };
 
 const state = {
@@ -204,6 +379,7 @@ const elements = {
   courseDetailModal: document.getElementById("courseDetailModal"),
   closeCourseDetailModal: document.getElementById("closeCourseDetailModal"),
   courseDetailBody: document.getElementById("courseDetailBody"),
+  toast: document.getElementById("toast"),
 };
 
 init();
@@ -580,6 +756,7 @@ function toggleCourseSelection(course) {
 
   if (exists) {
     state.selectedCourses = state.selectedCourses.filter((item) => item.code !== course.code);
+    showToast(`Se quito ${course.code} de tu lista.`);
   } else {
     state.selectedCourses.push({
       code: course.code,
@@ -587,6 +764,7 @@ function toggleCourseSelection(course) {
       cycle: course.cycle,
       credits: course.credits || "N/A",
     });
+    showToast(`Se agrego ${course.code} a tu lista.`);
   }
 
   saveSelectedCourses(state.selectedCourses);
@@ -633,6 +811,27 @@ function clearSelectedCourses() {
   saveSelectedCourses(state.selectedCourses);
   renderSelectedCourses();
   renderCourseList();
+  showToast("Lista de cursos limpiada.");
+}
+
+function showToast(message) {
+  if (!elements.toast) {
+    return;
+  }
+
+  elements.toast.textContent = message;
+  elements.toast.classList.remove("hidden", "show");
+
+  // Force reflow to restart the fade animation when repeated quickly.
+  void elements.toast.offsetWidth;
+
+  elements.toast.classList.add("show");
+
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => {
+    elements.toast.classList.remove("show");
+    elements.toast.classList.add("hidden");
+  }, 2300);
 }
 
 function loadSelectedCourses() {

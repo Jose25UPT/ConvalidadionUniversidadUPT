@@ -25,7 +25,7 @@
       <div class="stats" id="stats"></div>
     </header>
 
-    <main class="container single-layout">
+    <main class="container dashboard-layout">
       <section class="panel" aria-labelledby="panel-cursos">
         <div class="panel-title-wrap">
           <h2 id="panel-cursos">Cursos UPT</h2>
@@ -70,13 +70,18 @@
           />
         </div>
 
+        <ul id="courseList" class="course-list" aria-live="polite"></ul>
+
+      </section>
+
+      <aside class="panel sidebar-panel" aria-labelledby="panel-lista">
+        <h2 id="panel-lista">Tu solicitud</h2>
+
         <div id="selectedCourse" class="selected-course empty">
           Selecciona un curso de la lista para ver su informacion principal.
         </div>
 
-        <ul id="courseList" class="course-list" aria-live="polite"></ul>
-
-        <div class="selection-box">
+        <div class="selection-box right">
           <div class="selection-header">
             <h3>Cursos que deseo convalidar</h3>
             <button id="clearSelectedBtn" class="ghost-btn" type="button">Limpiar lista</button>
@@ -84,7 +89,11 @@
           <p class="selection-help">Puedes agregar 2 o mas cursos con un clic.</p>
           <div id="selectedCoursesList" class="selected-courses-list"></div>
         </div>
-      </section>
+
+        <p class="sidebar-note">
+          Esta lista es referencial. La validacion final esta sujeta a evaluacion de la universidad y escuela profesional.
+        </p>
+      </aside>
     </main>
 
     <div id="courseDetailModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="courseDetailTitle">
@@ -94,6 +103,8 @@
         <div id="courseDetailBody" class="course-detail-body"></div>
       </div>
     </div>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
     <footer class="container footer-note">
       <p>
