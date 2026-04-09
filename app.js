@@ -20,6 +20,8 @@ const elements = {
   onlyConvalidable: document.getElementById("onlyConvalidable"),
   policyCycles: document.getElementById("policyCycles"),
   strictGeneralOnly: document.getElementById("strictGeneralOnly"),
+  maxCreditsInstitute: document.getElementById("maxCreditsInstitute"),
+  unlimitedCreditsUniversity: document.getElementById("unlimitedCreditsUniversity"),
   quickMode: document.getElementById("quickMode"),
   courseSearch: document.getElementById("courseSearch"),
   courseList: document.getElementById("courseList"),
@@ -58,6 +60,8 @@ async function init() {
   elements.onlyConvalidable.addEventListener("change", renderCourseList);
   elements.policyCycles.addEventListener("change", renderCourseList);
   elements.strictGeneralOnly.addEventListener("change", renderCourseList);
+  elements.maxCreditsInstitute.addEventListener("change", renderCourseList);
+  elements.unlimitedCreditsUniversity.addEventListener("change", renderCourseList);
   elements.quickMode.addEventListener("change", applyQuickMode);
   elements.courseSearch.addEventListener("input", renderCourseList);
   elements.clearSelectedBtn.addEventListener("click", clearSelectedCourses);
@@ -415,13 +419,25 @@ function clearSelectedCourses() {
 }
 
 function updateProgress() {
-  const totalRequired = Number(state.meta.requiredCredits || state.meta.totalCredits || 0);
   const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
-  const percent = totalRequired > 0 ? Math.max(0, Math.min(100, Math.round((selectedCredits / totalRequired) * 100))) : 0;
+
+  let totalLimit = Number(state.meta.requiredCredits || state.meta.totalCredits || 0);
+  let limitLabel = totalLimit ? `de ${totalLimit}` : "N/A";
+  let limitPolicy = "";
+
+  if (elements.maxCreditsInstitute.checked && !elements.unlimitedCreditsUniversity.checked) {
+    totalLimit = 50;
+    limitLabel = "de 50";
+    limitPolicy = " (máximo institutos)";
+  } else if (elements.unlimitedCreditsUniversity.checked && !elements.maxCreditsInstitute.checked) {
+    limitPolicy = " (universidades, sin límite)";
+  }
+
+  const percent = totalLimit > 0 ? Math.max(0, Math.min(100, Math.round((selectedCredits / totalLimit) * 100))) : 0;
 
   elements.progressFill.style.width = `${percent}%`;
   elements.progressPercent.textContent = `${percent}%`;
-  elements.progressText.textContent = `Creditos seleccionados: ${selectedCredits} de ${totalRequired || "N/A"}`;
+  elements.progressText.textContent = `Creditos seleccionados: ${selectedCredits} ${limitLabel}${limitPolicy}`;
 
   let statusClass = "status-low";
   let statusText = "Inicio de solicitud";
@@ -559,6 +575,16 @@ function isCourseEligible(course) {
     return false;
   }
 
+  const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
+  const courseCredits = Number(course.credits || 0);
+  const totalWithCourse = selectedCredits + courseCredits;
+
+  if (elements.maxCreditsInstitute.checked && !elements.unlimitedCreditsUniversity.checked) {
+    if (totalWithCourse > 50) {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -576,6 +602,16 @@ function getEligibilityMessage(course) {
   }
   if (elements.strictGeneralOnly.checked && !isGeneralCourse(course)) {
     reasons.push("no es curso general (EG-)");
+  }
+
+  const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
+  const courseCredits = Number(course.credits || 0);
+  const totalWithCourse = selectedCredits + courseCredits;
+
+  if (elements.maxCreditsInstitute.checked && !elements.unlimitedCreditsUniversity.checked) {
+    if (totalWithCourse > 50) {
+      reasons.push(`excederia el limite de 50 creditos de institutos (tienes ${selectedCredits}, curso tiene ${courseCredits})`);
+    }
   }
 
   return `Curso fuera de politica activa porque ${reasons.join(" y ")}.`;
