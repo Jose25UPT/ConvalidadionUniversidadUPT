@@ -17,12 +17,8 @@ const state = {
 const elements = {
   stats: document.getElementById("stats"),
   cycleFilter: document.getElementById("cycleFilter"),
-  onlyConvalidable: document.getElementById("onlyConvalidable"),
-  policyCycles: document.getElementById("policyCycles"),
-  strictGeneralOnly: document.getElementById("strictGeneralOnly"),
   maxCreditsInstitute: document.getElementById("maxCreditsInstitute"),
   unlimitedCreditsUniversity: document.getElementById("unlimitedCreditsUniversity"),
-  quickMode: document.getElementById("quickMode"),
   courseSearch: document.getElementById("courseSearch"),
   courseList: document.getElementById("courseList"),
   selectedCourse: document.getElementById("selectedCourse"),
@@ -57,12 +53,8 @@ async function init() {
   updateProgress();
 
   elements.cycleFilter.addEventListener("change", renderCourseList);
-  elements.onlyConvalidable.addEventListener("change", renderCourseList);
-  elements.policyCycles.addEventListener("change", renderCourseList);
-  elements.strictGeneralOnly.addEventListener("change", renderCourseList);
   elements.maxCreditsInstitute.addEventListener("change", renderCourseList);
   elements.unlimitedCreditsUniversity.addEventListener("change", renderCourseList);
-  elements.quickMode.addEventListener("change", applyQuickMode);
   elements.courseSearch.addEventListener("input", renderCourseList);
   elements.clearSelectedBtn.addEventListener("click", clearSelectedCourses);
   elements.printPdfBtn.addEventListener("click", printSelectedCoursesPdf);
@@ -73,8 +65,6 @@ async function init() {
       closeCourseDetails();
     }
   });
-
-  applyQuickMode();
 }
 
 function parseCurriculumData(raw) {
@@ -215,8 +205,7 @@ function renderCycleFilter() {
 function renderCourseList() {
   const selectedCycle = elements.cycleFilter.value || "Todos";
   const query = normalize(elements.courseSearch.value);
-  const onlyConvalidable = elements.onlyConvalidable.checked;
-  const courses = getFilteredCourses(selectedCycle, query, onlyConvalidable);
+  const courses = getFilteredCourses(selectedCycle, query);
 
   if (courses.length === 0) {
     elements.courseList.innerHTML = `<li class="course-item">No se encontraron cursos.</li>`;
@@ -282,7 +271,7 @@ function renderCourseList() {
   });
 }
 
-function getFilteredCourses(selectedCycle, query, onlyConvalidable) {
+function getFilteredCourses(selectedCycle, query) {
   return state.courses.filter((course) => {
     const byCycle =
       selectedCycle === "Todos" ||
@@ -290,10 +279,6 @@ function getFilteredCourses(selectedCycle, query, onlyConvalidable) {
       course.cycle === selectedCycle;
 
     if (!byCycle) {
-      return false;
-    }
-
-    if (onlyConvalidable && !isCourseEligible(course)) {
       return false;
     }
 
@@ -553,25 +538,8 @@ function saveSelectedCourses(courses) {
   localStorage.setItem("upt-selected-courses", JSON.stringify(courses));
 }
 
-function applyQuickMode() {
-  const quick = elements.quickMode.checked;
-  document.body.classList.toggle("quick-mode", quick);
-}
-
-function isGeneralCourse(course) {
-  return String(course.code || "").startsWith("EG-");
-}
-
 function isCourseEligible(course) {
   if (course.cycle === "Electivo") {
-    return false;
-  }
-
-  if (elements.policyCycles.checked && !CONVALIDABLE_CYCLES.has(course.cycle)) {
-    return false;
-  }
-
-  if (elements.strictGeneralOnly.checked && !isGeneralCourse(course)) {
     return false;
   }
 
@@ -596,12 +564,6 @@ function getEligibilityMessage(course) {
   const reasons = [];
   if (course.cycle === "Electivo") {
     reasons.push("es electivo");
-  }
-  if (elements.policyCycles.checked && !CONVALIDABLE_CYCLES.has(course.cycle)) {
-    reasons.push("esta fuera de ciclos I-VI");
-  }
-  if (elements.strictGeneralOnly.checked && !isGeneralCourse(course)) {
-    reasons.push("no es curso general (EG-)");
   }
 
   const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);

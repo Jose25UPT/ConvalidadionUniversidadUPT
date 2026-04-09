@@ -764,24 +764,6 @@ button:disabled {
   }
 }
 
-.quick-mode .subtitle {
-  display: none;
-}
-
-.quick-mode .guide-box,
-.quick-mode .selection-help,
-.quick-mode .sidebar-note {
-  display: none;
-}
-
-.quick-mode .panel {
-  padding-top: 0.9rem;
-}
-
-.quick-mode .course-item {
-  padding: 0.78rem;
-}
-
 @media (max-width: 640px) {
   .container {
     width: min(100% - 1rem, 1320px);
