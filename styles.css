@@ -578,6 +578,25 @@ textarea:focus {
   background: #fff5eb;
 }
 
+.tag.disabled {
+  border-color: #f0bb8e;
+  color: #b9632b;
+  background: #fef3e9;
+}
+
+.course-item.disabled-course {
+  opacity: 0.7;
+  border-color: rgba(155, 190, 220, 0.25);
+}
+
+.mini-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #e8eef5;
+  color: #8a9db0;
+  border-color: #d0dae7;
+}
+
 button {
   border: none;
   border-radius: 12px;

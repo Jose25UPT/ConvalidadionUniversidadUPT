@@ -216,19 +216,31 @@ function renderCourseList() {
     .map((course) => {
       const isActive = state.selectedCourse && state.selectedCourse.code === course.code;
       const inSelection = state.selectedCourses.some((item) => item.code === course.code);
-      const convalidableTag = isCourseEligible(course)
-        ? `<span class="tag">Convalidable</span>`
-        : `<span class="tag warn">No convalidable</span>`;
+      const isEligible = isCourseEligible(course);
+      const isSelectable = isCourseSelectable(course);
+
+      let convalidableTag = "";
+      let itemClass = "";
+
+      if (!isEligible) {
+        convalidableTag = `<span class="tag warn">No convalidable</span>`;
+      } else if (!isSelectable) {
+        convalidableTag = `<span class="tag disabled">Límite alcanzado</span>`;
+        itemClass = "disabled-course";
+      } else {
+        convalidableTag = `<span class="tag">Convalidable</span>`;
+      }
+
       const credits = course.credits ? `${course.credits} creditos` : "Sin creditos";
 
       return `
-        <li class="course-item ${isActive ? "active" : ""}" data-code="${course.code}">
+        <li class="course-item ${isActive ? "active" : ""} ${itemClass}" data-code="${course.code}">
           <div class="course-code">${course.code} · Ciclo ${course.cycle} ${convalidableTag}</div>
           <div class="course-name">${course.name}</div>
           <div class="course-meta">${credits} · Prerrequisito: ${course.prerequisite || "Ninguno"}</div>
           <div class="course-actions-row">
             <button class="mini-btn detail-btn" type="button" data-action="details" data-code="${course.code}">Detalles</button>
-            <button class="mini-btn add-btn ${inSelection ? "active" : ""}" type="button" data-action="toggle-select" data-code="${course.code}">
+            <button class="mini-btn add-btn ${inSelection ? "active" : ""}" type="button" data-action="toggle-select" data-code="${course.code}" ${!isSelectable && !inSelection ? "disabled" : ""}>
               ${inSelection ? "Quitar" : "Agregar"}
             </button>
           </div>
@@ -342,6 +354,11 @@ function toggleCourseSelection(course) {
     state.selectedCourses = state.selectedCourses.filter((item) => item.code !== course.code);
     showToast(`Se quito ${course.code} de tu lista.`);
   } else {
+    // Check if course is selectable before adding
+    if (!isCourseSelectable(course)) {
+      showToast(`No puedes agregar ${course.code}: límite de créditos alcanzado.`);
+      return;
+    }
     state.selectedCourses.push({
       code: course.code,
       name: course.name,
@@ -543,6 +560,14 @@ function isCourseEligible(course) {
     return false;
   }
 
+  return true;
+}
+
+function isCourseSelectable(course) {
+  if (!isCourseEligible(course)) {
+    return false;
+  }
+
   const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
   const courseCredits = Number(course.credits || 0);
   const totalWithCourse = selectedCredits + courseCredits;
@@ -557,26 +582,17 @@ function isCourseEligible(course) {
 }
 
 function getEligibilityMessage(course) {
-  if (isCourseEligible(course)) {
-    return "Curso habilitado por la politica activa.";
+  if (!isCourseEligible(course)) {
+    return "Curso fuera de política activa: es electivo.";
   }
 
-  const reasons = [];
-  if (course.cycle === "Electivo") {
-    reasons.push("es electivo");
+  if (!isCourseSelectable(course)) {
+    const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
+    const courseCredits = Number(course.credits || 0);
+    return `No se puede agregar: excedería el límite de 50 créditos (actualmente tienes ${selectedCredits}, este curso es ${courseCredits})`.trim();
   }
 
-  const selectedCredits = state.selectedCourses.reduce((acc, item) => acc + Number(item.credits || 0), 0);
-  const courseCredits = Number(course.credits || 0);
-  const totalWithCourse = selectedCredits + courseCredits;
-
-  if (elements.maxCreditsInstitute.checked && !elements.unlimitedCreditsUniversity.checked) {
-    if (totalWithCourse > 50) {
-      reasons.push(`excederia el limite de 50 creditos de institutos (tienes ${selectedCredits}, curso tiene ${courseCredits})`);
-    }
-  }
-
-  return `Curso fuera de politica activa porque ${reasons.join(" y ")}.`;
+  return "Curso habilitado.";
 }
 
 function normalize(text = "") {
