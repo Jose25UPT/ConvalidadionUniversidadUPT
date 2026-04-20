@@ -13,90 +13,98 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-shape bg-shape-1"></div>
-    <div class="bg-shape bg-shape-2"></div>
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-top">
+          <div class="hero-brand">
+            <img class="hero-logo" src="./Universidad-Privada-de-Tacna-UPT.jpg" alt="Universidad Privada de Tacna" />
+            <span class="brand-name">UNIVERSIDAD PRIVADA DE TACNA</span>
+          </div>
+        </div>
 
-    <header class="hero container">
-      <p class="eyebrow">Universidad Privada de Tacna</p>
-      <h1>Simulador de Convalidación UPT</h1>
-      <p class="subtitle">
-        Carrera: Ingeniería de Sistemas (FAING). Selecciona un curso UPT y compara con el curso ya llevado en otra universidad.
-      </p>
-      <div class="stats" id="stats"></div>
+        <div class="hero-copy">
+          <h1>Simulador de Convalidación UPT</h1>
+          <h2>Ingeniería de Sistemas</h2>
+
+          <p class="subtitle">
+            Facultad de Ingeniería (FAING). Compara cursos UPT con los que llevaste en otra universidad.
+          </p>
+        </div>
+      </div>
     </header>
 
     <main class="container dashboard-layout">
-      <section class="panel" aria-labelledby="panel-cursos">
-        <div class="panel-title-wrap">
+      <button id="mobileSidebarToggle" class="floating-toggle" aria-label="Ver lista">
+        🛒 <span id="quickCount">0</span>
+      </button>
+      <section class="panel main-panel" aria-labelledby="panel-cursos">
+        <div class="panel-header">
           <h2 id="panel-cursos">Cursos UPT</h2>
-          <label for="cycleFilter">Filtrar ciclo</label>
-          <select id="cycleFilter"></select>
+          <div class="filters-row">
+            <div class="search-box">
+              <span class="search-icon"></span>
+              <input
+                id="courseSearch"
+                type="text"
+                placeholder="Buscar curso o código..."
+                aria-label="Buscar curso"
+              />
+            </div>
+            <select id="cycleFilter">
+              <option value="Todos">Todos los ciclos</option>
+            </select>
+            <select id="typeFilter">
+              <option value="Todos">Tipo de curso</option>
+              <option value="Obligatorio">Obligatorio</option>
+              <option value="Electivo">Electivo</option>
+            </select>
+          </div>
         </div>
 
-        <div class="guide-box compact">
-          <strong>Flujo rapido para convalidar</strong>
-          <p>
-            1) Presiona <em>Detalles</em>. 2) Si corresponde, presiona <em>Agregar</em>. 3) Repite con todos los cursos que deseas solicitar.
-          </p>
+        <div class="policy-selector">
+          <span class="policy-label">Procedencia:</span>
+          <div class="policy-options">
+            <label class="radio-pill">
+              <input type="radio" name="originPolicy" value="institute" checked />
+              <span>Instituto (Máx 50 CR)</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="originPolicy" value="university" />
+              <span>Universidad (Ilimitado)</span>
+            </label>
+          </div>
         </div>
 
-        <div class="policy-box">
-          <strong>Opciones de política</strong>
-          <label class="inline-check" for="maxCreditsInstitute">
-            <input id="maxCreditsInstitute" type="checkbox" checked />
-            INSTITUTO
-          </label>
-          <label class="inline-check" for="unlimitedCreditsUniversity">
-            <input id="unlimitedCreditsUniversity" type="checkbox" />
-            UNIVERSIDAD
-          </label>
+        <div id="courseList" class="course-grid" aria-live="polite">
+          <!-- Las tarjetas se generarán dinámicamente -->
         </div>
-
-        <div class="search-row">
-          <input
-            id="courseSearch"
-            type="text"
-            placeholder="Buscar por código o asignatura..."
-            aria-label="Buscar curso"
-          />
-        </div>
-
-        <ul id="courseList" class="course-list" aria-live="polite"></ul>
-
       </section>
 
       <aside class="panel sidebar-panel" aria-labelledby="panel-lista">
-        <h2 id="panel-lista">Tu solicitud</h2>
-
-        <div id="selectedCourse" class="selected-course empty">
-          Selecciona un curso de la lista para ver su informacion principal.
+        <div class="sidebar-header">
+          <h2 id="panel-lista">Tu solicitud</h2>
         </div>
 
-        <div class="selection-box right">
-          <div class="selection-header">
-            <h3>Cursos que deseo convalidar</h3>
-            <button id="clearSelectedBtn" class="ghost-btn" type="button">Limpiar lista</button>
+        <div class="sidebar-content">
+          <button id="clearSelectedBtn" class="clear-btn" type="button">Limpiar Lista</button>
+          <div id="selectedCoursesList" class="selected-courses-list">
+            <div class="empty-state">
+              Selecciona un curso de la lista para ver su información principal.
+            </div>
           </div>
-          <p class="selection-help">Puedes agregar 2 o mas cursos con un clic.</p>
-          <div id="selectedCoursesList" class="selected-courses-list"></div>
+          <div id="progressStatsContainer"></div>
         </div>
 
-        <div class="progress-box">
-          <div class="progress-header">
-            <h3>Avance de convalidacion</h3>
-            <span id="progressPercent" class="progress-percent">0%</span>
-          </div>
-          <div class="progress-track" aria-hidden="true">
-            <div id="progressFill" class="progress-fill"></div>
-          </div>
-          <p id="progressText" class="progress-text">Aun no agregaste cursos para evaluar.</p>
-          <div id="resultBadge" class="result-badge hidden"></div>
+        <div class="sidebar-footer">
+          <button id="startRequestBtn" class="primary-btn full-width">
+            Iniciar Solicitud <span class="arrow">→</span>
+          </button>
+          <p class="footer-help">Podrás revisar los detalles antes de enviar.</p>
           <button id="printPdfBtn" class="print-btn" type="button">Imprimir / Guardar PDF</button>
+          <p class="sidebar-note">
+            Esta lista es referencial. La validación final está sujeta a evaluación de la universidad y escuela profesional.
+          </p>
         </div>
-
-        <p class="sidebar-note">
-          Esta lista es referencial. La validacion final esta sujeta a evaluacion de la universidad y escuela profesional.
-        </p>
       </aside>
     </main>
 
@@ -109,6 +117,14 @@
     </div>
 
     <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <div id="previewModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+      <div class="modal-content preview-modal-content">
+        <button id="closePreviewModal" class="modal-close" type="button" aria-label="Cerrar">×</button>
+        <h3 id="previewModalTitle">Previsualización de tu lista de convalidación</h3>
+        <div id="previewBody" class="preview-body"></div>
+      </div>
+    </div>
 
     <footer class="container footer-note">
       <p>

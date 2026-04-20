@@ -1,771 +1,771 @@
 {
-  "metadata": {
-    "carrera": "Ingeniería de Sistemas",
-    "version_plan": "Adecuación 2024-II",
-    "creditos_totales": 225
+ "metadata": {
+  "carrera": "Ingeniería de Sistemas",
+  "version_plan": "Adecuación 2024-II",
+  "creditos_totales": 225
+ },
+ "ciclos": [
+  {
+   "ciclo": "I",
+   "cursos": [
+    {
+     "codigo": "EG-181",
+     "nombre": "COMUNICACIÓN I",
+     "creditos": 4,
+     "ht": 3,
+     "hp": 2,
+     "th": 5,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito favorecer el desarrollo de las habilidades comunicativas de los estudiantes para que sean capaces de aplicar técnicas y herramientas de expresión oral y expresión escrita con coherencia, claridad y corrección. La comunicación. Funciones y niveles del lenguaje. Realidad lingüística en el Perú. La comunicación oral. Técnicas y estrategias de expresión oral en disertaciones breves y el discurso. Importancia del libro y la lectura en el proceso de aprendizaje. Redacción de textos sencillos, ensayos breves y documentos administrativos de uso común."
+    },
+    {
+     "codigo": "EG-182",
+     "nombre": "MATEMÁTICA BÁSICA",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de Matemática Básica, corresponde al área de estudios generales, es de carácter obligatorio, de naturaleza teórico-práctico y constituye un conjunto de conocimientos, habilidades y actitudes, con el propósito de fortalecer en los estudiantes el pensamiento lógico, crítico y analítico, logrando competencias y capacidades que lo habilitan en los saberes prerequisitos de asignaturas superiores y otras relacionadas a su especialidad, además, desarrollando los procesos de análisis, síntesis, abstracción y generalización, mediante la solución de ejercicios, el planteamiento y resolución de problemas del contexto real, con precisión, orden y autonomía. Comprende los siguientes componentes: Geometría Analítica, Matrices y Determinantes, Vectores en Rn."
+    },
+    {
+     "codigo": "EG-183",
+     "nombre": "ESTRATEGIAS PARA EL APRENDIZAJE AUTÓNOMO",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito despertar el interés del estudiante hacia formas de estudio activas y creadoras, para desarrollar una actitud coherente y de mayor autonomía en la adquisición y aplicación de nuevos conocimientos que le permitan al estudiante la adaptación exitosa a la vida académica universitaria y profesional. La Universidad: Orígenes, conceptualización y funciones. La Nueva Ley Universitaria. El conocimiento y la investigación científica. El estudio y la lectura. Estilos de aprendizaje, revisión y aplicación de las técnicas de estudio. Estilo editorial APA: Redacción, citas y referencias. Proceso para la elaboración de trabajos científicos y académicos: la monografía, informes de investigación y trabajos de investigación."
+    },
+    {
+     "codigo": "EG-184",
+     "nombre": "DESARROLLO PERSONAL Y LIDERAZGO",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórica; tiene como propósito desarrollar habilidades personales y sociales de los estudiantes, potenciando el avance de actitudes de comunicación asertiva, liderazgo y sana convivencia e inclusión con personas con discapacidad, favoreciendo su crecimiento personal y profesional. Comprende los siguientes tópicos: La inteligencia emocional, Inteligencia intrapersonal e Interpersonal, proyecto de vida, liderazgo, discapacidad, persona con discapacidad, tipos de discapacidad y derechos de la persona con discapacidad."
+    },
+    {
+     "codigo": "EG-185",
+     "nombre": "DESARROLLO DE COMPETENCIAS DIGITALES",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito extender el conocimiento de las tecnologías de la información, apreciando su trascendencia en la formación académica y en las posibilidades que le ofrece su constante innovación. Tecnologías de información innovadoras. Aplicaciones en línea: redes sociales, transacciones en línea. Hosting. Servicios de alojamiento de información. Herramientas de información en línea. Manejo de almacenamiento en la nube. Herramientas avanzadas de los navegadores. Trabajos colaborativos en línea. Opciones avanzadas de presentaciones. Ética informática."
+    },
+    {
+     "codigo": "INE-186",
+     "nombre": "MATEMÁTICA I",
+     "creditos": 5,
+     "ht": 4,
+     "hp": 2,
+     "th": 6,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de matemática I, corresponde al Área de estudios específicos de ingeniería, es de carácter obligatorio, de naturaleza teórico-práctico y constituye un conjunto de conocimientos, habilidades y actitudes, con el propósito de desarrollar en el estudiante competencias y capacidades que lo habilitan en los saberes prerequisitos de asignaturas superiores y otras relacionadas a su especialidad, desarrollando los procesos de análisis, síntesis, abstracción y generalización, mediante el planteamiento, análisis y resolución de ejercicios y problemas contextualizados a la ingeniería, interpretando los resultados, con precisión, orden y autonomía. Comprende los siguientes temas: Funciones de variable real, Límites, Derivadas y Diferenciales."
+    }
+   ]
   },
-  "ciclos": [
+  {
+   "ciclo": "II",
+   "cursos": [
     {
-      "ciclo": "I",
-      "cursos": [
-        {
-          "codigo": "EG-181",
-          "nombre": "COMUNICACIÓN I",
-          "creditos": 4,
-          "ht": 3,
-          "hp": 2,
-          "th": 5,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Comunicación escrita y oral académica: redacción de textos universitarios, exposiciones claras y uso básico de normas de citación."
-        },
-        {
-          "codigo": "EG-182",
-          "nombre": "MATEMÁTICA BÁSICA",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Fundamentos de álgebra, funciones y razonamiento lógico aplicados a problemas de ingeniería."
-        },
-        {
-          "codigo": "EG-183",
-          "nombre": "ESTRATEGIAS PARA EL APRENDIZAJE AUTÓNOMO",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Técnicas de estudio, gestión del tiempo y herramientas metacognitivas para el aprendizaje universitario independiente."
-        },
-        {
-          "codigo": "EG-184",
-          "nombre": "DESARROLLO PERSONAL Y LIDERAZGO",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Habilidades socioemocionales, trabajo en equipo y liderazgo aplicado al entorno profesional."
-        },
-        {
-          "codigo": "EG-185",
-          "nombre": "DESARROLLO DE COMPETENCIAS DIGITALES",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Herramientas digitales esenciales: ofimática avanzada, búsqueda académica, colaboración en la nube y seguridad digital básica."
-        },
-        {
-          "codigo": "INE-186",
-          "nombre": "MATEMÁTICA I",
-          "creditos": 5,
-          "ht": 4,
-          "hp": 2,
-          "th": 6,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Cálculo diferencial aplicado: límites, derivadas y optimización para modelamiento en ingeniería de sistemas."
-        }
-      ]
+     "codigo": "EG-281",
+     "nombre": "COMUNICACIÓN II",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "EG-181",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito utilizar el lenguaje como instrumento de comprensión y redacción de trabajos académicos siguiendo normas establecidas. El texto lingüístico: Estructura y redacción. El texto académico y su redacción. El párrafo: Características y clasificación del párrafo. El proceso de producción escrita: Planificación, textualización y producción. Elementos de cohesión en el texto. La cita textual. El léxico académico. El artículo académico: modalidades, estructura, elementos. El ensayo: características, clases y estructura. El proceso de redacción de un ensayo: planificación, composición y redacción, revisión. La redacción científica y las Normas APA."
     },
     {
-      "ciclo": "II",
-      "cursos": [
-        {
-          "codigo": "EG-281",
-          "nombre": "COMUNICACIÓN II",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "EG-181",
-          "que_aprenderas": "Comunicación académica avanzada: argumentación, debate estructurado y redacción de textos técnicos complejos."
-        },
-        {
-          "codigo": "EG-282",
-          "nombre": "TERRITORIO PERUANO, DEFENSA Y SEGURIDAD NACIONAL",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Geopolítica peruana, recursos estratégicos y políticas de defensa y seguridad nacional."
-        },
-        {
-          "codigo": "EG-283",
-          "nombre": "FILOSOFÍA",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Pensamiento crítico y ético mediante el estudio de corrientes filosóficas aplicadas a dilemas tecnológicos."
-        },
-        {
-          "codigo": "INE-284",
-          "nombre": "TÉCNICAS DE PROGRAMACIÓN",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Lógica algorítmica y programación estructurada: variables, estructuras de control, funciones y resolución de problemas con código."
-        },
-        {
-          "codigo": "INE-285",
-          "nombre": "FÍSICA I",
-          "creditos": 4,
-          "ht": 3,
-          "hp": 2,
-          "th": 5,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Mecánica clásica aplicada: cinemática, dinámica y modelamiento físico para ingeniería."
-        },
-        {
-          "codigo": "INE-286",
-          "nombre": "MATEMÁTICA II",
-          "creditos": 5,
-          "ht": 4,
-          "hp": 2,
-          "th": 6,
-          "prerrequisito": "INE-186",
-          "que_aprenderas": "Cálculo integral y series aplicadas: integración, modelado continuo y análisis de algoritmos."
-        }
-      ]
+     "codigo": "EG-282",
+     "nombre": "TERRITORIO PERUANO, DEFENSA Y SEGURIDAD NACIONAL",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórica; tiene como propósito que el estudiante adquiera conocimientos sobre la realidad socioeconómica y sociocultural de su comunidad, región y en el ámbito nacional. Concepto, origen, funciones, naturaleza y fines del estado. La nación y el estado peruano. La geografía del Perú: los pisos ecológicos. El Perú y su situación geopolítica en América Latina. Principios y valores de la persona humana, su dignidad, defensa, desarrollo y realización. El bien común, el bienestar general y el desarrollo nacional. La seguridad integral y la defensa nacional. Relación entre el pueblo, el territorio y el poder. Expresiones del poder nacional. La defensa nacional: Objetivos. Identidad nacional. Defensa interna y externa. Sistema de Defensa Nacional: ámbitos, fundamentos, niveles, funciones, estructura y planeamiento estratégico. Movilización nacional y defensa civil. Sistema de Defensa Civil. Características, fase e importancia de la movilización nacional."
     },
     {
-      "ciclo": "III",
-      "cursos": [
-        {
-          "codigo": "INE-381",
-          "nombre": "ECONOMÍA",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Fundamentos micro y macroeconómicos aplicados a la toma de decisiones en proyectos tecnológicos."
-        },
-        {
-          "codigo": "EG-382",
-          "nombre": "ÉTICA",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "EG-283",
-          "que_aprenderas": "Ética profesional aplicada a la tecnología: privacidad, responsabilidad y dilemas en ingeniería de sistemas."
-        },
-        {
-          "codigo": "INE-383",
-          "nombre": "ESTADÍSTICA Y PROBABILIDADES",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Métodos estadísticos y probabilísticos para análisis de datos en proyectos de TI."
-        },
-        {
-          "codigo": "SI-384",
-          "nombre": "ESTRUCTURA DE DATOS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "INE-284",
-          "que_aprenderas": "Diseño e implementación de estructuras eficientes: listas, pilas, colas, árboles y análisis de complejidad algorítmica."
-        },
-        {
-          "codigo": "SI-385",
-          "nombre": "SISTEMAS DE INFORMACIÓN",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Arquitectura y gestión de sistemas de información organizacionales: flujos de datos, procesos y gobernanza."
-        },
-        {
-          "codigo": "SI-386",
-          "nombre": "MATEMÁTICA DISCRETA",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "INE-286",
-          "que_aprenderas": "Fundamentos matemáticos para computación: lógica, conjuntos, grafos, relaciones y combinatoria aplicada."
-        }
-      ]
+     "codigo": "EG-283",
+     "nombre": "FILOSOFÍA",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito formar en los estudiantes espíritu de reflexión y crítica, interesándolos ante los diversos problemas del mundo, del hombre y de la vida que se han presentado al pensamiento humano, mediante el análisis de las posiciones y teorías de los filósofos a través del tiempo y la expresión de puntos de vista propios. Origen de la filosofía. Disciplinas filosóficas. Filosofía griega. Filósofos presocráticos. Sócrates, Platón, Aristóteles. La filosofía cristiana: La escolástica. El problema del conocimiento: el racionalismo, el empirismo, el criticismo. La filosofía política en la edad moderna. El problema histórico social. El problema de la ciencia. El problema del hombre y de la vida."
     },
     {
-      "ciclo": "IV",
-      "cursos": [
-        {
-          "codigo": "SI-481",
-          "nombre": "MODELAMIENTO DE PROCESOS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-385",
-          "que_aprenderas": "Especificación y optimización de procesos de negocio usando BPMN y herramientas de modelamiento estándar."
-        },
-        {
-          "codigo": "SI-482",
-          "nombre": "INGENIERÍA ECONÓMICA Y FINANCIERA",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "INE-381",
-          "que_aprenderas": "Evaluación financiera de proyectos TI: VAN, TIR, flujos de caja y análisis de inversión tecnológica."
-        },
-        {
-          "codigo": "SI-483",
-          "nombre": "INTERACCIÓN Y DISEÑO DE INTERFACES",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Diseño centrado en el usuario: wireframing, prototipado, usabilidad y principios UX/UI aplicados."
-        },
-        {
-          "codigo": "INE-484",
-          "nombre": "DISEÑO EN INGENIERÍA",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Metodologías de diseño técnico: bocetado, modelado 3D, selección de componentes y validación de prototipos."
-        },
-        {
-          "codigo": "SI-485",
-          "nombre": "SISTEMAS ELECTRÓNICOS DIGITALES",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-386",
-          "que_aprenderas": "Diseño de circuitos digitales: álgebra de Boole, compuertas lógicas, contadores y simulación de sistemas embebidos."
-        },
-        {
-          "codigo": "SI-486",
-          "nombre": "PROGRAMACIÓN I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-384",
-          "que_aprenderas": "Programación orientada a objetos: clases, herencia, polimorfismo, encapsulamiento y manejo de excepciones."
-        }
-      ]
+     "codigo": "INE-284",
+     "nombre": "TÉCNICAS DE PROGRAMACIÓN",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de Técnicas de Programación pertenece al área de estudios específicos, es de carácter obligatorio, de naturaleza teórico-práctico. Su propósito es contribuir a que el estudiante desarrolle soluciones básicas de problemas con capacidad de análisis utilizando la computadora, mediante el diseño de algoritmos, diagramas de flujo y código en un lenguaje de programación de alto nivel. El contenido de la asignatura es: 1. Fundamentos de programación, estructuras secuenciales y selectivas. 2. Estructuras de control repetitivas, funciones y vectores. 3. Arreglos, Registros y Ficheros."
     },
     {
-      "ciclo": "V",
-      "cursos": [
-        {
-          "codigo": "SI-581",
-          "nombre": "ARQUITECTURA DE COMPUTADORAS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-485",
-          "que_aprenderas": "Organización interna de sistemas computacionales: CPU, memoria, buses y análisis de rendimiento."
-        },
-        {
-          "codigo": "SI-582",
-          "nombre": "DISEÑO DE BASE DE DATOS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-481",
-          "que_aprenderas": "Modelado de bases de datos relacionales: modelo ER, normalización y SQL estructurado."
-        },
-        {
-          "codigo": "SI-583",
-          "nombre": "DISEÑO Y MODELAMIENTO VIRTUAL",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "INE-484",
-          "que_aprenderas": "Creación de modelos 3D y entornos virtuales aplicados a visualización técnica y simulación."
-        },
-        {
-          "codigo": "SI-584",
-          "nombre": "INGENIERÍA DE REQUERIMIENTOS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-481",
-          "que_aprenderas": "Elicitación, especificación y validación de requerimientos de software mediante estándares y casos reales."
-        },
-        {
-          "codigo": "SI-585",
-          "nombre": "INGENIERÍA DE SOFTWARE",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-483",
-          "que_aprenderas": "Ciclo de vida de desarrollo de software: metodologías ágiles, gestión de versiones y buenas prácticas de ingeniería."
-        },
-        {
-          "codigo": "SI-586",
-          "nombre": "PROGRAMACIÓN II",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-486",
-          "que_aprenderas": "Desarrollo de aplicaciones robustas: patrones de diseño, persistencia de datos y concurrencia."
-        }
-      ]
+     "codigo": "INE-285",
+     "nombre": "FÍSICA I",
+     "creditos": 4,
+     "ht": 3,
+     "hp": 2,
+     "th": 5,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de Física I, corresponde al área de estudios específicos de ingeniería, es una asignatura de carácter obligatorio, de naturaleza teórico-práctico; tiene el propósito de desarrollar en el estudiante competencias que lo habilitan abordar asignaturas posteriores relacionadas a su especialidad; con la finalidad que el estudiante utilice conocimientos de matemática, ciencias e ingeniería, para identificar, analizar, buscar información, relacionar y formular la solución de problemas de mecánica. Comprende los siguientes temas: Análisis dimensional, vectorial y cinemática. Leyes de Newton, trabajo y energía. Dinámica de un sistema de partículas y cuerpo rígido."
     },
     {
-      "ciclo": "VI",
-      "cursos": [
-        {
-          "codigo": "EG-681",
-          "nombre": "ECOLOGÍA Y DESARROLLO SOSTENIBLE",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Sostenibilidad aplicada a ingeniería: huella de carbono, economía circular y diseño de proyectos ecoeficientes."
-        },
-        {
-          "codigo": "SI-682",
-          "nombre": "SISTEMAS OPERATIVOS I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-581",
-          "que_aprenderas": "Administración de sistemas operativos: gestión de procesos, memoria virtual, sistemas de archivos y scripting."
-        },
-        {
-          "codigo": "SI-683",
-          "nombre": "BASE DE DATOS I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-582",
-          "que_aprenderas": "Implementación y administración avanzada de bases de datos relacionales: SQL, optimización, seguridad y backups."
-        },
-        {
-          "codigo": "SI-684",
-          "nombre": "INVESTIGACIÓN DE OPERACIONES",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-585",
-          "que_aprenderas": "Modelos de optimización matemática: programación lineal, transporte, colas y toma de decisiones cuantitativas."
-        },
-        {
-          "codigo": "SI-685",
-          "nombre": "DISEÑO Y ARQUITECTURA DE SOFTWARE",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-584",
-          "que_aprenderas": "Diseño de arquitecturas escalables: patrones MVC, microservicios, UML y atributos de calidad."
-        },
-        {
-          "codigo": "SI-686",
-          "nombre": "PROGRAMACIÓN III",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-586",
-          "que_aprenderas": "Desarrollo de sistemas distribuidos: APIs REST, autenticación, contenedores y despliegue en entornos cloud."
-        }
-      ]
-    },
-    {
-      "ciclo": "VII",
-      "cursos": [
-        {
-          "codigo": "EG-781",
-          "nombre": "PROBLEMAS Y DESAFIOS DEL PERÚ EN UN MUNDO GLOBAL",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Análisis de desafíos socioeconómicos y tecnológicos del Perú en contexto global y propuestas de innovación."
-        },
-        {
-          "codigo": "SI-782",
-          "nombre": "SISTEMAS OPERATIVOS II",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-682",
-          "que_aprenderas": "Virtualización, redes a nivel SO, seguridad avanzada y automatización de administración de sistemas."
-        },
-        {
-          "codigo": "SI-783",
-          "nombre": "BASE DE DATOS II",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-683",
-          "que_aprenderas": "Bases de datos NoSQL y distribuidas: MongoDB, replicación, sharding y técnicas de big data básico."
-        },
-        {
-          "codigo": "SI-784",
-          "nombre": "CALIDAD Y PRUEBAS DE SOFTWARE",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-686",
-          "que_aprenderas": "Diseño y automatización de pruebas de software: unitarias, integración, métricas de calidad y frameworks de testing."
-        },
-        {
-          "codigo": "SI-785",
-          "nombre": "GESTIÓN DE PROYECTOS DE TI",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-684",
-          "que_aprenderas": "Planificación y ejecución de proyectos TI: estándares PMI, metodologías ágiles, gestión de riesgos y herramientas profesionales."
-        },
-        {
-          "codigo": "SI-786",
-          "nombre": "PROGRAMACIÓN WEB I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-683",
-          "que_aprenderas": "Desarrollo web fullstack básico: frontend moderno, backend, integración con bases de datos y despliegue inicial."
-        }
-      ]
-    },
-    {
-      "ciclo": "VIII",
-      "cursos": [
-        {
-          "codigo": "SI-881",
-          "nombre": "INTELIGENCIA ARTIFICIAL",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-783",
-          "que_aprenderas": "Fundamentos de IA y aprendizaje automático: algoritmos de clasificación, regresión y ética en sistemas inteligentes."
-        },
-        {
-          "codigo": "SI-882",
-          "nombre": "REDES Y COMUNICACIÓN DE DATOS I",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-782",
-          "que_aprenderas": "Diseño y administración de redes: modelo OSI/TCP-IP, enrutamiento, subredes y análisis de tráfico."
-        },
-        {
-          "codigo": "SI-883",
-          "nombre": "SOLUCIONES MÓVILES I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-786",
-          "que_aprenderas": "Desarrollo de aplicaciones móviles nativas o híbridas: UI móvil, sensores, almacenamiento local y publicación."
-        },
-        {
-          "codigo": "SI-884",
-          "nombre": "ESTADÍSTICA INFERENCIAL Y ANÁLISIS DE DATOS",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-783",
-          "que_aprenderas": "Inferencia estadística aplicada: pruebas de hipótesis, regresión múltiple, visualización y dashboards interactivos."
-        },
-        {
-          "codigo": "SI-885",
-          "nombre": "INTELIGENCIA DE NEGOCIOS",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-783",
-          "que_aprenderas": "Soluciones BI para transformación de datos: ETL, modelado dimensional, dashboards y KPIs estratégicos."
-        },
-        {
-          "codigo": "SI-886",
-          "nombre": "PLANEAMIENTO ESTRATÉGICO DE TI",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-785",
-          "que_aprenderas": "Alineación estratégica de TI con el negocio: gobernanza, arquitectura empresarial y roadmap tecnológico."
-        }
-      ]
-    },
-    {
-      "ciclo": "IX",
-      "cursos": [
-        {
-          "codigo": "SI-981",
-          "nombre": "TALLER DE TESIS I",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "SI-884",
-          "que_aprenderas": "Formulación de investigación científica aplicada: problema, marco teórico, metodología y protocolo de tesis."
-        },
-        {
-          "codigo": "SI-982",
-          "nombre": "PROGRAMACIÓN WEB II",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-883",
-          "que_aprenderas": "Aplicaciones web avanzadas: arquitecturas SPA/PWA, autenticación, CI/CD y optimización de rendimiento."
-        },
-        {
-          "codigo": "SI-983",
-          "nombre": "CONSTRUCCIÓN DE SOFTWARE I",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-883",
-          "que_aprenderas": "Desarrollo profesional de software: clean code, testing avanzado, documentación automatizada y control de versiones."
-        },
-        {
-          "codigo": "SI-984",
-          "nombre": "REDES Y COMUNICACIÓN DE DATOS II",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-882",
-          "que_aprenderas": "Redes avanzadas y seguridad: VLANs, firewalls, VPNs, servicios de red y monitoreo profesional."
-        },
-        {
-          "codigo": "SI-985",
-          "nombre": "GESTIÓN DE LA CONFIGURACIÓN DE SOFTWARE",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-885",
-          "que_aprenderas": "Control de versiones y automatización: Git avanzado, gestión de releases, contenedores y pipelines de despliegue."
-        },
-        {
-          "codigo": "SI-986",
-          "nombre": "INGLÉS TÉCNICO",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "*Inglés Intermedio",
-          "que_aprenderas": "Comunicación técnica en inglés: lectura de documentación, redacción de manuales y presentaciones profesionales."
-        }
-      ]
-    },
-    {
-      "ciclo": "X",
-      "cursos": [
-        {
-          "codigo": "SI-082",
-          "nombre": "SEGURIDAD DE TECNOLOGÍA DE INFORMACIÓN",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-985",
-          "que_aprenderas": "Ciberseguridad aplicada: análisis de vulnerabilidades, criptografía, políticas de seguridad y respuesta a incidentes."
-        },
-        {
-          "codigo": "SI-083",
-          "nombre": "CONSTRUCCIÓN DE SOFTWARE II",
-          "creditos": 4,
-          "ht": 2,
-          "hp": 4,
-          "th": 6,
-          "prerrequisito": "SI-983",
-          "que_aprenderas": "Soluciones empresariales complejas: microservicios, mensajería asíncrona, integración cloud y observabilidad."
-        },
-        {
-          "codigo": "SI-084",
-          "nombre": "AUDITORÍA DE SISTEMAS",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-985",
-          "que_aprenderas": "Evaluación de controles y riesgos en TI: estándares COBIT/ITIL, muestreo, evidencia y informes de auditoría."
-        },
-        {
-          "codigo": "SI-085",
-          "nombre": "TALLER DE EMPRENDIMIENTO Y LIDERAZGO",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "Ninguno",
-          "que_aprenderas": "Modelos de negocio innovadores y liderazgo: Lean Canvas, validación de mercado, pitching y gestión de equipos."
-        },
-        {
-          "codigo": "SI-086",
-          "nombre": "GERENCIA DE TECNOLOGÍAS DE INFORMACIÓN",
-          "creditos": 3,
-          "ht": 2,
-          "hp": 2,
-          "th": 4,
-          "prerrequisito": "SI-983",
-          "que_aprenderas": "Gestión estratégica de áreas de TI: presupuestos, KPIs, outsourcing y transformación digital organizacional."
-        },
-        {
-          "codigo": "SI-080",
-          "nombre": "TALLER DE TESIS II / TRABAJO DE INVESTIGACIÓN",
-          "creditos": 3,
-          "ht": 3,
-          "hp": 0,
-          "th": 3,
-          "prerrequisito": "SI-981",
-          "que_aprenderas": "Ejecución y comunicación de investigación: análisis de resultados, redacción final y defensa académica de tesis."
-        }
-      ]
+     "codigo": "INE-286",
+     "nombre": "MATEMÁTICA II",
+     "creditos": 5,
+     "ht": 4,
+     "hp": 2,
+     "th": 6,
+     "prerrequisito": "INE-186",
+     "que_aprenderas": "La asignatura de Matemática II, corresponde al Área de estudios específicos, es de carácter obligatorio, de naturaleza teórico-práctico y constituye un conjunto de conocimientos, habilidades y actitudes, con el propósito de desarrollar en el estudiante competencias y capacidades que lo habilitan en los saberes prerequisitos de asignaturas superiores y otras relacionadas a su especialidad, desarrollando los procesos de análisis, síntesis, abstracción y generalización, mediante el planteamiento y resolución de ejercicios y problemas del contexto real, interpretando los resultados, con precisión, orden y autonomía. Comprende los siguientes temas: Integrales Indefinidas, Integrales Definidas y Aplicación de las Integrales."
     }
-  ],
-  "electivos": [
+   ]
+  },
+  {
+   "ciclo": "III",
+   "cursos": [
     {
-      "codigo": "SI-8810",
-      "nombre": "SISTEMAS DE RECURSOS EMPRESARIALES",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-685",
-      "que_aprenderas": "Configuración y administración de módulos ERP para integración de procesos financieros, logísticos y de RRHH."
+     "codigo": "INE-381",
+     "nombre": "ECONOMÍA",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de economía pertenece al área de estudios específicos, es de carácter obligatorio, de naturaleza teórico-práctico; Esta asignatura tiene como propósito de formar a los estudiantes para el análisis de los principios básicos de la teoría económica, así como el comportamiento de los agentes individuales de la economía: los consumidores, las empresas y los efectos que tienen sus decisiones en los mercados. Cumpliendo así con las competencias exigidas para el perfil de egreso del estudiante de ingeniería de la Universidad Privada de Tacna. La asignatura comprende los siguientes aspectos; conceptos básicos de la economía, teoría económica, el estudio de la oferta, el estudio de la demanda, el estudio del punto de equilibrio, la teoría de la producción, la teoría de los costos, la teoría de mercados, y estudio de la teoría de la macroeconomía."
     },
     {
-      "codigo": "SI-8811",
-      "nombre": "TÓPICOS DE BASE DE DATOS AVANZADOS I",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-783",
-      "que_aprenderas": "Tecnologías emergentes de datos: data lakes, procesamiento streaming, gobernanza y seguridad de información masiva."
+     "codigo": "EG-382",
+     "nombre": "ÉTICA",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "EG-283",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórica; tiene como propósito proporcionar a los estudiantes conocimientos acerca de los valores y favorecer la reflexión sobre los principios que guían la conducta humana, con el fin de orientarlos a asumir una actitud de valoración de la dignidad humana en su desenvolvimiento personal y social. La ética y la moral. Objeto de estudio de la ética. El acto y la persona moral. Estructura del acto moral. Conciencia, responsabilidad y libertad. Los valores éticos y las normas. La conciencia moral: de la heteronomía a la autonomía. La importancia de la ética. Dilemas morales. Teorías éticas: El utilitarismo, la ética de Kant, la ética crítica, ética postmoderna, la bioética, la ética ecológica. La ética en la investigación científica y la tecnología. Implicaciones éticas en el ejercicio profesional. Principios de la responsabilidad profesional. Los códigos deontológicos. Revisión del código deontológico de la profesión."
     },
     {
-      "codigo": "SI-887",
-      "nombre": "INTERNET DE LAS COSAS",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-782",
-      "que_aprenderas": "Soluciones IoT integradas: microcontroladores, protocolos MQTT/CoAP, dashboards de monitoreo y seguridad en dispositivos."
+     "codigo": "INE-383",
+     "nombre": "ESTADÍSTICA Y PROBABILIDADES",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de estadística y probabilidades pertenece al área de estudios específicos, es de carácter obligatorio, de naturaleza teórico-práctico. Tiene como propósito fortalecer en los estudiantes el pensamiento lógico, crítico y analítico, logrando competencias y capacidades que lo habilitan para el procesamiento y análisis de datos, haciendo uso de métodos y técnicas estadísticos para realizar el tratamiento de la información, elegir el modelo probabilístico que mejor se adapte a un caso real, permitiendo al estudiante la interpretación de los resultados, con precisión, orden y autonomía. Comprende los siguientes componentes: Estadística descriptiva, teoría de probabilidades, estadística inferencial."
     },
     {
-      "codigo": "SI-888",
-      "nombre": "DISEÑO Y CREACIÓN DE VIDEOJUEGOS",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-686",
-      "que_aprenderas": "Desarrollo de videojuegos: mecánicas, narrativa interactiva, programación en motores gráficos y optimización de rendimiento."
+     "codigo": "SI-384",
+     "nombre": "ESTRUCTURA DE DATOS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "INE-284",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de desarrollo de software, es de naturaleza teórico-práctica, de carácter obligatorio. El propósito de la asignatura es contribuir a la formación profesional en el desarrollo de la lógica y enfoque analítico en el alumno, que les permita luego desarrollar aplicaciones avanzadas de programación, así como proveer los conocimientos de programación que permita diseñar, implementar y comprobar el buen funcionamiento de algoritmos, empleando la herramienta PSeint y lenguaje C++. Se creará algoritmos y programas utilizando estructuras selectivas y repetitivas, arreglos unidimensionales y dimensionales, programas, funciones, paso de parámetro por valor y referencia, técnicas de búsqueda, ordenamiento, archivos, pilas, colas y estructuras dinámicas con listas, árboles y grafos. El contenido de la asignatura es: 1. Computación, algoritmos, metodología de la programación y arreglos 2. Programación modular con funciones y procedimientos, operaciones de búsqueda, ordenamiento de arreglos y archivos. 3. Pilas, colas, estructuras dinámicas con listas, árboles y grafos."
     },
     {
-      "codigo": "SI-889",
-      "nombre": "PATRONES DE SOFTWARE",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-685",
-      "que_aprenderas": "Aplicación de patrones de diseño y arquitectura para resolver problemas comunes de software de forma eficiente y mantenible."
+     "codigo": "SI-385",
+     "nombre": "SISTEMAS DE INFORMACIÓN",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de la asignatura es comprender los aspectos de la organización, áreas funcionales y la importancia del enfoque hacia el cliente. Infraestructura de tecnología de información, aspectos éticos y sociales de los sistemas de información. Aplicaciones de sistemas para la era digital y fundamentos de Inteligencia de negocios. El contenido de la asignatura es: 1. Estructura organizacional 2. Infraestructura de tecnología de información, aspectos éticos y sociales de los sistemas de información. 3. Fundamentos de Inteligencia de negocios."
     },
     {
-      "codigo": "SI-987",
-      "nombre": "CLOUD COMPUTING",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-783",
-      "que_aprenderas": "Diseño y administración en la nube: IaaS/PaaS/SaaS, infraestructura como código, serverless y gestión de costos cloud."
-    },
-    {
-      "codigo": "SI-988",
-      "nombre": "SOLUCIONES MÓVILES II",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-883",
-      "que_aprenderas": "Aplicaciones móviles avanzadas: integración de APIs externas, sincronización offline, notificaciones push y analytics."
-    },
-    {
-      "codigo": "SI-989",
-      "nombre": "MACHINE LEARNING",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-881",
-      "que_aprenderas": "Modelos de aprendizaje automático avanzados: feature engineering, validación cruzada, redes profundas y despliegue de modelos."
-    },
-    {
-      "codigo": "SI-087",
-      "nombre": "INFRAESTRUCTURA DE TI",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-984",
-      "que_aprenderas": "Infraestructura tecnológica enterprise: virtualización avanzada, alta disponibilidad, backup y planes de recuperación ante desastres."
-    },
-    {
-      "codigo": "SI-088",
-      "nombre": "MODELO DE NEGOCIOS DIGITALES",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-786",
-      "que_aprenderas": "Diseño de negocios digitales: Lean Canvas, métricas de crecimiento, monetización y validación de propuestas de valor tecnológico."
-    },
-    {
-      "codigo": "SI-089",
-      "nombre": "TÓPICOS DE BASE DE DATOS AVANZADOS II",
-      "creditos": 3,
-      "ht": 2,
-      "hp": 2,
-      "th": 4,
-      "prerrequisito": "SI-885",
-      "que_aprenderas": "Bases de datos especializadas: grafos, series temporales, búsqueda full-text y optimización avanzada para casos de uso específicos."
+     "codigo": "SI-386",
+     "nombre": "MATEMÁTICA DISCRETA",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "INE-286",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de estudios específicos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es proporcionar algunas bases matemáticas como base de la informática para desarrollar en el estudiante la capacidad de formalizar, de razonar rigurosamente al aplicar conceptos, teoremas, postulados y propiedades, con la finalidad de resolver problemas de su entorno real y de la sociedad aplicando temas de sistemas de numeración, conjuntos de datos, lógica matemática, álgebra booleana, análisis combinatorio, árboles binarios. El contenido de la asignatura es: 1. Sistemas Numéricos, Lógica Matemática y Binaria, Conjuntos. 2. Álgebra Booleana, Inducción Matemática, Números Complejos. 3. Análisis Combinatorio, Grafos y Árboles Binarios."
     }
-  ]
+   ]
+  },
+  {
+   "ciclo": "IV",
+   "cursos": [
+    {
+     "codigo": "SI-481",
+     "nombre": "MODELAMIENTO DE PROCESOS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-385",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Desarrollo de Software, es de naturaleza teórico-práctica, de carácter obligatorio, el propósito de esta asignatura es modelar procesos de negocios. El Contenido de la asignatura es: 1. Casos de Uso de Negocios con notación UML 2. Vista interna y externa de Casos de Uso de Negocios con notación UML. 3. Modelamiento y documentación de procesos de negocios con notación BPMN."
+    },
+    {
+     "codigo": "SI-482",
+     "nombre": "INGENIERÍA ECONÓMICA Y FINANCIERA",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "INE-381",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de estudios específicos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es proporcionar al estudiante los conocimientos y habilidades necesarias para realizar el Análisis de sensibilidad del proyecto, el planteamiento de alternativas de inversión y la selección de la alternativa que optimice los recursos financieros de cualquier organización a través de la presentación de conceptos y la formulación de procedimientos y modelos de matemática financiera, herramientas de Ingeniería Económica para lograr la evaluación de factibilidad del proyecto. El contenido de la asignatura es: 1. Fundamentos de Ingeniería Económica. 2. Criterios de Evaluación de Proyectos. 3. Factibilidad de un proyecto de TI."
+    },
+    {
+     "codigo": "SI-483",
+     "nombre": "INTERACCIÓN Y DISEÑO DE INTERFACES",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es dar a conocer la importancia del diseño de la interacción entre la persona y el computador, identificar diferentes paradigmas de interacción humano-computador y aplicar técnicas de diseño y evaluación de interfaces de usuario. El contenido de la asignatura es: 1. Aspectos básicos de IHC. 2. Diseño de prototipos de interfaces web. 3. Diseño de prototipos de interfaces móviles."
+    },
+    {
+     "codigo": "INE-484",
+     "nombre": "DISEÑO EN INGENIERÍA",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "La asignatura de Diseño en Ingeniería, corresponde al área de estudios específicos, es de carácter obligatorio, de naturaleza teórico-práctica. El propósito de esta asignatura es estudiar temas relativos a la Ingeniería utilizando la teoría de proyecciones ortogonales y axonométricas para la representación gráfica de sólidos o piezas de ingeniería, aplicando técnicas del dibujo manual y del software gráfico especializado. Comprende los siguientes componentes temáticos: Fundamentos básicos de la representación gráfica y formas geométricas básicas, proyecciones ortogonales, relaciones entre objetos geométricos y visibilidad, diseño del producto."
+    },
+    {
+     "codigo": "SI-485",
+     "nombre": "SISTEMAS ELECTRÓNICOS DIGITALES",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-386",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es realizar un análisis y estudio de los circuitos eléctricos y electrónicos tanto como el análisis de los semiconductores, diodos y transistores. El contenido de la asignatura es: 1. Electrodinámica. 2. Los semiconductores. 3. Circuitos Digitales."
+    },
+    {
+     "codigo": "SI-486",
+     "nombre": "PROGRAMACIÓN I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-384",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es proporcionar conceptos fundamentales de programación para el planteamiento de soluciones a diversos problemas de alguna situación real empleando la lógica de programación en el desarrollo de programas, utilizando técnicas de programación para optimizar recursos y herramientas de un lenguaje de programación. El contenido de la asignatura es: 1. Fundamentos de programación utilizando Python. 2. Funciones, Matrices y fundamentos de programación orientada a objetos 3. Ficheros e Interfaz gráfica."
+    }
+   ]
+  },
+  {
+   "ciclo": "V",
+   "cursos": [
+    {
+     "codigo": "SI-581",
+     "nombre": "ARQUITECTURA DE COMPUTADORAS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-485",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es el estudio del computador, tanto en organización como en diseño, que viene a ser el elemento fundamental de todo proceso automatizado y de las redes de comunicación y datos. El contenido de la asignatura es: 1. Estructura Básica de un computador. 2. Funcionamiento del computador 3. Módulos de Entrada y Salida."
+    },
+    {
+     "codigo": "SI-582",
+     "nombre": "DISEÑO DE BASE DE DATOS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-481",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Base de Datos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es llegar a construir modelos de datos (diseño conceptual, lógico), basado en los requerimientos de información de una organización, empleando metodologías orientadas hacia el análisis de datos con el modelamiento relacional y no relacional. El contenido de la asignatura es: 1. Diseño de Base de datos 2. Herramientas de diseño y normalización de base de datos. 3. Lenguaje SQL."
+    },
+    {
+     "codigo": "SI-583",
+     "nombre": "DISEÑO Y MODELAMIENTO VIRTUAL",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "INE-484",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es conocer el diseño vectorial para el modelamiento de entornos virtuales, aplicando software especializado para la implementación y características técnicas del proyecto. El contenido de la asignatura es: 1. Diseño y modelo de estructuras en 2D y 3D. 2. Modelamiento de planos en 3D. 3. Diseño y modelamiento de recorridos virtuales."
+    },
+    {
+     "codigo": "SI-584",
+     "nombre": "INGENIERÍA DE REQUERIMIENTOS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-481",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Desarrollo de Software, es de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es describir y aplicar en un proyecto de software real los diferentes tipos de requerimientos, las técnicas o métodos para la obtención, validación, administración y el modelado de los requerimientos. El Contenido de la asignatura es: 1. Dominio del problema a modelar, requerimientos funcionales y requerimientos no funcionales 2. Modelamiento de Casos de Uso. 3. Metodología SCRUM."
+    },
+    {
+     "codigo": "SI-585",
+     "nombre": "INGENIERÍA DE SOFTWARE",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-483",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es permitir al estudiante conocer los fundamentos de la disciplina de ingeniería de software e innovaciones en tecnología. El contenido de la asignatura es: 1. Fundamentos de Ingeniería de software, 2. Metodologías y procesos para el desarrollo de software, 3. Arquitectura, calidad y pruebas de software."
+    },
+    {
+     "codigo": "SI-586",
+     "nombre": "PROGRAMACIÓN II",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-486",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es proporcionar los conceptos fundamentales de programación orientada a objetos que el estudiante podrá aplicar en el planteamiento de soluciones a los diversos problemas existentes en una determinada situación real, a través del desarrollo de programas usando técnicas de programación orientada a objetos optimizando recursos y utilizando herramientas del IDE de Visual Studio y el lenguaje de programación C#. El contenido de la asignatura es: 1. Fundamentos del lenguaje de programación C# y programación orientada a objetos. 2. Estructura de datos y LINQ. 3. Diseño e implementación de solución con Base de Datos."
+    }
+   ]
+  },
+  {
+   "ciclo": "VI",
+   "cursos": [
+    {
+     "codigo": "EG-681",
+     "nombre": "ECOLOGÍA Y DESARROLLO SOSTENIBLE",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito lograr que el estudiante adquiera conciencia acerca de la ecología, su relevancia en la sostenibilidad ambiental, y el desarrollo económico y social, valore los recursos naturales y los diversos ecosistemas, percatándose de la problemática ambiental, sus causas, consecuencias y las repercusiones en el desarrollo integral de la sociedad, para tomar decisiones al respecto. La ecología. Principios y conceptos de la ecología. Leyes, importancia. Ecosistemas: definición estructura y tipos. Factores ambientales, características y clasificación. El ciclo del agua. El crecimiento demográfico causas y consecuencias. Problemas ambientales: el cambio climático, causas y efectos en el ecosistema. Contaminación del suelo, aire y agua. Ecorregiones del Perú. Problemas ambientales en las ecorregiones. Desarrollo sostenible. Campos de aplicación: agricultura, actividades productivas, transporte. Legislación ambiental en el Perú. Áreas naturales protegidas en el Perú. Nuevos enfoques y perspectivas para el desarrollo sostenible. La ONU y el desarrollo sostenible. Responsabilidad Social Universitaria y los ODS."
+    },
+    {
+     "codigo": "SI-682",
+     "nombre": "SISTEMAS OPERATIVOS I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-581",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es describir e implementar, configurar y gestionar roles y características de Sistema Operativo Servidor propietario utilizando software y herramientas de entorno empresarial. El contenido de la asignatura es: 1. Sistema Operativo, 2. Administración de Servicios básicos, 3. Administración de Servicios Avanzados."
+    },
+    {
+     "codigo": "SI-683",
+     "nombre": "BASE DE DATOS I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-582",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Base de Datos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es aplicar la gestión de los datos y realizar prácticas en gestión y optimización de bases de datos relacionales. El contenido de la asignatura es: 1. Gestión de los datos, 2. Administración del Sistema de Gestión de Base de datos, 3. Optimización de la base de datos."
+    },
+    {
+     "codigo": "SI-684",
+     "nombre": "INVESTIGACIÓN DE OPERACIONES",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-585",
+     "que_aprenderas": "Esta asignatura pertenece al área de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es brindar conocimientos para representar una realidad mediante modelos matemáticos, aplicando las diferentes fases: Definición del problema, construcción de un modelo matemático, solución del modelo, validación del modelo e interpretación del resultado con la finalidad de optimizar recursos para la empresa maximizando la utilidad o minimizando los costos. La asignatura pretende desarrollar la capacidad de interpretar resultados obtenidos a través del análisis de sensibilidad. Se revisan otros modelos como el de transporte incluido el método de Vogel, Técnicas para identificar la ruta crítica a través de PERT y CPM, manejo de costos y recursos para una gestión eficaz de proyectos. El contenido de la asignatura es: 1. Programación Lineal 2. Modelos de transporte y asignación, método y herramientas para determinar la solución factible. 3. Técnicas PERT, CPM, manejo de costos y recursos para una gestión eficaz de proyectos."
+    },
+    {
+     "codigo": "SI-685",
+     "nombre": "DISEÑO Y ARQUITECTURA DE SOFTWARE",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-584",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es aprender a diseñar sistemas que se desempeñen correctamente en el mundo real y que además puedan ser implementados por un equipo de desarrollo de software. El contenido de la asignatura es: 1. El contexto del negocio y el diseño del software. 2. Patrones de Arquitectura de Software, 3. Arquitectura de Software en el ambiente de negocios."
+    },
+    {
+     "codigo": "SI-686",
+     "nombre": "PROGRAMACIÓN III",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-586",
+     "que_aprenderas": "Esta asignatura pertenece al área Curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es aplicar los fundamentos de programación utilizando un lenguaje de programación de alto nivel para la solución de problemas. El contenido de la asignatura es: 1. Fundamentos de programación orientado a objetos, HTML y Java Script. 2. Aplicación web con framework 3. Implementación de Aplicación multiplataforma."
+    }
+   ]
+  },
+  {
+   "ciclo": "VII",
+   "cursos": [
+    {
+     "codigo": "EG-781",
+     "nombre": "PROBLEMAS Y DESAFIOS DEL PERÚ EN UN MUNDO GLOBAL",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al Área de Estudios Generales, es de carácter obligatorio, de naturaleza teórico-práctica; tiene como propósito que el estudiante obtenga una visión integral de la situación del Perú en el contexto del fenómeno de la globalización mundial para situarlo en el presente y en el futuro cambiante del país. La globalización: concepto, etapas, aspectos. Argumentos a favor y argumentos en contra de la globalización. Desafíos del proceso a las sociedades a nivel mundial. Perspectivas de la globalización en la actualidad. Problemática del Perú: Desigualdad y carencia en los aspectos económico, social, civil, cultural, político; debilitamiento del estado, discriminación, crecimiento de la corrupción, carencias educativas. Alternativas del Perú ante los retos de la globalización. Estructura y forma del aparato estatal: Trabajo conjunto de estado y sociedad. Descentralización. Atención a la agenda externa e interna. Tratados de libre comercio, acuerdos comerciales."
+    },
+    {
+     "codigo": "SI-782",
+     "nombre": "SISTEMAS OPERATIVOS II",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-682",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es describir e implementar, configurar y gestionar servicios de Sistemas Operativos de Servidor GNU/Linux utilizando software y herramientas de entorno empresarial. El contenido de la asignatura es: 1. Gestión del sistema operativo Linux con comandos, 2. Entorno de red y configuración de servidores, 3. Configuración de servicios web, base de datos, Correo y proxy."
+    },
+    {
+     "codigo": "SI-783",
+     "nombre": "BASE DE DATOS II",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-683",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de base de datos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es desarrollar en el estudiante las habilidades y destrezas para la construcción de soluciones de base de datos en escenarios modernos utilizando diversos conceptos y técnicas de estructuras de datos, constituyendo una perspectiva amplia sobre base de datos y sistemas de información. El contenido de la asignatura es: 1. Arquitectura y gestión de bases de datos relacionales. 2. Arquitectura y gestión de bases de datos no relacionales. 3. Aspectos Avanzados de Acceso a Datos."
+    },
+    {
+     "codigo": "SI-784",
+     "nombre": "CALIDAD Y PRUEBAS DE SOFTWARE",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-686",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Desarrollo de Software, es de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es preparar al estudiante en elaborar un plan de pruebas y determinar las estrategias de pruebas necesarias a través de las técnicas y/o herramientas para el aseguramiento de la calidad en un proyecto de software. El contenido de la asignatura es: 1. Aseguramiento de calidad del software y técnicas estáticas de pruebas de software, 2. Técnicas dinámicas de pruebas de software, 3. Gestión de pruebas de software."
+    },
+    {
+     "codigo": "SI-785",
+     "nombre": "GESTIÓN DE PROYECTOS DE TI",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-684",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es que el estudiante conozca y aplique conceptos de Gestión de proyectos, elabore documentos de gestión de proyectos, utiliza metodologías, estándares, métricas y guías de mejores prácticas para dirigir un proyecto de TI. El contenido de la asignatura es: 1. Fundamentos de dirección de proyectos, 2. Gestión de la Integración del Proyecto y 3. Gestión del tiempo, costos, calidad y otros aspectos de la dirección de proyectos."
+    },
+    {
+     "codigo": "SI-786",
+     "nombre": "PROGRAMACIÓN WEB I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-683",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es capacitar al estudiante en el diseño y desarrollo de aplicaciones Web, usando tecnologías estándares como un lenguaje de marcas, un lenguaje de presentación, un lenguaje de lado del cliente, un lenguaje de servidor y un servidor de base de datos. Al finalizar el curso, el estudiante estará capacitado en el desarrollo de aplicaciones web con acceso a base de datos y capacidad para el comercio electrónico. El contenido de la asignatura es: 1. Fundamentos del Desarrollo Web, 2. Desarrollo Web con Base de Datos, 3. Extracción de Información y seguridad en el Desarrollo Web."
+    }
+   ]
+  },
+  {
+   "ciclo": "VIII",
+   "cursos": [
+    {
+     "codigo": "SI-881",
+     "nombre": "INTELIGENCIA ARTIFICIAL",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-783",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es que el estudiante sea capaz de identificar, reconocer, comprender y aplicar soluciones computacionales inteligentes a problemas complejos basadas en el procesamiento simbólico del conocimiento para aproximar y replicar procesos como la percepción, raciocinio, aprendizaje, evolución y adaptación con el fin de formular aplicaciones inteligentes como la toma de decisiones, optimización, reconocimiento de patrones y aprendizaje, entre otros. El contenido de la asignatura es: 1. Fundamentos de Inteligencia Artificial, 2. Sistemas Inteligentes y Cognitivos, 3. Procesamiento de Lenguaje Natural."
+    },
+    {
+     "codigo": "SI-882",
+     "nombre": "REDES Y COMUNICACIÓN DE DATOS I",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-782",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es realizar un análisis y estudio de las tecnologías, dispositivos y herramientas, requeridos para lograr una efectiva comunicación de datos en redes de cobertura local, permitiendo al estudiante tener un conocimiento de los sistemas de comunicación, los estándares y modelos de interconexión. Para ello, se estudiará los fundamentos de la comunicación electrónica, la evolución de las arquitecturas y modelos de comunicación tomando como base la propuesta por DoD (TCPIP), ISO (OSI). El contenido de la asignatura es: 1. Fundamentos de Comunicación Electrónica. 2. Interconexión de Sistemas Abiertos - Modelos OSI. 3. Introducción a las redes de Datos."
+    },
+    {
+     "codigo": "SI-883",
+     "nombre": "SOLUCIONES MÓVILES I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-786",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es hacer que el estudiante pueda construir las soluciones a los problemas cotidianos o de corte empresarial orientando estos planteamientos al uso de tecnología móvil, haciendo uso de herramientas y técnicas de programación dirigidas a la tecnología con mayor presencia de mercado. El contenido de la asignatura es: 1. Componentes básicos y experiencia de usuario. 2. Segundo plano y técnicas de serialización. 3. Servicios complementarios."
+    },
+    {
+     "codigo": "SI-884",
+     "nombre": "ESTADÍSTICA INFERENCIAL Y ANÁLISIS DE DATOS",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-783",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Estudios Específicos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es que el estudiante aplique técnicas de muestreo y métodos de inferencia estadística aplicables al campo de la investigación y análisis de datos en estimaciones poblacionales a partir de una muestra significativa, por ello, se desarrollan los principios básicos de la teoría del muestreo y estadística inferencial que servirán para la mejor comprensión de los métodos de estimación intervalica, pruebas de hipótesis modelos probabilísticos, pruebas de bondad de ajuste, regresión lineal y correlación. El contenido de la asignatura es: 1. Introducción a la estadística inferencial, muestreo y prueba de hipótesis paramétricas. 2. Prueba de hipótesis no paramétricas. 3. Análisis predictivo bajo el modelado de minería de datos."
+    },
+    {
+     "codigo": "SI-885",
+     "nombre": "INTELIGENCIA DE NEGOCIOS",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-783",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Base de Datos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es orientar a que el estudiante identifique, reconozca, comprenda y aplique los conceptos de una solución de Inteligencia de Negocios alineada al proceso de toma de decisiones de una empresa u organización, integrando los conceptos y procesos clave del negocio con herramientas permitan identificar los insights dentro de cada uno de estos. El contenido de la asignatura es: 1. Inteligencia de negocios y sistemas para la toma de decisiones. 2. Construcción de almacenes de datos. 3. Explotación y minería de datos."
+    },
+    {
+     "codigo": "SI-886",
+     "nombre": "PLANEAMIENTO ESTRATÉGICO DE TI",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-785",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es desarrollar habilidades de gestión y aplicación de principios administrativos que orienten la elaboración del plan estratégico de TI, considerando el comportamiento ético. El contenido de la asignatura es: 1. Fundamentos de planeamiento estratégico. 2. Plan de gobierno digital, su enfoque estratégico, objetivos, proyectos, riesgos y supervisión 3. Plan Estratégico de TI."
+    }
+   ]
+  },
+  {
+   "ciclo": "IX",
+   "cursos": [
+    {
+     "codigo": "SI-981",
+     "nombre": "TALLER DE TESIS I",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "SI-884",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórica, de carácter obligatorio. El propósito de la asignatura es que el estudiante tome conciencia de la problemática de la realidad nacional, regional y local en función de las líneas de investigación de la universidad, de la facultad y la carrera. Facilita al estudiante la elaboración del trabajo académico o proyecto de investigación con fines de obtención de grado académico y/o titulación. Comprende la revisión y aplicación de la metodología de investigación de acuerdo con su especialidad. El producto final del curso es la elaboración del plan del trabajo de investigación según las modalidades que establezca la carrera. El contenido de la asignatura es: 1. Introducción a la metodología de investigación. 2. Metodología de la Investigación. 3. El proyecto de Investigación."
+    },
+    {
+     "codigo": "SI-982",
+     "nombre": "PROGRAMACIÓN WEB II",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-883",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es el desarrollo de un proyecto de software utilizando herramientas y técnicas de programación web. El contenido de la asignatura es: 1. ASP.NET y ASP.NET MVC 2. ASP.NET MVC, LINQ y Base de Datos 3. Web Services y Web API."
+    },
+    {
+     "codigo": "SI-983",
+     "nombre": "CONSTRUCCIÓN DE SOFTWARE I",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-883",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es elaborar un proyecto de software, realizando un análisis de negocio para diseñar y/o validar una arquitectura de software que cuente con todas las características de calidad de software, permitiendo para esto el uso de diversas metodologías, herramientas, plataformas y técnicas de programación. El contenido de la asignatura es: 1. Principios del Desarrollo de Software. 2. Fases para el desarrollo del Proyecto de Software. 3. Construcción de Software."
+    },
+    {
+     "codigo": "SI-984",
+     "nombre": "REDES Y COMUNICACIÓN DE DATOS II",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-882",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es el estudio los protocolos de comunicaciones de las capas del modelo OSI. Los estudiantes aprenden sobre el modelo de diseño de red jerárquico y el método de selección de dispositivos para cada capa. El curso explica cómo implementar LAN virtuales o VLANs en una red convergente. Se analizan las tecnologías WAN y los servicios de red que se requieren para aplicaciones convergentes en redes empresariales. El contenido de la asignatura es: 1. Redes de área local (LAN). 2. Redes de área extendida (WAN). 3. Seguridad en redes empresariales."
+    },
+    {
+     "codigo": "SI-985",
+     "nombre": "GESTIÓN DE LA CONFIGURACIÓN DE SOFTWARE",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-885",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es consolidar el conocimiento del estudiante sobre la gestión de la configuración y cambios en todas las fases de un proyecto de desarrollo de software. El contenido de la asignatura es: 1. Gestión de la Configuración de Software, 2. Plan de Gestión de la configuración de Software. 3. Plan de Gestión del Cambios."
+    },
+    {
+     "codigo": "SI-986",
+     "nombre": "INGLÉS TÉCNICO",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "*Inglés Intermedio",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Estudios Específicos, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de la asignatura es contribuir a que el estudiante adquiera y demuestre su competencia comunicativa en situaciones profesionales cotidianas a través del idioma inglés. El curso está orientado a desarrollar su expresión oral y escrita, así como también su comprensión lectora, lo fundamental de la asignatura es lograr que el alumno se familiarice con la terminología técnica de su Carrera, así como desarrollar su capacidad de comprensión y traducción de textos simples y manuales en inglés, reconociendo principalmente el vocabulario técnico de la carrera profesional de Ingeniería de sistemas. El contenido de la asignatura es: 1. Computers today, 2. Output/ Input devices, 3. Programming language."
+    }
+   ]
+  },
+  {
+   "ciclo": "X",
+   "cursos": [
+    {
+     "codigo": "SI-082",
+     "nombre": "SEGURIDAD DE TECNOLOGÍA DE INFORMACIÓN",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-985",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de Tecnologías de la Información, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es describir y aplicar los conocimientos sobre seguridad informática, analizando problemas reales de las organizaciones, proponiendo mejoras eficientes y eficaces. Para tales fines se emplea el ISO/IEC 27001, ISO/IEC 27005, ISO/IEC TR 18044, ISO/IEC 27032 e ISO 22301. El contenido de la asignatura es: 1. Fundamentos de Seguridad Informática, Infraestructura de TI, 2. Estándares y buenas prácticas en Seguridad Informática, 3. Seguridad Informática Organizacional."
+    },
+    {
+     "codigo": "SI-083",
+     "nombre": "CONSTRUCCIÓN DE SOFTWARE II",
+     "creditos": 4,
+     "ht": 2,
+     "hp": 4,
+     "th": 6,
+     "prerrequisito": "SI-983",
+     "que_aprenderas": "Esta asignatura pertenece al Área Curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es preparar al estudiante en la capacidad de aplicar técnicas, métodos y herramientas para la construcción eficiente de software orientado al cumplimiento de los requerimientos y arquitectura definida. El contenido de la asignatura es: 1. Construcción del Software, 2. Aseguramiento de la Calidad del Software, 3. Entrega y Mantenimiento del Software."
+    },
+    {
+     "codigo": "SI-084",
+     "nombre": "AUDITORÍA DE SISTEMAS",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-985",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es incrementar la capacidad de análisis y de pensamiento crítico acerca de las normas auditables de la Tecnología de Información, el control interno, componentes de control, administración de riesgos en TI, estándares de auditoria de TI ISO/NTP 27001, buenas prácticas de auditoria (ISACA, COBIT). El Contenido de la asignatura es: 1. Seguridad de la Información en Auditoria de Sistemas 2. Diagnóstico, evaluación y metodología de auditoria de sistemas 3. Tipos de auditoria de Sistemas - Informe final."
+    },
+    {
+     "codigo": "SI-085",
+     "nombre": "TALLER DE EMPRENDIMIENTO Y LIDERAZGO",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "Ninguno",
+     "que_aprenderas": "Esta asignatura pertenece al área curricular de Infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es que el estudiante adquiera los conocimientos para desarrollar su liderazgo y espíritu emprendedor, mediante el planeamiento, organización y realización de actividades innovadoras y creativas, que le permitan valorar la importancia del liderazgo y emprendimiento en las actividades diarias y en las organizaciones, desarrollando las habilidades blandas como futuro profesional. El contenido de la asignatura es: 1. Liderazgo y hábitos de líder. 2. Creatividad y trabajo en equipo. 3. Emprendimiento."
+    },
+    {
+     "codigo": "SI-086",
+     "nombre": "GERENCIA DE TECNOLOGÍAS DE INFORMACIÓN",
+     "creditos": 3,
+     "ht": 2,
+     "hp": 2,
+     "th": 4,
+     "prerrequisito": "SI-983",
+     "que_aprenderas": "Esta asignatura pertenece al Área curricular de Infraestructura de TI, de naturaleza teórica, de carácter obligatorio. El propósito de esta asignatura es dar a conocer herramientas de mejoras de procesos y de gestión, fomentando una cultura productiva y eficiente que reduzca los riesgos en el desarrollo de Software, productos y servicios, además de que permitan enlazar estrategias y objetivos clave con desempeño y resultados. El contenido de la asignatura es: 1. Enfoque Estratégico de los Sistemas y Tecnología de la Información, 2. Herramientas de Mejora de Proceso y Gestión y 3. Gestión Funcional de Sistemas de Información."
+    },
+    {
+     "codigo": "SI-080",
+     "nombre": "TALLER DE TESIS II / TRABAJO DE INVESTIGACIÓN",
+     "creditos": 3,
+     "ht": 3,
+     "hp": 0,
+     "th": 3,
+     "prerrequisito": "SI-981",
+     "que_aprenderas": "Es una asignatura que pertenece al área de desarrollo de software, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de esta asignatura es realizar la ejecución del proyecto de tesis conforme a la naturaleza de la carrera, enmarcadas en las líneas matrices de investigación de la Universidad y las líneas de investigación de la Facultad y Escuela Profesional de la Faculta de Ingeniería. El producto final del curso es la ejecución del trabajo de investigación en distintos niveles según la naturaleza de la carrera. El contenido de la asignatura es: 1. Conceptos de Proyecto de Tesis y Fundamentos de investigación científica aplicado a la ingeniería. 2. Fase del Proyecto de Tesis. 3. Fase de Elaboración del borrador de Tesis y sustentación."
+    }
+   ]
+  }
+ ],
+ "electivos": [
+  {
+   "codigo": "SI-8810",
+   "nombre": "SISTEMAS DE RECURSOS EMPRESARIALES",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-685",
+   "que_aprenderas": "Configuración y administración de módulos ERP para integración de procesos financieros, logísticos y de RRHH."
+  },
+  {
+   "codigo": "SI-8811",
+   "nombre": "TÓPICOS DE BASE DE DATOS AVANZADOS I",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-783",
+   "que_aprenderas": "Tecnologías emergentes de datos: data lakes, procesamiento streaming, gobernanza y seguridad de información masiva."
+  },
+  {
+   "codigo": "SI-887",
+   "nombre": "INTERNET DE LAS COSAS",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-782",
+   "que_aprenderas": "Soluciones IoT integradas: microcontroladores, protocolos MQTT/CoAP, dashboards de monitoreo y seguridad en dispositivos."
+  },
+  {
+   "codigo": "SI-888",
+   "nombre": "DISEÑO Y CREACIÓN DE VIDEOJUEGOS",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-686",
+   "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter electivo. El propósito de esta asignatura es que el estudiante adquiera, las habilidades y destrezas para diseñar y desarrollar videojuegos. Mediante la planificación, diseño e implementación utilizando metodologías y herramientas modernas. El contenido de la asignatura es: 1. Introducción a Videojuegos, 2. Diseño de Videojuegos, 3. Desarrollo Videojuegos."
+  },
+  {
+   "codigo": "SI-889",
+   "nombre": "PATRONES DE SOFTWARE",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-685",
+   "que_aprenderas": "Esta asignatura pertenece al Área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter electivo. El propósito de la asignatura es que el estudiante comprenda y aplique el ecosistema de patrones de diseño de software utilizando herramientas y estándares. El contenido de la asignatura es: 1. Fundamentos de Patrones de Diseño, 2. Patrones de diseño de software creacionales, estructurales y de comportamiento, 3. Implementación de patrones de diseño."
+  },
+  {
+   "codigo": "SI-987",
+   "nombre": "CLOUD COMPUTING",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-783",
+   "que_aprenderas": "Diseño y administración en la nube: IaaS/PaaS/SaaS, infraestructura como código, serverless y gestión de costos cloud."
+  },
+  {
+   "codigo": "SI-988",
+   "nombre": "SOLUCIONES MÓVILES II",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-883",
+   "que_aprenderas": "Esta asignatura pertenece al área curricular de Desarrollo de Software, de naturaleza teórico-práctica, de carácter electivo. El propósito de la asignatura es hacer que el estudiante pueda construir soluciones móviles, haciendo uso de herramientas y técnicas de programación dirigidas a la tecnología con mayor presencia de mercado. El contenido de la asignatura es: 1. Consumo de servicios Web SOAP y REST, 2. Geo localización, seguridad y permisos, 3. Programación de móviles multiplataforma."
+  },
+  {
+   "codigo": "SI-989",
+   "nombre": "MACHINE LEARNING",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-881",
+   "que_aprenderas": "Esta asignatura pertenece al Área curricular de Base de Datos, de naturaleza teórico-práctica, de carácter electivo. El propósito de esta asignatura es orientar a que el estudiante identifique, reconozca, comprenda y aplique soluciones computacionales inteligentes a problemas complejos basadas en el entrenamiento y aprendizaje de máquinas para obtener mejores resultados sin utilizar explícitamente programación. El contenido de la asignatura es: 1. Fundamentos de ML y Aprendizaje No supervisado. 2. Aprendizaje Supervisado. 3. Aprendizaje por Refuerzo y Aprendizaje Profundo."
+  },
+  {
+   "codigo": "SI-087",
+   "nombre": "INFRAESTRUCTURA DE TI",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-984",
+   "que_aprenderas": "Esta asignatura pertenece al área curricular de infraestructura de TI, de naturaleza teórico-práctica, de carácter obligatorio. El propósito de la asignatura es que los alumnos desarrollen un proyecto de ingeniería con tecnologías modernas de TI teniendo en cuenta restricciones reales, usando estándares ingenieriles y normativas técnicas vigentes. Se ven temas de infraestructura de Tics que las empresas e instituciones poseen, así como también los medios de conectividad más comunes y temas de seguridad eléctrica y contra incendios dentro de los estándares técnicos vigentes que dichas instalaciones deben observar. El contenido de la asignatura es: 1. Sistemas de cableado estructurado y conectividad. 2. Centro de procesamiento de datos - datacenter. 3. Infraestructura virtual de tics."
+  },
+  {
+   "codigo": "SI-088",
+   "nombre": "MODELO DE NEGOCIOS DIGITALES",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-786",
+   "que_aprenderas": "Diseño de negocios digitales: Lean Canvas, métricas de crecimiento, monetización y validación de propuestas de valor tecnológico."
+  },
+  {
+   "codigo": "SI-089",
+   "nombre": "TÓPICOS DE BASE DE DATOS AVANZADOS II",
+   "creditos": 3,
+   "ht": 2,
+   "hp": 2,
+   "th": 4,
+   "prerrequisito": "SI-885",
+   "que_aprenderas": "Bases de datos especializadas: grafos, series temporales, búsqueda full-text y optimización avanzada para casos de uso específicos."
+  }
+ ]
 }
